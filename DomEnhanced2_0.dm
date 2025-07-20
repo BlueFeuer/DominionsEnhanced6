@@ -105719,9 +105719,9 @@ Priests: Strong"
 #buildfort 27  -- Fortified Villages
 #startcom 6798 -- Kikmongwi
 #startunittype1 6781 -- Spear Warrior
-#startunitnbrs1 20
+#startunitnbrs1 30
 #startunittype2 6779 -- Archer
-#startunitnbrs2 20
+#startunitnbrs2 30
 #startscout 6797 -- Scout
 #defcom1 6798 -- Kikmongwi
 #defcom2 6799 -- Village Elder
@@ -105856,9 +105856,9 @@ Priests: Strong"
 #halfdeathpop
 #startcom 6805 -- Kikmongwi
 #startunittype1 6788 -- Spear Warrior
-#startunitnbrs1 20
+#startunitnbrs1 30
 #startunittype2 6786 -- Archer
-#startunitnbrs2 20
+#startunitnbrs2 30
 #startscout 6797 -- Scout
 #defcom1 6805 -- Kikmongwi
 #defcom2 6806 -- Village Elder
@@ -105987,9 +105987,9 @@ Priests: Strong"
 #fortera 2
 #startcom 6861 -- Kikmongwi
 #startunittype1 6855 -- Spear Warrior
-#startunitnbrs1 20
+#startunitnbrs1 30
 #startunittype2 6853 -- Archer
-#startunitnbrs2 20
+#startunitnbrs2 30
 #startscout 6797 -- Scout
 #defcom1 6861 -- Kikmongwi
 #defcom2 6862 -- Village Elder
@@ -106292,7 +106292,7 @@ Priests: Average"
 
 #startcom 7113 -- Sar
 #startunittype1 7101 -- Spearman
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 7104 -- Swordsman
 #startunitnbrs2 20
 #startscout 7112 -- Scout
@@ -106380,7 +106380,7 @@ Priests: Moderately strong; most priests are also mages."
 #startunittype1 6877 -- Bhödpa Archer
 #startunitnbrs1 20
 #startunittype2 6882 -- Spear Soldier
-#startunitnbrs2 20
+#startunitnbrs2 25
 #homerealm 4  -- Far East
 #homerealm 10  -- Default
 #addgod 499 -- Nataraja
@@ -106657,7 +106657,7 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 
 #startcom 8088 -- Finnaithae Chieftain
 #startunittype1 8075 -- Finnaithae Soturi
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 8074 -- Finnaithae Javelineer
 #startunitnbrs2 20
 #startscout 8087 -- Fenni Scout
@@ -106748,8 +106748,8 @@ Sailing: All commanders can sail. Only Schippers can transport troops."
 #uwrec 7973 -- Merman Hoplite
 #startcom 7941
 #startunittype1 7951
-#startunitnbrs1 20
-#startunittype2 7954
+#startunitnbrs1 25
+#startunittype2 7939
 #startunitnbrs2 20
 #startscout 7940
 #hero1 7963
@@ -106859,7 +106859,7 @@ Priests: Average"
 #startunittype1 6651
 #startunitnbrs1 20
 #startunittype2 6652
-#startunitnbrs2 10
+#startunitnbrs2 12
 #startscout 6665
 #hero1 6675 -- Temujin
 #hero2 6677 -- Jangar
@@ -106955,7 +106955,7 @@ Priests: Average, cannot preach however can perform blood sacrifice. Blood sacri
 #addrecunit 7034
 #startcom 7011
 #startunittype1 7004
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 7003
 #startunitnbrs2 20
 #startscout 7009
@@ -107106,8 +107106,9 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #startcom 6690
 #startscout 6689
 #startunittype1 6682
+#startunitnbrs1 30
 #startunittype2 6680
-
+#startunitnbrs2 30
 #moremagic 1
 #moreheat 1
 #end
@@ -107142,7 +107143,7 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #addforeigncom 7056
 #startcom 7046
 #startunittype1 7041
-#startunitnbrs1 30
+#startunitnbrs1 45
 #startscout 7055
 #defcom1 7046
 #defcom2 7054
@@ -107285,7 +107286,7 @@ Priests: Average"
 #startcom 7180
 #startscout 7206
 #startunittype1 7159
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 7160
 #startunitnbrs2 20
 #wallcom 7180 -- Irami Commander
@@ -107334,7 +107335,7 @@ Priests: Average"
 #startunittype1 6577
 #startunitnbrs1 30
 #startunittype2 6576
-#startunitnbrs2 30
+#startunitnbrs2 25
 #addreccom 9087
 #addreccom 6565
 #addreccom 6566
@@ -107712,7 +107713,7 @@ Priests: Average"
 #startcom "Venedian captain"  -- captain
 #startscout "Venedian diplomat"  -- diplomat
 #startunittype1 6715
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 6719
 #startunitnbrs2 20
 #addreccom 6726
@@ -107842,7 +107843,7 @@ Priests: Average"
 #startcom 6973 -- Okakuo
 #startscout 6972 -- Scout
 #startunittype1 6964 -- Vet Long
-#startunitnbrs1 30
+#startunitnbrs1 25
 #startunittype2 6959 -- Archer
 #startunitnbrs2 20
 
@@ -108156,7 +108157,7 @@ Priests: Weak. Can unlock strong priests in capital."
 --starting army
 #startcom 9613 --"Madawaki"
 #startunittype1 9604 --"Hausa Infantry
-#startunitnbrs1 25
+#startunitnbrs1 20
 #startunittype2 9609 --"Colossi Soldier"
 #startunitnbrs2 10
 #startscout 9611 --"Scout"
@@ -108171,7 +108172,7 @@ Priests: Weak. Can unlock strong priests in capital."
 #defcom2 9612 --"Magayaki"
 #defunit1 9604 --"Hausa Infantry"
 #defunit2 9603 --"Hausa Crossbowman"
-#defmult1 15`
+#defmult1 15
 #defmult2 10
 #wallcom 9612 -- "Magayaki"
 #wallunit 9603 -- "Hausa Crossbowman"
@@ -108774,7 +108775,9 @@ Priests: Average"
 #addreccom 161 -- king
 
 #startunittype1 8565
-#startunittype2 8566
+#startunitnbrs1 25
+#startunittype2 8567
+#startunitnbrs2 20
 #defcom1 8572
 #defcom2 8573
 #defunit1 8565
@@ -108987,7 +108990,7 @@ Priests: Average"
 #startcom 2542  -- Guhyakha Commander
 #startscout 1119  -- Markata Scout
 #startunittype1 1350  -- Bandar Swordsmen
-#startunitnbrs1 20
+#startunitnbrs1 18
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
 
@@ -109010,7 +109013,7 @@ Priests: Average"
 #startcom 1761
 #startscout 1119  -- Markata Scout
 #startunittype1 1762  -- Bandar Warrior
-#startunitnbrs1 20
+#startunitnbrs1 18
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
 
@@ -109249,7 +109252,7 @@ Dominion: Dominion hides province ownership."
 #startcom 1523  -- Slave Prince
 #startscout 432  -- Scout
 #startunittype1 336  -- Slave Guardian
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 1524  -- Slave Guardian
 #startunitnbrs2 20
 
@@ -109330,7 +109333,7 @@ Dominion: Dominion hides province ownership."
 #startcom 2390  -- Pelagian Captain
 #startscout 1050  -- Merman Scout
 #startunittype1 2383  -- Turtle Tribe Triton
-#startunitnbrs1 20
+#startunitnbrs1 30
 #startunittype2 2386  -- Coral Clan Soldier
 #startunitnbrs2 20
 
@@ -109388,9 +109391,9 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #domkill 1
 #startcom 7394 -- Spectral Melia
 #startunittype1 2841  -- Peltast
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 2842  -- Hoplite
-#startunitnbrs2 20
+#startunitnbrs2 25
 
 #homefort 13 -- Fortified City
 
@@ -109792,8 +109795,8 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #cheapgod40 8405 -- Neter of the River
 #startcom 163  -- Commander of C'tis
 #startscout 502  -- Empoisoner
-#startunittype1 166  -- 10 City Guard
-#startunitnbrs1 20
+#startunittype1 166  -- 25 City Guard
+#startunitnbrs1 25
 #startunittype2 165  -- Heavy Infantry
 #startunitnbrs2 20
 
@@ -110225,7 +110228,7 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #startcom 207  -- Shambler Chief
 #startscout 432  -- Scout
 #startunittype1 107  -- Atlantian Light Infantry
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 1621  -- Atlantian Infantry
 #startunitnbrs2 20
 
@@ -110306,7 +110309,7 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #startcom 445  -- Illithid Lord
 #startscout 432  -- Scout
 #startunittype1 336  -- Slave Guardian
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 1524  -- Slave Guardian
 #startunitnbrs2 20
 
@@ -110641,7 +110644,7 @@ Bless bonuses: Poison Resistance +10"
 #startcom 54  -- Castellan
 #startscout 56  -- Royal Forester
 #startunittype1 62  -- Longspear
-#startunitnbrs1 30
+#startunitnbrs1 20
 #startunittype2 59  -- Longbowman
 #startunitnbrs2 30
 
@@ -110687,13 +110690,7 @@ Bless bonuses: Poison Resistance +10"
 #startcom 1029  -- Captain
 #startscout 2107  -- Troubadour
 #startunittype1 2111  -- Halberdiers
-#startunitnbrs1 30
-#startunittype2 2108  -- Crossbowmen
-#startunitnbrs2 20
-#startcom 1029  -- Captain
-#startscout 2107  -- Troubador
-#startunittype1 2111  -- Halberdiers
-#startunitnbrs1 30
+#startunitnbrs1 25
 #startunittype2 2108  -- Crossbowmen
 #startunitnbrs2 20
 #futuresite "LA Marignon Summons"
@@ -110889,8 +110886,8 @@ Bless bonuses: Poison Resistance +10"
 #addgod 8450 -- Emissary of Antrax
 #startcom 163  -- Commander of C'tis
 #startscout 502  -- Empoisoner
-#startunittype1 166  -- 10 City Guard
-#startunitnbrs1 20
+#startunittype1 166  -- 25 City Guard
+#startunitnbrs1 25
 #startunittype2 165  -- Heavy Infantry
 #startunitnbrs2 20
 
@@ -111011,7 +111008,7 @@ Bless bonuses: Poison Resistance +10"
 #startcom 1135  -- Bandar Commander
 #startscout 1119  -- Markata Scout
 #startunittype1 1126  -- Vanara Swordsmen
-#startunitnbrs1 40
+#startunitnbrs1 35
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
 --#addreccom 7645 -- Nagayathi
@@ -111170,7 +111167,7 @@ Bless bonuses: Poison Resistance +10"
 #startcom 445  -- Illithid Lord
 #startscout 432  -- Scout
 #startunittype1 336  -- Slave Guardian
-#startunitnbrs1 20
+#startunitnbrs1 25
 #startunittype2 1524  -- Slave Guardian
 #startunitnbrs2 20
 #descr "In the halls of R'lyeh the Starspawns, the Great Ones who survived the Fall opened a gate into the Void and unleashed its horrors upon the world. But the Void was not to be controlled even by the Starspawns. The very fabric of the Veil was weakened and madness struck the inhabitants of mighty R'lyeh. Only the most powerful of the Starspawns were able to keep their minds intact. The Empire crumbled as insanity took the leaders and the former slaves and servants of the Empire were able to lift the yoke of R'lyeh.
