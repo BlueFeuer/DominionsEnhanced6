@@ -163826,6 +163826,7 @@ Can only be cast once per combat round."
 #itemcost2 -40
 #weapon 514  -- Vitriol Breath
 #acidshield 12
+#acidres 25
 #onlydemon
 #cursed
 #nofind
@@ -164001,6 +164002,8 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 4
 #secondarylevel 2
+#itemcost1 -20
+#itemcost2 -20
 #sunawe 3
 #armor 231  -- Magic robes
 #fly
@@ -164928,10 +164931,11 @@ This will also prevent their skin from drying out."
 #mainpath 5
 #mainlevel 4
 #type 6
+#itemcost1 -20
 #armor "Leather Hood"
 #undcommand 10
 #bestowtomount
-#raiseonkill 50
+#raiseonkill 100
 #end
 
 #selectitem 795
@@ -165482,11 +165486,12 @@ This will also prevent their skin from drying out."
 #copyitem 367 -- Crystal Matrix
 #spr "magicenhanced/eeigaiacom.tga"
 #name "Berries of Gaia"
-#descr "This branch bearing a handful of berries is enchanted with powerful magic. By eating one before a battle the bearer is able to open their mind to other creatures and can use communion slaves as if they had cast the Communion or Sabbath Master spell."
+#descr "This branch bearing a handful of berries is enchanted with powerful magic. By eating one before a battle the bearer is able to open their mind to other creatures and can use communion slaves as if they had cast the Communion spell."
 #constlevel 7
 #mainpath 6
 #mainlevel 3
 #secondarypath -1
+#itemcot1 -20
 #end
 
 #selectitem 833
@@ -165507,6 +165512,7 @@ This will also prevent their skin from drying out."
 #mainpath 3
 #mainlevel 3
 #type 7  -- Boots
+#itemcost1 -30
 #trample
 #autospell "Enlarge Self"
 #fear 5
@@ -166211,6 +166217,181 @@ This will also prevent their skin from drying out."
 #armor 502 -- Circlet
 #end
 
+#selectitem 884
+#name "Magmaskin Armor"
+#descr "This leather armor looks as though it is made of molten metal, and quickly shapes to the form of it's wearer, almost like a second skin. This skin makes the wearer resistant to fire and surrounds them with a fiery aura that burns would be attackers. The armor is more powerful in hot provinces, but in cold provinces it becomes weak and brittle. 
+
+Increases Natural Protection by 2 for each level of heat in the province."
+#spr "magicenhanced/magmaskin.png"
+#armor 206 --Obsidian Cuirass
+#constlevel 7
+#hp 8
+#fireres 10
+#icenatprot -2
+#heat 6
+#mainpath 0
+#mainlevel 1
+#secondarypath 3
+#secondarylevel 1
+#type 5
+#itemcost1 -40
+#itemcost2 -40
+#end
+
+#selectitem 885
+#name "Enchanted Grass"
+#descr "The world is filled with magic, illusions and other un-realities. By clutching this tuft of grass in their fist, the holder can be reminded of what in the world is real, and what is unreal, granting defense gainst false damage."
+#spr "magicenhanced/enchantedgrass.png"
+#falseregen 2
+#constlevel 5
+#mainpath 6
+#mainlevel 1
+#type 8
+#constlevel 3
+#end
+
+#selectitem 886
+#newitem
+#name "Iron Fist of Authority"
+#descr "The one who wears this bloody gauntlet has the terrifying authority to force even the most disorganized rabble into organized troops. So great is the power of this item that even animals or unthinking undead will follow the wearer's command. However, the tighter the grasp, the more slip through the fingers- the morale of any troops this commander leads will be lower, and they will be more likely to route.
+
+Adds Undisciplined Leader"
+#spr "magicenhanced/ironfist.png"
+#constlevel 7
+#type 1
+#weapon 881 --Magic Fist--
+#undisleader 1
+#inspirational -3
+#command 25
+#undcommand 25
+#taskmaster 2
+#mainpath 8
+#mainlevel 3
+#secondarypath 0
+#secondarylevel 1
+#end
+
+#selectitem 887
+#newitem
+#name "Whip of Beast-Command"
+#descr "This enchanted whip gives the wielder the ability to command and communicate with animals as though they were soldiers allowing for advanced commands for even the most undisciplined rabble. As a side effect, they can also lead undisciplined non animals as well, though their ability to command them will be lowered as the user will only be able to speak in the most basic barks and grunts.
+
+Adds Undisciplined Leader
+Adds Beastmaster 5"
+#spr "magicenhanced/beastcommand.png"
+#constlevel 5
+#weapon 140
+#mainpath 6
+#mainlevel 3
+#type 1
+#undiscleader 1
+#noundead
+#nodemon
+#inspirational -5
+#beastmaster 5
+#end
+
+#selectitem 888
+#newitem
+#name "Pendant of the Peaceful Mind"
+#descr "This pendant has a soothing aura and when worn can greatly lessen the effects of insanity and even a shattered mind.
+
+-25 Insane
+-25 Shattered Mind"
+#spr "magicenhanced/peacefulmind.png"
+#type 8
+#mainpath 4
+#mainlevel 2
+#secondarypath 2
+#secondarylevel 2
+#itemcost2 -50
+#insane -25
+#shatteredsoul -25
+#constlevel 5
+#end
+
+#selectitem 889
+#newitem 
+#name "Amulet of Unification"
+#descr "This amulet empowers the wearer's ability to open their mind allowing it's wearer to join or lead a Grand Communion.
+
+Adds Grand Communicant"
+#spr "magicenhanced/unification.png"
+#mainpath 4
+#mainlevel 3
+#grandcom 1
+#type 8
+#constlevel 7
+#end
+
+#selectitem 890
+#name "Gauntlet of Spell Channeling"
+#spr "spellfocus.png"
+#descr "This enchanted glove allow for quick movements and are magically enchanted to help channel magic, allowing wearers to occasionally cast spells while in melee combat, and helps avoid having their spells be interrupted.
+
+Adds Combat Caster"
+#type 1
+#weapon 881 --Magic Fist--
+#mainpath 0
+#mainlevel 2
+#secondarypath 7
+#secondarypath 1
+#itemcost1 -50
+#combatcaster 1
+#constlevel 5
+#end
+
+#selectitem 891
+#newitem
+#name "Shard of Elemental Fire"
+#spr "magicenhanced/elementalfire.png"
+#descr "This is a tiny mote of true flame, stolen from the Elemental Plane of Fire itself. Carrying this flame allows the caster to empower any fire elementals that they summon."
+#type 8
+#mainpath 0
+#mainlevel 3
+#itemcost1 -33
+#fireelementals 1
+#constlevel 5
+#end
+
+#selectitem 892
+#newitem
+#name "Shard of Elemental Air"
+#spr "magicenhanced/elementalair.png"
+#descr "This is a tiny mote of true air, stolen from the Elemental Plane of air itself. Carrying this flame allows the caster to empower any air elementals that they summon."
+#type 8
+#mainpath 1
+#mainlevel 3
+#itemcost1 -33
+#airelementals 1
+#constlevel 5
+#end
+
+#selectitem 893
+#newitem
+#name "Shard of Elemental Water"
+#spr "magicenhanced/elementalwater.png"
+#descr "This is a tiny mote of true water, stolen from the Elemental Plane of air itself. Carrying this flame allows the caster to empower any air elementals that they summon."
+#type 8
+#mainpath 2
+#mainlevel 3
+#itemcost1 -33
+#waterelementals 1
+#constlevel 5
+#end
+
+#selectitem 894
+#newitem
+#name "Shard of Elemental Earth"
+#spr "magicenhanced/elementalearth.png"
+#descr "This is a tiny mote of true earth, stolen from the Elemental Plane of air itself. Carrying this flame allows the caster to empower any air elementals that they summon."
+#type 8
+#mainpath 3
+#mainlevel 3
+#itemcost1 -33
+#earthelementals 1
+#constlevel 5
+#end
 
 -- END OF NEW ITEMS (Skip items 881~882)
 
@@ -166481,7 +166662,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 16 -- Ice Pebble Staff
-#itemcost1 -33
+#itemcost1 -50
 #end
 
 #selectitem 146 -- Piercer
@@ -166495,7 +166676,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 48 -- Wand of Wild Fire
-#itemcost1 -33
+#itemcost1 -50
 #end
 
 #selectitem 50 -- lightning Spear
@@ -166527,7 +166708,8 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 52 -- Staff of Corrosion
-#itemcost1 -50
+#itemcost1 -30
+#itemcost2 -30
 #end
 
 #selectitem 59 -- Starfire Staff
@@ -166559,7 +166741,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 75 -- Rod of the Phoenix
-#itemcost1 -40
+#itemcost1 -50
 #end
 
 #selectitem 77 -- Carmine Cleaver
@@ -167080,22 +167262,27 @@ This headband does not require activation in combat."
 
 #selectitem 243 -- Red Dragon Mail
 #itemcost1 -30
+#prot 17
 #end
 
 #selectitem 250 -- Blue Dragon Mail
 #itemcost1 -30
+#prot 17
 #end
 
 #selectitem 255 -- Green Dragon Mail
 #itemcost1 -30
-#end
-
-#selectitem 526 -- Black Dragon Mail
-#itemcost1 -30
+#prot 17
 #end
 
 #selectitem 525 -- White Dragon Mail
 #itemcost1 -30
+#prot 17
+#end
+
+#selectitem 526 -- Black Dragon Mail
+#itemcost1 -30
+#prot 17
 #end
 
 #selectitem 260 -- Marble Armor
@@ -167196,13 +167383,13 @@ This headband does not require activation in combat."
 #constlevel 3
 #end
 
-#selectitem 293 -- Pixie Shoes
-#itemcost1 -20
-#itemcost2 -20
-#end
-
 #selectitem 296 -- Boots of Stone
 #itemcost1 -20
+#end
+
+#selectitem 298 -- Pixie Shoes
+#itemcost1 -20
+#itemcost2 -20
 #end
 
 #selectitem 304 -- Boots of Antaeus
@@ -167394,6 +167581,10 @@ This headband does not require activation in combat."
 #nodemon
 #noundead
 #nationrebate 104 -- LA Abysia
+#end
+
+#selectitem 350 -- Medalian of Vengeance
+#itemcos1 -40
 #end
 
 #selectitem 351 -- Pills of Water
@@ -167908,6 +168099,7 @@ This headband does not require activation in combat."
 #selectitem 219 -- Crown of the Fire King
 #itemcost1 -40
 #nofind
+#fireelementals 1
 #tmpfiregems 3
 #constlevel 7
 #unique
@@ -167916,6 +168108,7 @@ This headband does not require activation in combat."
 #selectitem 220 -- Crown of the Frost King
 #itemcost1 -40
 #nofind
+#waterelementals 1
 #tmpwatergems 3
 #constlevel 7
 #unique
@@ -167932,6 +168125,13 @@ This headband does not require activation in combat."
 #itemcost2 -50
 #magicboost 8 1
 #magicboost 5 1
+#end
+
+#selectitem 223 -- Crown of the Elements
+#fireelementals 1
+#airelementals 1
+#earthelementals 1
+#waterelementals 1
 #end
 
 #selectitem 200 -- Crown of Bones
