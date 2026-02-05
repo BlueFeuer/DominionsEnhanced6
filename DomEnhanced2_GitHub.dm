@@ -180378,7 +180378,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Angel of the Host"
 #notext
 #nolog
-#1unit 543  -- Angel of the Host
+#1unit 3870  -- Angel of the Host
 #end
 
 #newevent
