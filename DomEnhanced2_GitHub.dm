@@ -18693,7 +18693,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/quaggaraffe.tga"
 #spr2 "gondwana/quaggaraffe2.tga"
 #descr "Quaggaraffes feed from the tops of tall trees, using their long legs and neck to reach the highest branches. When threatened they lash out with a kick that can split a mans skull, and a headbutt backed by their powerful neck. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings."
-#mountedhumanoid -- Quadruped bugged
+#quadruped
 #gcost 0
 #size 8
 #hp 44
@@ -88054,6 +88054,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 5 1
 #custommagic 1024 50 -- E
 #custommagic 4096 50 -- D
+#prot 5 -- matching new umbral buffs
+#darkpower 2 -- matching new umbral buffs
+#woundfend 3 -- matching new umbral buffs
 #end
 
 
@@ -94905,14 +94908,27 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #twiceborn 6644 -- Wight Beast
 #end
 
-#selectmonster 2968  -- Hellspawn
+#selectmonster 2968  -- Hell Spawn salamandar/abysian
 #poorundeadleader
+#neednoteat
+#icenatprot -1
 #end
 
-#selectmonster 2969  -- Hellspawn
+#selectmonster 2969  -- Hell Spawn salamandar/abysian armed 
 #poorundeadleader
+#neednoteat
+#icenatprot -1
 #end
 
+#selectmonster 2970 -- Hell Spawn spike fiend/abysian
+#neednoteat
+#icenatprot -1
+#end 
+
+#selectmonster 3061 -- Hell Spawn Salamander/Burning One
+#neednoteat 
+#icenatprot -1
+#end
 
 #selectmonster 3003  -- Great Bear
 #clearweapons
@@ -137387,7 +137403,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #copyspell 783 -- Enlarge
 #name "Rhuax Legacy"
 #descr "The caster invokes the power of Rhuax in a few nearby soldiers. The affected units will grow in size and will radiate hellish heat that will severely burn attackers."
-#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, Fire Shield: 9 AP fire dmg, reduced by weapon length"
+#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, +5 Fire Resistance, Fire Shield: 9 AP fire dmg, reduced by weapon length"
 #researchlevel 4
 #path 0 0
 #pathlevel 0 3
@@ -137427,7 +137443,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #copyspell 783 -- Enlarge
 #name "Outer Furnace"
 #descr "The caster calls on the power of Rhuax in troops around them to unleash the fire within their spirit. The affected units will grow in size and will radiate hellish heat that will severely burn attackers."
-#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, Fire Shield: 9 AP fire dmg, reduced by weapon length"
+#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, +5 Fire Resistance, Fire Shield: 9 AP fire dmg, reduced by weapon length"
 #researchlevel 7
 #path 0 0
 #pathlevel 0 3
