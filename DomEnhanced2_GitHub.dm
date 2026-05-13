@@ -172646,6 +172646,8 @@ This headband does not require activation in combat."
 
 -- START OF INFORMATIVE SEARCH EVENTS
 
+-- Start of vanilla site events
+
 #newevent
 #rarity 5
 #req_hiddensite 1
@@ -177471,11 +177473,4941 @@ This headband does not require activation in combat."
 #end
 
 
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Tar Pits]"
+#header 2
+#end
 
 
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Sun Ridge]"
+#header 2
+#end
 
 
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
 
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Magus Temple]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Alchemists Guild]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Smoke Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Rage Wind Heath]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Candle Marsh]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Copper Cliff]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Stargazers Cliff]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Desert of Bones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Lantern Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Shimmering Haze]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Solar Lens]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Tower of the Golden Order]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Ashen Fields]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Fountain of Fire]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [High Temple of the Magii]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Enchanted Pyre]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Rageflame Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Smoulderstone]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Wildfire Glade]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Caverns of Glowing Moss]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Glowing Fissure]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Smouldering Maze]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [House of Embers]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Thunder Oak]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Canyon of Wild Winds]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Desert of Sighs]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Cypress Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Howling Gorge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Canyon of Playful Winds]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Ice Mists]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Thunder Stones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Cloud Pillars]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Singing Stones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Dragon Cliff]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Tower of the Silver Order]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Stone Spires]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Tempest Spire]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Blizzard Valley]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Forest of Joy]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [The Cloven Mountain]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Stairway Mountain]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Silver Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Enchanted Windmill]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Whisperwind Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Sparkling Fields]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Skysplit Oak]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Wailing Woods]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Ziggurat of Thunder]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Well of White Water]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Mercury Pond]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Boiling Bog]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Sinkmarsh]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Lantern Fens]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Geyser]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Pearl Beach]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Waterfall]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Rockside Spring]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Well of Yesterdays Waters]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Corpse Candles' Marsh]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Overgrown Lake]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Glittering Stream]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Lifeless Lake]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [River Fortress]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Bottomless Lake]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Mist Swamps]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Azure Academy]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Rustwater]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [The Ferry]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Mount Frost]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [The Forest of the Lake]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Stony Swamps]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Temple of the Turning Tide]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Black Ice Valley]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [The Swamp of Dread]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Enchanted Well]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Icebrick Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Ichtyid Enclave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Mermage Coven]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Isle of the Saoi]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Garden of Frozen Flowers]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Subterranean Lake]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Forgotten Oasis]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Plaguewater Oasis]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Frozen Glen]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Enchanted Glacier]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Wellspring of the Virgins]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Pharos]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Mineral Cave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Earth Blood Seepage]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Hidden Gold Mine]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Gem Deposits]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Gorge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Magma Cave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Standing Stones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Water Filled Cave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Starlight Chasm]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Chasm of Strange Lights]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Cave of the Pale Ones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Forest of Truffles]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Entrance]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Tower of the Iron Order]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Twice Walled Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Archaic Fortress]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [The Jervellan Wall]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Ten Thousand Things]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Castle Arcanum]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Ancient Forge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Chamber of Changes]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Circle of Standing Stones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [The Jade Pagoda]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [The Imperial Quarry]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Dolmen]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Enchanted Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Earthroot Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Deep Crevasse]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Mud Field]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Quicksand]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Flooded Mines]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Abyss]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Painted Cave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Maze]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Strange Opening]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Sages Guild]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Abandoned Laboratory]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Crystal Flames]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Mirror Palace]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Caves of Passing Time]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Scrying Pool]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Pyramid of Life]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Totem Collection]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Dream Collection]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Gateway]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Distortion]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Void Alignment]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Village of Strange Men]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [The Ancient Master]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [The Council of Sages]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [The Cave of Souls]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Enchanted Gate]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Skywatch Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Starlit Pond]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Moonlit Halls]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Brook of Glimmering Pearls]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Starfall Waste]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Battlefield]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Burial Mound]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Graveyard of the Damned]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Gallows]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Broken Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Forest of the Dead]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Banefire Braziers]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Windswept Catacombs]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Crypt in the Sand]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Witches Bog]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Catacombs]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Overgrown Graveyard]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Nightmare Meadow]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Marble Mausoleum]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Raven Oak]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Chillsick Swamp]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Leper Fens]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Grayshade Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [The City of a Thousand Wonders]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Halls of the Dead]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Banefire Forge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Enchanted Tomb]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Bonedoor Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Labyrinth of Skulls]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Garden of Bones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Swamp of Shadows]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Plague Barrow]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Pit of Despair]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Blackrose Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Glen of Verdant Greenery]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Forest of Delights]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Farm of Plenty]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Bile Marsh]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Hidden Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Stone Circle]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Woodhenge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Animist's Hut]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Fields of the Fire Flies]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Whisperwoods]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Hidden Valley]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Forest of a Thousand Streams]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Endless Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Dying Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Straywild Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Hall of Ancient Oaks]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Flower Swamp]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Cedar Pillars]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Flowering Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Cedar Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Crown Woods]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Gateward Valley]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Motheroak]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Wolven Gate]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Twisting Woods]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Ancient Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Valley of Shame]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Thorn Wood Heights]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Poison Glades]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Enchanted Field]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Oakwood Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Wolf Oak]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Grove of Fertility]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Lair of Spiders]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Skin Shifter's Barrow]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [The Frogmarch]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Field of Golden Rye]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Withering Woods]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Fungus Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Earthroot Grove]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Dusk Spiral]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Mist Shrouded Ruins]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Song of Birds]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Veiled Valley]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Gorge of Echoes]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Shimmering Waterfall]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Mirage]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Singing Tree]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Veiled Willow]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Hall of Merriment]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [House of Otherworld Windows]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Circle of Strange Stones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Cracked Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Twin Spire Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Rainbow Roses]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Tower of the Hidden Order]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Academy of Magic]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Mirror Wall Palace]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [The Gate of Deeper Slumber]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Glowing Mound]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Elusive Mountain]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Bog of Strange Lights]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Rainbow Mist]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Moon Mirror Moor]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Shimmering Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Nightmare Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Leper Dreams]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [House of Dreams]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Dreams Unleashed]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Everchanging Fields]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Gossamer Weaver]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Twisted Mirror]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Shrouded Glen]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Birdsong Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Hall of Horrible Memories]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Brigand Lair]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Damned Merchant]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Fields of Blood]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Blood Henge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Gore Swamps]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Mount Chaining]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [The Vale of Infinite Horror]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [The Blood Keep]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Assassins Guild]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Red Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bloodleaf Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bloodstone Mountain]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bloodwind Waste]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bloodsucker Fens]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bloodmarble Mausoleum]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bloodsplatter Pattern]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Torture Tower]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Tower of the Devil's Bride]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Forgotten Village]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Sacrificial Grove]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Bleeding Tree]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Stained Altar]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [The First Gate]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Cliffside Abattoir]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Redcap Feeding Ground]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Ancient Temple]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Convent]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Abbey]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Order of the Secret Light]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Order of the Undying]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Shrine of the Outcast]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Temple of the Spider God]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Temple of Flying Monkeys]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [The Martyr's Grave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Cradle of Faith]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Pillar of Life]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [The Prophet's Sigil]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Oracle's Lair]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Mountain of Revelation]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Place of Prophecy]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Stele of Law]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Temple of Life and Death]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Gorge of Glowing Fish]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Glowing Sands]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Sparkling Current]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Crust of Molten Sulphur]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Underwater Volcano]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Smoldering Starfish Colony]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Pond of Lava]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Steaming Stone]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Boiling Current]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Fire Rift]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Magma River]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Thermal Vent]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Underwater Cave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Pocket of Air]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Floating Rock]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Bubbling Fissure]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Foaming Waves]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Island of Floating Stone]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Scoriatic Cliffs]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Clam Field]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Coral Statue]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Isle of Ice]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Academy Underneath]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Depths Unnamed]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Whispering Waters]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Glowing Depths]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Falling Depths]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Dark Waters]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Cavern of Underwater Ice]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Charmed Current]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Sweet Water Current]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Frozen Deeps]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Ridge of Ice]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Fathoms Deep]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Maelstrom]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Underwater Cliff]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Moving Sand Banks]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Copper Clams]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Mineral Fingers]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Plateau of Shards]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Rock Crab Colony]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Underwater Stalagmite]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Ridge of Volcanic Glass]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Meteorite Rock]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Basalt Plateau]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Mountain Underneath]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Fossilized Conch]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Kelp Fortress]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Amber Beach Island]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Floating Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Coral Garden]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Fields of Glowing Algae]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Giant Anemone]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Ridge of Empty Shells]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Wall of Living Kelp]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Monstrous Conch]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Living Sediment]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Lair of the Eel-King]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Breeding Ground of Eels]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Sunken Galley]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Reef of Sunken Ships]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Isle of Death]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Dark Depths]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Ghoul Fish Cave]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [The Sea of Dead Memories]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Black Sands]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Basalt Ruins]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Submerged Catacombs]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Stale Current]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Black Coral Reef]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Field of Undead Clams]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Halls of the Drowned]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Pearl Stairway]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Basalt Pillars]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Submerged Labyrinth]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Displaced Tunnel]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Arcane Vent]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Shimmering Conches]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Pearl Farm]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Eye Pebble Plain]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Blasphemous Presence]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Enchanted Current]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Shimmerfish Reef]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Dream Kelp]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Singing Sands]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Lingering Corpusants]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Whale Song Forest]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Pearl Sphere]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful null site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of null will be required to locate it. [Ancient Temple of the Deeps]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Wailwind Shores]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Oasis]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Great Oasis]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Date Oasis]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Chitterpalm Oasis]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Trapped Lights]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Dripping Stones]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Trapped Wind]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Mineral Deposit]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Spiral Shaft]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Cavern Tomb]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Moss Covered Cavern]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Cavern of Dreams]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Cavern of Rubies]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Fire site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Cavern of Magma]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Dripping Caverns]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Mud Caverns]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Stalagmite Cavern]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Water site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Mist Caverns]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Hidden Gold Deposit]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Hidden Gem Deposits]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Crystal Cavern]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Ancient Tomb]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Nature site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Nature will be required to locate it. [Caveman Cavern]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Glamour site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Gemsparkle Gorge]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [Nest of Bats]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Blood site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Blood will be required to locate it. [The Lesser Abyss]"
+#header 2
+#end
+
+-- End of vanilla site events
+
+-- Start of custom site events
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Death site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Temple of the Toad God]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Astral site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Rune Stone]"
+#header 2
+#end
+
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Earth site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Shrimp Settlement]"
+#header 2
+#end
+
+-- End of custom site events
 
 
 
