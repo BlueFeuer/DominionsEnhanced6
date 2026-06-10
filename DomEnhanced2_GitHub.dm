@@ -10,10 +10,12 @@
 -- Wasteland Survival cost from 2 -> 1
 -- Death Explosion cost from 5 -> 6, no longer Incarnate
 -- Fire Shield cost from 6 -> 5
--- Flaming Weapons cost from 7 -> 5
+-- Flaming Weapons cost from 7 -> 4, no longer Incarnate
+-- Farshot cost from 2 -> 1
 -- Awareness cost from 3 -> 2
 -- Swiftness cost from 4 -> 3
 -- Storm Flight cost from 4 -> 3
+-- Wind Walker cost from 5 -> 6, no longer Incarnate
 -- Weightlessness cost from 6 -> 4, no longer Incarnate
 -- Air Shield cost from 6 -> 5
 -- Charged Bodies cost from 8 -> 7
@@ -37,18 +39,19 @@
 -- Poison Weapons cost from 4 -> 3
 -- Recuperation cost from 5 -> 4, no longer Incarnate
 -- Berserker cost from 5 -> 5, no longer Incarnate
--- Barkskin cost from 6 -> 5
+-- Barkskin cost from 6 -> 6, no longer Incarnate
 -- Obfuscate cost from 6 -> 5
 -- Awe cost from 8 -> 7
 -- Displacement cost from 7 -> 6
 -- Dread cost from 8 -> 7
--- Vampiric Weapons cost from 12 -> 10
+-- Vampiric Weapons cost from 12 -> 9
 
 -- Death Explosion - F/D
 -- Berserker - N/B
 -- Reanimators - D/E
 -- Frost Mist Weapons - W/A
 -- Slowing Weapons - W/G
+-- Barkskin - N/N
 
 #selectbless "Death Explosion" -- F/D
 #path1 5
@@ -70,6 +73,21 @@
 #path1 8
 #end
 
+#selectbless "Barkskin" -- N/N
+#path1 6
+#growthscale 1
+#end
+
+#selectbless "Flaming Weapons" -- Heat scale
+#heatscale 1
+#end
+
+#selectbless "Wind Walker" -- A/S
+#path1 4
+#end
+
+
+
 
 #selectbless "Wasteland Survival" -- 2 -> 1
 #cost1 0 -- 1 -> 0
@@ -84,8 +102,12 @@
 #cost0 5 -- 6 -> 5
 #end
 
-#selectbless "Flaming Weapons" -- 7 -> 5
-#cost0 5 -- 7 -> 5
+#selectbless "Flaming Weapons" -- 7 -> 4
+#cost0 4 -- 7 -> 4
+#end
+
+#selectbless "Farshot" -- 2 -> 1
+#cost0 1 -- 2 -> 1
 #end
 
 #selectbless "Awareness" -- 3 -> 2
@@ -98,6 +120,11 @@
 
 #selectbless "Storm Flight" -- 4 -> 3
 #cost0 3 -- 4 -> 3
+#end
+
+#selectbless "Wind Walker" -- 5 -> 6
+#cost0 4 -- 5 -> 4
+#cost1 2 --  -> 2
 #end
 
 #selectbless "Weightlessness" -- 6 -> 4
@@ -196,8 +223,9 @@
 #cost1 1 --  -> 1
 #end
 
-#selectbless "Barkskin" -- 6 -> 5
-#cost0 5 -- 6 -> 5
+#selectbless "Barkskin" -- 6 -> 6
+#cost0 4 -- 6 -> 4
+#cost1 2 --  -> 2
 #end
 
 #selectbless "Obfuscate" -- 6 -> 5
@@ -216,17 +244,12 @@
 #cost0 7 -- 8 -> 7
 #end
 
-#selectbless "Vampiric Weapons" -- 12 -> 10
+#selectbless "Vampiric Weapons" -- 12 -> 9
 #cost0 6 -- 8 -> 6
+#cost1 3 -- 4 -> 3
 #end
 
 
-#selectbless "Barkskin"
-#cost0 4
-#path1 6
-#cost1 2
-#growthscale 1
-#end
 
 
 #gemlongevity 2
@@ -1133,6 +1156,7 @@
 #rcost 3
 #sound 10
 #pierce
+#sound 12
 #end
 
 #newweapon 1579
@@ -1235,6 +1259,7 @@
 #att -2
 #def 0
 #magic
+#sound 9
 #end
 
 #newweapon 1591
@@ -1247,6 +1272,7 @@
 #def 0
 #pierce
 #magic
+#sound 38
 #end
 
 #newweapon 1592
@@ -1285,6 +1311,7 @@
 #dmg 1
 #slash
 #bonus
+#sound 38
 #end
 
 #newweapon 1596
@@ -2013,6 +2040,7 @@
 #blunt
 #pierce
 #bonus
+#sound 10
 #end
 
 #newweapon 1683
@@ -2025,6 +2053,7 @@
 #magic
 #slash
 #bonus -- so that he does not lose the weapon if he gets extra arms
+#sound 8
 #end
 
 #newweapon 1684
@@ -2037,6 +2066,7 @@
 #magic
 #blunt
 #bonus -- so that he does not lose the weapon if he gets extra arms
+#sound 10
 #end
 
 #newweapon 1685
@@ -2049,6 +2079,7 @@
 #bonus
 #magic
 #blunt
+#sound 10
 #end
 
 #newweapon 1688
@@ -2056,7 +2087,7 @@
 #name "Raterik's Morningstar"
 #dmg 9
 #att 3
-#def -2
+#def -1
 #len 1
 #magic
 #dt_large
@@ -2075,6 +2106,7 @@
 #nostr
 #nratt 1
 #secondaryeffect 333
+#sound 10
 #end
 
 #newweapon 1690
@@ -2088,6 +2120,7 @@
 #nratt 1
 #armornegating
 #secondaryeffect 112
+#sound 10
 #end
 
 #newweapon 1691
@@ -2095,7 +2128,7 @@
 #name "Hero's Morningstar"
 #dmg 8
 #att 3
-#def -2
+#def -1
 #len 1
 #magic
 #dt_large
@@ -2111,6 +2144,7 @@
 #magic
 #dt_large
 #pierce
+#sound 12
 #end
 
 #newweapon 1693
@@ -2122,6 +2156,7 @@
 #magic
 #dt_large
 #pierce
+#sound 12
 #end
 
 #newweapon 1694
@@ -2135,6 +2170,7 @@
 #nratt 2
 #dt_large
 #slash
+#sound 8
 #end
 
 #newweapon 1695
@@ -2146,6 +2182,7 @@
 #magic
 #dt_large
 #slash
+#sound 8
 #end
 
 #newweapon 1696 -- Abasi and his ancestor
@@ -2158,6 +2195,7 @@
 #magic
 #blunt
 #secondaryeffectalways 564
+#sound 10
 #end
 
 #newweapon 1697
@@ -2171,6 +2209,7 @@
 #dt_holy
 #secondaryeffect 1698
 #pierce
+#sound 12
 #end
 
 #newweapon 1699
@@ -2182,6 +2221,7 @@
 #magic
 #dt_holy
 #secondaryeffect 440
+#sound 8
 #slash
 #end
 
@@ -2195,6 +2235,7 @@
 #magic
 #dt_large
 #slash
+#sound 8
 #end
 
 #newweapon 1701
@@ -2207,6 +2248,7 @@
 #dt_large
 #secondaryeffect 232
 #slash
+#sound 8
 #end
 
 #newweapon 1702
@@ -2241,6 +2283,7 @@
 #bonus
 #magic
 #nratt 3
+#sound 10
 #end
 
 #newweapon 1704
@@ -2270,6 +2313,7 @@
 #magic
 #dt_magic
 #secondaryeffectalways 1704
+#sound 8
 #end
 
 #newweapon 1706
@@ -2282,6 +2326,7 @@
 #slash
 #magic
 #secondaryeffectalways 125  -- Leg Chop
+#sound 8
 #end
 
 #newweapon 1707
@@ -2297,6 +2342,7 @@
 #secondaryeffectalways 276  -- Small area holy fire
 #armorpiercing
 #magic
+#sound 8
 #end
 
 #newweapon 1708 -- MA Verethragna
@@ -2311,6 +2357,7 @@
 #secondaryeffectalways 765 -- Small area cold
 #armorpiercing
 #magic
+#sound 8
 #end
 
 #newweapon 1709 -- LA Verethragna
@@ -2326,6 +2373,7 @@
 #secondaryeffectalways 159  -- Fear & Cold
 #armorpiercing
 #magic
+#sound 8
 #end
 
 #newweapon 1710
@@ -2367,6 +2415,7 @@
 #armornegating
 #slash
 #magic
+#sound 8
 #end
 
 #newweapon 1713
@@ -2379,6 +2428,7 @@
 #len 0
 #aoe 1
 #blunt
+#sound 10
 #end
 
 #newweapon 1714
@@ -2388,6 +2438,7 @@
 #aoe 1
 #slash
 #bonus
+#sound 38
 #end
 
 #newweapon 1715
@@ -2411,6 +2462,7 @@
 #slash
 #dt_weapondrain
 #secondaryeffectalways 1715
+#sound 8
 #end
 
 #newweapon 1717
@@ -2450,6 +2502,7 @@
 #len 1
 #pierce
 #secondaryeffect 112  -- Heart finding
+#sound 38
 #end
 
 #newweapon 1722
@@ -2474,10 +2527,11 @@
 #magic
 #bonus
 #inanimateimmune
+#sound 29
 #end
 
 #newweapon 1724
-#name "Soul enslaving"
+#name "Soul Enslaving"
 #aoe 1
 #len 0
 #norepel
@@ -2489,6 +2543,7 @@
 #dt_drain
 #hardmrneg
 #secondaryeffectalways 1725
+#sound 22
 #end
 
 #newweapon 1725
@@ -2506,6 +2561,7 @@
 #slash
 #bonus
 #secondaryeffectalways 71
+#sound 9
 #end
 
 #newweapon 1727
@@ -2516,6 +2572,7 @@
 #len 1
 #blunt
 #magic
+#sound 10
 #end
 
 #newweapon 1728
@@ -2867,6 +2924,7 @@
 #magic
 #dt_magic
 #rcost 5
+#sound 10
 #end
 
 #newweapon 1775
@@ -2886,6 +2944,7 @@
 #magic
 #secondaryeffectalways 60  -- Fear
 #slash
+#sound 8
 #end
 
 #newweapon 1777
@@ -2899,6 +2958,7 @@
 #slash
 #magic
 #secondaryeffectalways 60  -- Fear
+#sound 8
 #end
 
 #newweapon 1778 -- Enchanted Sword w/ Bonus
@@ -2917,6 +2977,7 @@
 #magic
 #bonus
 #secondaryeffectalways 196 -- killing light
+#sound 8
 #end
 
 #newweapon 1800 -- Golden Claw w/ Bonus
@@ -2935,6 +2996,7 @@
 #magic
 #bonus
 #secondaryeffectalways 405
+#sound 8
 #end
 
 #newweapon 1802 -- Bronze Bident
@@ -3140,6 +3202,7 @@
 #slash
 #pierce
 #twohanded
+#sound 11
 #secondaryeffect 1814
 #end
 
@@ -3275,6 +3338,7 @@
 #magic
 #slash
 #secondaryeffect 738 -- shock
+#sound 24
 #end
 
 #newweapon 1833 -- Aizkora
@@ -3286,6 +3350,7 @@
 #magic
 #slash
 #blunt
+#sound 10
 #end
 
 
@@ -3311,6 +3376,7 @@
 #pierce
 #flyspr 109 1
 #thirdstr
+#sound 13
 #end
 
 #newweapon 1836
@@ -3324,6 +3390,7 @@
 #pierce
 #twohanded
 #rcost 1
+#sound 12
 #end
 
 #newweapon 1837
@@ -3335,6 +3402,7 @@
 #notmounted 2
 #pierce
 #twohanded
+#sound 12
 #end
 
 #newweapon 1838
@@ -3681,6 +3749,7 @@
 #magic
 #secondaryeffect 143 -- disease
 #bonus
+#sound 8
 #end
 
 #newweapon 1871 -- Earth Churn
@@ -3796,6 +3865,7 @@
 #ironweapon
 #pierce
 #slash
+#sound 8
 #end
 
 #newweapon 1884 -- Troop SS
@@ -3885,8 +3955,8 @@
 #copyweapon 645 -- Bronze sword
 #name "Anointed Sword"
 #dmg 5
-#secondaryeffect 509
-#magic
+#secondaryeffectalways 509
+--#magic
 #end
 
 #newweapon 1895 -- Swordbill
@@ -3968,6 +4038,7 @@
 --#copyweapon 440 -- Lesser Fear
 #name "Gaze of Fear"
 #aoe 5
+#natural
 #range 40
 #att 100
 #ammo 3
@@ -4042,6 +4113,7 @@
 #range 70
 #nratt -2
 #aoe 1
+#natural
 #notdismounted
 #bonus
 #secondaryeffectalways 1910
@@ -4061,15 +4133,16 @@
 #ammo 1
 #range 20
 --#mrnegateseasily
-#dmg 4
-#range0
+#dmg 3
+--#range0
 #end
 
 #newweapon 1914 -- Nightmare
 #copyweapon 86 -- Mind Blast
 #name "Nightmare Projection"
 #range 100
-#ammo 1002
+--#ammo 1006
+#ammo 12
 #att 100
 #nratt -2
 #range0
@@ -4077,6 +4150,141 @@
 #dmg 17179870208 -- Sleep, Confusion
 #secondaryeffect 293
 #end
+
+#newweapon 1916 -- Holy Fire no aoe
+#copyweapon 808 -- Holy Fire
+#name "Holy Fire"
+#aoe 0
+#end
+
+#newweapon 1917 -- Heavenly Blade no aoe / ap, 2h
+#name "Heavenly Sword"
+#dmg 9
+#att 2
+#def 3
+#len 2
+#slash
+#magic
+#twohanded
+#sound 8
+#secondaryeffectalways 1916
+#end
+
+#newweapon 1918 -- Sarissa
+#copyweapon 2 -- Pike
+#name "Sarissa"
+#att 0
+#def 0 -- +1
+#dmg 4 -- -1
+#end
+
+#newweapon 1919 -- Xyston
+#copyweapon 357 -- Light Lance
+#name "Xyston"
+#len 4
+#att -1
+#dmg 6
+#skip
+#ammo 1005
+#bonus
+--#copyweapon 4 -- Lance
+#norepel
+#end
+
+#newweapon 1920 -- Burning
+#copyweapon 541 -- Area Fire
+#name "Burning"
+#dt_aff
+#aoe 0
+#dmg 512 -- On Fire 
+#end
+
+#newweapon 1921 -- Magma Bolts
+#name "Magma Bolts"
+#ammo 1001
+#natural
+#bonus
+#dmg 16
+#halfstr
+#nratt 5
+#range 30
+#precision 2
+#blunt
+#magic
+#natural
+#secondaryeffectalways 1920
+#sound 16 -- flames
+#flyspr 362 4 -- Fire boulder
+#end
+
+#newweapon 1922 -- Area Calmness
+#name "Weaken Resolve"
+#dt_aff
+#dmg 36028797018963968 -- Calm Emotions
+#aoe 1
+#magic
+#nostr
+#armornegating
+#friendlyimmune
+#mrnegateseasily
+#bonus
+#mind
+#natural
+#end
+
+#newweapon 1915 -- Area Weakness
+#name "Divine Pacification"
+#dt_weakness
+#dmg 2
+#aoe 6
+#len 5
+#norepel
+#unrepel
+#magic
+#nostr
+#armornegating
+#friendlyimmune
+#morroll
+#hardmrneg
+#bonus
+#mind
+#natural
+#sound 16 -- Flame Strike
+--#explspr 10075 -- Few white lights
+#secondaryeffectalways 1922
+#end
+
+#newweapon 1923 -- Earthen Pillar
+#copyweapon 119 -- Hammer of the Cyclops
+#name "Earthen Pillar"
+#dmg 25
+#def -2
+#att -1
+#secondaryeffect 1512 -- Stun
+#end
+
+#newweapon 1924 -- Ghostly Sword
+#copyweapon 63 -- Life Drain
+#name "Ghostly Blade"
+--#dt_weapondrain
+#len 2
+#dmg 3
+#slash
+#def 1
+#att 1
+#end
+
+#newweapon 1925 -- Peck Eyes
+#name "Peck Eyes"
+#dmg 3
+#att 0
+#len 0
+#bonus
+#pierce
+#secondaryeffect 333 -- Eyeloss
+#ammo 1
+#end
+
 
 
 -- END OF NEW WEAPONS
@@ -4254,6 +4462,7 @@
 #dmg 2 -- +1
 #att 3 -- +3
 #ammo 24
+#friendlyimmune
 #end
 
 #selectweapon 303 -- Vine Bow
@@ -4284,6 +4493,7 @@
 #dmg 7 -- +1
 #att 2 -- +2
 #ammo 24
+#friendlyimmune
 #end
 
 -- End missile changes
@@ -4403,6 +4613,9 @@
 
 -- End Spear damage increase
 
+#selectweapon 15 -- Morningstar
+#def -1
+#end
 
 #selectweapon 21 -- Javelin
 #uwok
@@ -4427,6 +4640,10 @@
 
 #selectweapon 191 -- Ember
 #armorpiercing
+#end
+
+#selectweapon 131 -- Frost Blast
+#halfstr
 #end
 
 #selectweapon 84 -- Unquenched Sword
@@ -4745,6 +4962,14 @@
 #dmg 15
 #att 6
 #ammo 24
+#end
+
+#selectweapon 646 -- Bronze Hatchet
+#dmg 6
+#end
+
+#selectweapon 253 -- Hatchet
+#dmg 6
 #end
 
 #selectweapon 677  -- Wing Buff
@@ -5266,18 +5491,18 @@
 #end
 
 #newarmor 558 -- Lifidi Barding
+#copyarmor 251
 #name "Lifidi Barding"
 #rcost 12
-#type 9
 #protparts 14 9
 #woodenarmor
 #magicarmor
 #end
 
 #newarmor 559 -- Saddle Barding
+#copyarmor 251
 #name "Light Leather Barding"
 #rcost 1
-#type 9
 #protparts 5 5
 #end
 
@@ -5300,7 +5525,6 @@
 #newarmor 562 -- Pearl Barding
 #copyarmor 255 -- silver barding
 #name "Pearl Barding"
-#type 9
 #protparts 13 13
 #enc 1
 #magicarmor
@@ -5309,7 +5533,6 @@
 #newarmor 563 -- Spectral Barding
 #copyarmor 251 -- leather barding
 #name "Spectral Barding"
-#type 9
 #protparts 9 9
 #enc 0
 #magicarmor
@@ -5318,7 +5541,6 @@
 #newarmor 564 -- Fire Plate Barding
 #copyarmor 251 -- leather barding
 #name "Fire Plate Barding"
-#type 9
 #protparts 18 18
 #enc 1
 #def -1
@@ -5328,7 +5550,6 @@
 #newarmor 565 -- Hexplate Barding
 #copyarmor 251 -- leather barding
 #name "Hexplate Barding"
-#type 9
 #protparts 17 21
 #protinspector 17
 #enc 1
@@ -5339,7 +5560,6 @@
 #newarmor 566 -- Death Knight Barding
 #copyarmor 251 -- leather barding
 #name "Death Knight Barding"
-#type 9
 #protparts 18 21
 #protinspector 18
 #enc 1
@@ -5350,7 +5570,6 @@
 #newarmor 567 -- Icicle Barding
 #copyarmor 251 -- leather barding
 #name "Icicle Barding"
-#type 9
 #protparts 16 16
 #enc 0
 #def 0
@@ -5402,6 +5621,64 @@
 #copyarmor 278 -- Magic Crown
 #name "Oppressor's Headband"
 #end
+
+#newarmor 575 -- Turquoise Barding
+#copyarmor 251 -- leather barding
+#name "Turquoise Barding"
+#protparts 11 11
+#protinspector 11
+#enc 0
+#def 0
+#rcost 2
+#end
+
+#newarmor 576 -- Jet Barding
+#copyarmor 251 -- leather barding
+#name "Obsidian Barding"
+#protparts 14 14
+#protinspector 14
+#enc 0
+#def 0
+#rcost 6
+#magic
+#end
+
+#newarmor 577 -- Turquoise Barding
+#copyarmor 251 -- leather barding
+#name "Alabaster Barding"
+#protparts 12 12
+#protinspector 12
+#enc 0
+#def 0
+#rcost 2
+#end
+
+#newarmor 578 -- Wolf Barding
+#copyarmor 252
+#protparts 16 13
+#protinspector 13
+#rcost 5
+#enc 1
+#name "Wolf Barding"
+#end
+
+#newarmor 579 -- Turtle Shell Breastplate
+#copyarmor 100
+#rcost 12
+#name "Turtle Shell Breastplate"
+#end
+
+#newarmor 580 -- Turtle Helm
+#copyarmor 135
+#name "Turtle Helm"
+#end
+
+#newarmor 581 -- Turtle Greatshield
+#copyarmor 555
+#prot 18
+#name "Turtle Greatshield"
+#end
+
 
 -- END OF NEW ARMORS
 
@@ -5464,6 +5741,10 @@
 
 #selectarmor 206  -- Obsidian Cuirass
 #rcost 16
+#end
+
+#selectarmor 236  -- Gleaming Cuirass
+#prot 14 -- +2
 #end
 
 #selectarmor 114 -- Turtle Shell Hauberk
@@ -5608,20 +5889,13 @@
 
 
 
-
-
-
-
-
-#newmonster 6510
-#copystats 1664  -- Monster Fish
-#name "Dandan"
-#spr1 "domdaniel/dandan.tga"
-#spr2 "domdaniel/dandan2.tga"
-#descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans."
-#prot 18
-#poisonres 5
+#newmonster 6510 -- Howler dupe bugfix, do not remove or Howler's attack sprite will copy whatever the next #spr1 is
+--#copystats 3880
+#spr1 "vanilla/howler2.png"
+#spr2 "vanilla/howler2.png"
 #end
+
+
 
 #newmonster 6511
 #copystats 3367  -- Hinn
@@ -5731,6 +6005,16 @@
 #heat 3
 #poisonarmor 5
 #watershape 6512
+#end
+
+#newmonster 6514
+#copystats 1664  -- Monster Fish
+#name "Dandan"
+#spr1 "domdaniel/dandan.tga"
+#spr2 "domdaniel/dandan2.tga"
+#descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans."
+#prot 18
+#poisonres 5
 #end
 
 #newmonster 6518
@@ -7465,7 +7749,7 @@
 #weapon 264  -- Composite Bow
 #armor 149  -- Bone Cuirass
 #armor 119  -- Reinforced Leather Cap
-#mountmnr 3580 -- cata steppe horse
+#mountmnr 9326 -- cata steppe horse
 #mountedinspector
 #skilledrider 4
 #ressize 2
@@ -7822,14 +8106,13 @@
 #spr2 "nihuala/jetwarrior_2.tga"
 #unmountedspr1 "nihuala/un_jetwarrior.tga"
 #unmountedspr2 "nihuala/un_jetwarrior2.tga"
-#rcost 1
-#ressize 3
-#gcost 10035
-#rpcost 10000
+#rcost -3
+#gcost 10040
+#rpcost 21
 #hp 14
 #str 12
 #att 12
-#def 12
+#def 13
 #prec 10
 #size 3
 #mr 12
@@ -7845,11 +8128,11 @@
 #armor 112  -- Great Hide Shield
 #holy
 #spiritsight
-#mountmnr 3580 -- sacred cata steppe horse
+#mountmnr 9325 -- Jet Steppe Horse
 #mountedinspector
 #skilledrider 2
 #pillagebonus 2
-#xpgain 35 -- +35%
+#xpgain 35
 #end
 
 #newmonster 6606
@@ -10325,7 +10608,8 @@
 #prec 11
 #mr 14
 #mor 12
-#gcost 10015
+#gcost 55
+#poormagicleader
 #rcost 1
 #weapon "Stone Spear"
 #armor "Hide Shield"
@@ -10355,7 +10639,8 @@
 #prec 11
 #mr 14
 #mor 13
-#gcost 10015
+#gcost 100
+#poormagicleader
 #rcost 1
 #weapon "Stone Spear"
 #armor "Hide Shield"
@@ -10386,7 +10671,8 @@
 #prec 11
 #mr 16
 #mor 12
-#gcost 10015
+#gcost 70
+#poormagicleader
 #rcost 1
 #weapon "Fist"
 #magicpower 1
@@ -10598,6 +10884,7 @@
 #magicstudy 1
 #magicskill 7 2
 #magicskill 9 2
+#startage 54
 #maxage 60
 #holy
 #expertleader
@@ -10626,14 +10913,14 @@
 #prec 10
 #mr 10
 #mor 13
-#gcost 10011
+#gcost 70
 #rcost 1
 #wolftattoo 2
 #boartattoo 3
 #weapon "Quarterstaff"
 #armor "Leather Cuirass"
 #rpcost 1
-#sailing 999 3
+#sailing 999 4
 #farsail -1
 #maxage 60
 #swimming
@@ -10659,7 +10946,8 @@
 #prec 10
 #mr 14
 #mor 12
-#gcost 10010
+#gcost 230
+#sailing 999 4
 #rcost 2
 #wolftattoo 2
 #boartattoo 3
@@ -15548,7 +15836,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prec 10
 #mr 12
 #mor 9
-#gcost 160 -- autocalc 60 as is, but 125 if random pick is increased to 100%
+#gcost 140
 #rcost 1
 #nametype 180
 #itemslots 991750
@@ -16839,7 +17127,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prec 10
 #mr 13
 #mor 9
-#gcost 70  -- autocalc 65
+#gcost 115
 #rcost 1
 #nametype 180
 #itemslots 991750
@@ -16908,7 +17196,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prec 10
 #mr 13
 #mor 11
-#gcost 190 -- autocalc 100
+#gcost 160
 #rcost 1
 #nametype 180
 #itemslots 991750
@@ -17025,7 +17313,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prec 10
 #mr 14
 #mor 11
-#gcost 270
+#gcost 220
 #rcost 1
 #nametype 180
 #itemslots 991750
@@ -17495,7 +17783,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Tsen"
 #spr1 "shambhala/btsan_1.tga"
 #spr2 "shambhala/btsan_2.tga"
-#descr "Tsen are Mu spirits of the sky from the high mountains of Shambhala. They were once noble allies of the Bhödpa, but are now degraded abd malevolent beings, angry at being harassed and driven off by the demon hunters of Shambhala. They appear as black-skinned demons with hideous bone necklaces. They are master archers, and when in one of their vengeful rages they range through the forests, killing anything that moves with their plague-ridden arrows. Sometimes, a sorcerer may summon a vengeful Tsen and send them against an enemy. Tsen bring death, and one struck by an arrow from their foul bow will almost surely die of disease."
+#descr "Tsen are Mu spirits of the sky from the high mountains of Shambhala. They were once noble allies of the Bhödpa, but are now degraded and malevolent beings, angry at being harassed and driven off by the demon hunters of Shambhala. They appear as black-skinned demons with hideous bone necklaces. They are master archers, and when in one of their vengeful rages they range through the forests, killing anything that moves with their plague-ridden arrows. Sometimes, a sorcerer may summon a vengeful Tsen and send them against an enemy. Tsen bring death, and one struck by an arrow from their foul bow will almost surely die of disease."
 #ap 13
 #mapmove 2
 #hp 25
@@ -18693,7 +18981,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/quaggaraffe.tga"
 #spr2 "gondwana/quaggaraffe2.tga"
 #descr "Quaggaraffes feed from the tops of tall trees, using their long legs and neck to reach the highest branches. When threatened they lash out with a kick that can split a mans skull, and a headbutt backed by their powerful neck. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings."
-#quadruped
+#mountedhumanoid -- Quadruped bugged
+#itemslots 17571840 -- 2 misc, crown
 #gcost 0
 #size 8
 #hp 44
@@ -22074,6 +22363,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "zion/horseman2.tga"
 #unmountedspr1 "zion/un_horseman.tga"
 #unmountedspr2 "zion/un_horseman2.tga"
+#drawsize 0
 #name "Horseman"
 #clearweapons
 #cleararmor
@@ -22087,6 +22377,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mor 13
 #prophetshape 7102 -- Shophet
 #wastesurvival
+#skilledrider 3
+#mountmnr 3515 -- light scale barding
+#gcost 10
 #end
 
 #newmonster 7110
@@ -22115,7 +22408,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Temple Guard"
 #descr "The Temple Guard are warrior-priests chosen from the most devout Levites to guard the Great Temple in Zion. They operate in family groups, each guarding for a set period and assigned to protect specific gates of the temple. Although they guard the temple, even they are forbidden from entering the inner sanctum accessible only to the Kohen Gadol and the Prophet King. In times of need Temple Guard not assigned guard duty may be sent away from the Great Temple on missions of great importance. They are revered by the tribes of Zion and their presence will bolster the morale of other warriors. When faced with heretics and heathens the force of their faith may cow the unbelievers."
 #gcost 20
-#rpcost 24
+#rpcost 21
 #str 11
 #att 12
 #def 12
@@ -22126,8 +22419,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #holy
 #haltheretic 5
 #weapon 1894  -- Bronze Sword
-#armor 142  -- Bronze Scale Cuirass
-#armor 249  -- Cloth Headpiece
+#armor 136 -- bronze scale hauberk
+#armor 120 -- Leather Cap
 #armor 2  -- Shield
 #prophetshape 7102 -- Shophet
 #end
@@ -22149,6 +22442,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 645  -- Bronze Sword
 #weapon 645  -- Bronze Sword
 #prophetshape 7102 -- Shophet
+#gcost 55
+#poorundeadleader
+#poormagicleader
 #end
 
 #newmonster 7114
@@ -22162,6 +22458,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #poormagicleader
 #undcommand 10
 #magiccommand 10
+#gcost 110
 #inspirational 1
 #patrolbonus 0
 #prophetshape 7102 -- Shophet
@@ -22212,6 +22509,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #gcost 10015
 #magicskill 9 2
 #patrolbonus 15
+#poormagicleader
 #okleader
 #prophetshape 7102 -- Shophet
 #weapon 92  -- Fist
@@ -22227,6 +22525,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #custommagic 2432 200  -- 200% FAS
 #magicskill 9 1
 #armor 249  -- Cloth Headpiece
+#armor 158 -- Robes
 #poorundeadleader
 #poormagicleader
 #undcommand 40
@@ -22284,16 +22583,17 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #enc 3
 #fireres 25
 #heat 0
+#saltvul 2 
 #fireshield 0
 #firepower 0
 #fear 0
 #glamour
-#incunrest 50
+#incunrest 30
 #speciallook 0
 #stealthy 0
 #magicskill 0 2
 #magicskill 1 2
-#magicskill 7 2
+#magicskill 7 1
 #weapon 92  -- Fist
 #end
 
@@ -22323,6 +22623,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #firepower 0
 #fear 0
 #glamour
+#saltvul 2 
 #incunrest 10
 #speciallook 0
 #stealthy 0
@@ -22594,6 +22895,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ethereal
 #poormagicleader
 #okundeadleader
+#regeneration 50
 #fireres 5
 #poisonres 15
 #startage 20
@@ -22679,6 +22981,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ethereal
 #poormagicleader
 #okundeadleader
+#regeneration 50
 #fireres 5
 #poisonres 15
 #startage 20
@@ -22749,6 +23052,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ethereal
 #poormagicleader
 #okundeadleader
+#regeneration 50
 #fireres 5
 #poisonres 15
 #startage 20
@@ -22781,6 +23085,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 236  -- dmg16 claw
 #weapon 236
 #transformation 0
+#tolerateund
 #end
 
 #newmonster 7142
@@ -24708,6 +25013,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #custommagic 5760 100  -- 100% FEWD
 #custommagic 5760 100  -- 100% FEWD
 #nametype 117  -- Deep One
+#prot 5
 #end
 
 #newmonster 7264
@@ -25785,6 +26091,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 545 -- Spectral Plate Cuirass
 #armor 549 -- Spectral Helmet
 #ethereal
+#spiritform
 #enc 0
 #coldres 15
 #poisonres 20
@@ -26096,6 +26403,9 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spiritsight
 #wastesurvival
 #itemslots 860678 -- No feet
+#clearweapons
+#weapon 229 -- Flame Strike
+#weapon 1921 -- Magma Bolts
 #end
 
 #newmonster 7314
@@ -26276,11 +26586,10 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #end
 
 #newmonster 7329
-#copystats 2194
 #copyspr 2194
 #name "Draugadrott"
 #descr "The Draugadrott is an ancient Vanir king returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain all of their magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to lead the living and prefer the company of their dead fellows. They can command more Draug to leave their barrows each month."
-#hp 45
+#clearmagic
 #magicskill 1 1 -- A
 #magicskill 5 2 -- D
 #magicskill 7 2 -- G
@@ -26291,23 +26600,74 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #holy
 #makemonsters2 2190
 #maxage 1000
+#hp 45
+#size 3
+#prot 5
+#mr 16
+#mor 20
+#str 20
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 20
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okleader
+#expertundeadleader
+#glamour
 #end
 
 #newmonster 7330
-#copystats 2192
 #copyspr 2192
 #name "Draugherse"
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#startitem 266 -- Rime Hauberk
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20736 100  -- 100% ADG
-#shrinkhp 0
-#startitem 266 -- Rime Hauberk
 #poorleader
 #holy
 #montag 1014
 #maxage 1000
+#holy
+#hp 40
+#size 3
+#prot 5
+#mr 14
+#mor 17
+#str 18
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 18
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#armor 2
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okundeadleader
+#glamour
 #end
 
 #newmonster 7331
@@ -26315,16 +26675,42 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 2192
 #name "Draugherse"
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#startitem 54 -- Frost Brand
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20736 100  -- 100% ADG
-#shrinkhp 0
-#startitem 54 -- Frost Brand
 #poorleader
 #holy
 #montag 1014
 #maxage 1000
+#holy
+#hp 40
+#size 3
+#prot 5
+#mr 14
+#mor 17
+#str 18
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 18
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#armor 2
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okundeadleader
+#glamour
 #end
 
 #newmonster 7319
@@ -26332,15 +26718,42 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 2192
 #name "Draugherse"
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#startitem 602 -- Bane Fire Blade
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20736 100  -- 100% ADG
-#shrinkhp 0
-#startitem 602 -- Bane Fire Blade
 #poorleader
 #holy
 #montag 1014
+#maxage 1000
+#holy
+#hp 40
+#size 3
+#prot 5
+#mr 14
+#mor 17
+#str 18
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 18
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#armor 2
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okundeadleader
+#glamour
 #end
 
 #newmonster 7332
@@ -27592,11 +28005,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #eyes 3
 #weapon 29  -- Claw
 #weapon 29  -- Claw
+#weapon 274 -- Enslave Mind
 #magicbeing
-#magicskill 4 2 -- S
+#magicskill 4 3 -- S
 #researchbonus 6
 #voidsanity 10
-#itemslots 860166
+#itemslots 860678
 #nametype 117  -- Deep Ones
 #end
 
@@ -27891,6 +28305,9 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Ghostly Champion"
 #descr "This Ghostly Champion is the soul of an ancient warrior that has returned from the Underworld at the behest of a powerful necromancer."
 #goodleader
+#clearweapons
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
 #end
 
 #newmonster 7405
@@ -29601,24 +30018,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #nametype 145  -- Wooden Creatures
 #end
 
-#newmonster 7479
-#copystats 7478 -- Awakened Tree
-#copyspr 7478 -- Awakened Tree
-#name "Ancient Tree"
-#descr "This is a mage that has permanently transferred their spirit into a tree using powerful nature magic. Trees are very robust and can sweep away enemies with their branches. They can hide themselves by appearing as a normal tree to evade detection. In the summer and in lands of Growth their sap runs high, however in the winter or lands strong in Death they will wither and their powers are reduced."
-#miscshape
-#spiritsight
-#immobile
-#bonusspells 1
-#ap 2
-#mr 16
-#mapmove 0
-#stealthy 0
-#montag 1021
-#nametype 145  -- Wooden Creatures
-#twiceborn 7480 -- Tree of Hate
-#end
-
 #newmonster 7481
 #copystats 330  -- Dark Vine
 #clearweapons
@@ -29646,22 +30045,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #nametype 145  -- Wooden Creatures
 #end
 
-#newmonster 7482
-#copystats 187  -- Longdead Legionnaire
-#clearweapons
-#cleararmor
-#spr1 "magicenhanced/eeldcent.tga"
-#spr2 "magicenhanced/eeldcent2.tga"
-#name "Longdead Centurion"
-#descr "Skeletal legionnaires risen from the ashen fields of Ermor, armed with rusty weaponry and wearing armor of dried leather and rusty iron. Fearless and skilled in combat, they march upon the living to reclaim their dead empire. Centurions command the legions and retain a glimmer of their previous life."
-#mor 16
-#goodundeadleader
-#undcommand 20
-#weapon 6  -- Short Sword
-#armor 30  -- Rusty Plate
-#armor 126  -- Legionary Helmet
-#end
-
 #newmonster 7483
 #copystats 330  -- Dark Vine
 #clearweapons
@@ -29687,6 +30070,40 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 240  -- Branch
 #weapon 240  -- Branch
 #nametype 145  -- Wooden Creatures
+#end
+
+#newmonster 7479
+#copystats 7478 -- Awakened Tree
+#copyspr 7478 -- Awakened Tree
+#name "Ancient Tree"
+#descr "This is a mage that has permanently transferred their spirit into a tree using powerful nature magic. Trees are very robust and can sweep away enemies with their branches. They can hide themselves by appearing as a normal tree to evade detection. In the summer and in lands of Growth their sap runs high, however in the winter or lands strong in Death they will wither and their powers are reduced."
+#miscshape
+#spiritsight
+#immobile
+#bonusspells 1
+#ap 2
+#mr 16
+#mapmove 0
+#stealthy 0
+#montag 1021
+#nametype 145  -- Wooden Creatures
+#twiceborn 7480 -- Tree of Hate
+#end
+
+#newmonster 7482
+#copystats 187  -- Longdead Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "magicenhanced/eeldcent.tga"
+#spr2 "magicenhanced/eeldcent2.tga"
+#name "Longdead Centurion"
+#descr "Skeletal legionnaires risen from the ashen fields of Ermor, armed with rusty weaponry and wearing armor of dried leather and rusty iron. Fearless and skilled in combat, they march upon the living to reclaim their dead empire. Centurions command the legions and retain a glimmer of their previous life."
+#mor 16
+#goodundeadleader
+#undcommand 20
+#weapon 6  -- Short Sword
+#armor 30  -- Rusty Plate
+#armor 126  -- Legionary Helmet
 #end
 
 #newmonster 7484
@@ -30981,22 +31398,34 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7538
-#copystats 547  -- Dead One
-#clearweapons
-#clearmagic
 #spr1 "magicenhanced/eepreta.tga"
 #spr2 "magicenhanced/eepreta2.tga"
 #name "Preta"
 #descr "Pretas are the spirits of those that were jealous or greedy in life reborn as eternally hungry supernatural beings. As a result of their karma they are afflicted with an insatiable hunger for repugnant substances, such as cadavers or feces. They are human-like, but with sunken, mummified skin, narrow limbs, enormously distended bellies and long, thin necks with shrunken mouths. As a result, they are always hungry. Pretas are pitied rather than feared or hated amongst the monkey people. They dwell in wastes and deserts far away from people. The hunger of a Preta is so intense it manifests as a smouldering aura around the beings."
+#hp 15
+#size 3
+#str 12
+#prec 5
+#ap 6
+#enc 0
+#mapmove 20
 #mr 14
 #mor 14
 #att 10
 #def 12
 #prot 7
+#coldres 15
+#poisonres 25
 #fireres 15
 #appetite 3
 #wastesurvival
 #heat 3
+#amphibian
+#neednoteat
+#undead
+#wastesurvival
+#spiritsight
+#ethereal
 #weapon 29  -- Claw
 #weapon 63  -- Life Drain
 #end
@@ -31011,6 +31440,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 549 -- Spectral helmet
 #armor 156  -- Spectral Shield
 #bodyguard 2
+#clearweapons
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
 #end
 
 
@@ -31946,7 +32378,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #neednoteat
 #aquatic
 #plant
-#noitem
 #hp 25
 #mor 30
 #mr 12
@@ -31961,7 +32392,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #poorleader
 #poorundeadleader
 #okmagicleader
-#battlesum2 7580 -- Kelp Man
+--#battlesum2 7580 -- Kelp Man
+#miscshape
+#itemslots 262144 -- 1 misc
+#startitem 898 -- Kelp Lord's Crown
+--#reinvigoration -5
 #mapmove 2
 #nametype 144
 #startage 1000
@@ -32457,25 +32892,25 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 7614
 #name "Laistrygone Hurler"
-#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Each Laistrygone will capture and eat up to ten people per month, increasing unrest among the local population."
+#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Laistrygones are dangerous and unruly creatures who will increase unrest among the local population."
 #spr1 "magicenhanced/eelaistryhurler.tga"
 #spr2 "magicenhanced/eelaistryhurler2.tga"
 #rcost 1
 #gcost 0
 #hp 24
 #size 5
-#prot 4
+#prot 9
 #mr 8
 #mor 14
 #str 18
-#att 10
-#def 9
+#att 12
+#def 10
 #prec 10
 #enc 2
 #mapmove 2
 #ap 14
 #neednoteat
-#weapon 605  -- Throw rocks
+#weapon 424  -- Throw rocks
 #weapon 553  -- Rock
 #armor 44  -- Furs
 #startage 22
@@ -32483,27 +32918,26 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #fireres 5
 #darkvision 50
-#incunrest 10
-#popkill 1
+#incunrest 2
 #nametype 149
 #poorleader
 #end
 
 #newmonster 7615
 #name "Laistrygone Spearman"
-#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Each Laistrygone will capture and eat up to ten people per month, increasing unrest among the local population."
+#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Laistrygones are dangerous and unruly creatures who will increase unrest among the local population."
 #spr1 "magicenhanced/eelaistryspear.tga"
 #spr2 "magicenhanced/eelaistryspear2.tga"
 #rcost 1
 #gcost 0
 #hp 24
 #size 5
-#prot 4
+#prot 9
 #mr 8
 #mor 14
 #str 18
-#att 10
-#def 9
+#att 12
+#def 10
 #prec 10
 #enc 2
 #mapmove 2
@@ -32516,8 +32950,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #fireres 5
 #darkvision 50
-#incunrest 10
-#popkill 1
+#incunrest 2
 #nametype 149
 #poorleader
 #end
@@ -33044,6 +33477,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1335  -- Gandharva
 #gcost 10035
 #descr "Gandharvas are divine warrior-musicians that left this world ages ago. They serve the Celestial Gods, but are sometimes summoned to this world by the monkey people living on the sacred mountain where the worlds lie closer. Gandharvas are blessed with an Aura of Splendor that strikes mortals with awe."
+#airshield 50
 #end
 
 #newmonster 7641
@@ -33051,6 +33485,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1331  -- Kinnara
 #gcost 10050
 #descr "The Kinnara is a divine being and a musician of the Spheres. It has the appearance of a winged horse-headed man robed in splendor that strikes mortals with awe."
+#def 12 -- 11 -> 12
+#airshield 50
 #end
 
 #newmonster 7642
@@ -33738,6 +34174,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #size 6
 #hp 50
 #str 18
+#prot 1
 #holy
 #wastesurvival
 #magicskill 5 1
@@ -34660,7 +35097,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Varangian Draugr"
 #descr "The Varangian Guard were a force of elite Vanir warriors that were employed by the Emperor of Pythium in ages past. Now the Vanir have all passed, however many remain entombed in the Imperial City. So strong were the oaths of loyalty they swore that they transcend even death. Through dark magic they can be called back to the world of the living as draugr, corporeal undead vanir. They are incredibly strong and are surrounded by ice cold winds."
 #hp 25
-#str 14
+#str 15
+#def 13
 #fear 5
 #weapon 8  -- Broad Sword
 #armor 18  -- Chain Mail
@@ -36101,6 +36539,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #str 15
 #att 13
 #def 13
+#pooramphibian
 #neednoteat
 #blind
 #magicbeing
@@ -37891,7 +38330,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 14
 #def 14
 #ap 12
-#regeneration 20
+#reconst 20
 #blind
 #bluntres
 #diseaseres 100
@@ -37920,7 +38359,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #hp 80
 #prot 20
 #mr 14
-#str 22
+#str 26
 #att 9
 #def 8
 #ap 14
@@ -37932,7 +38371,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mapmove 12
 #trample
 #siegebonus 25
-#weapon 48  -- Fire Flare
+#weapon 1816 -- Solar Flare
 #weapon 20  -- Bite
 #homerealm 0
 #mastersmith 0
@@ -40281,7 +40720,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeblackiron2.tga"
 #name "Black Iron Infantry"
 #descr "The black iron infantry of Ulm are warriors inspired by an Iron Angel. Clad in full plate armor made from the Blacksteel of Ulm they are armed with incredibly sharp weapons and tower shields. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. Inspired by the presence of an Iron Angel to create almost supernaturally sharp weaponry, the black iron infantry have higher morale than even the black plate infantry of Ulm. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. The influence of the Iron Angel has imbued their armor with some resistance to magic."
-#gcost 10030
+#gcost 10023
 #rcost 120
 #rpcost 46
 #mr 11
@@ -40308,7 +40747,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeblacksword2.tga"
 #name "Blacksteel Swordsman"
 #descr "The Blacksteel Swordsmen of Ulm are warriors clad in full plate armor and bearing incredibly sharp swords made from the Blacksteel of Ulm. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. The inhabitants of Ulm are large and can endure much physical punishment before collapsing."
-#gcost 10018
+#gcost 10016
 #rcost 35
 #rpcost 26
 #mor 13
@@ -40326,7 +40765,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeblackzwei2.tga"
 #name "Blacksteel Zweihander"
 #descr "The Blacksteel Zweihander is a warrior clad in full plate armor made from Blacksteel and armed with an incredibly sharp Great Sword. Forged from Blacksteel, their weapons can cut through the toughest armor and these Zweihanders are feared by even the great cold giants of the North. The swords are each made by a Master Craftsmen of Ulm and only a few can be created each month. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. They are trained to move and fight in heavy armor without tiring."
-#gcost 10022
+#gcost 10018
 #rcost 45
 #rpcost 31
 #mor 13
@@ -43000,6 +43439,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #shockres -5
 #holy
 #forestsurvival
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 8100
@@ -43285,6 +43725,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #mr 12
 #mor 12
+#animal
 #weapon 5  -- Halberd
 #weapon 20  -- Bite
 #armor 10  -- Leather Hauberk
@@ -43338,6 +43779,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsruohtta2.tga"
 #unmountedspr1 "fennoscandia/un_fsruohtta1.tga"
 #unmountedspr2 "fennoscandia/un_fsruohtta2.tga"
+#drawsize 0
 #name "Lord of Rotaimo"
 #fixedname "Ruohtta"
 #descr "Ruohtta is the personification of sickness and death and ruler of the Underworld realm of Rotaimo. He carries a blade that drains the life force of the living and rides a terrible fey horse, a feared and detested animal in Fennoscandia. The souls of those who did not live their lives according to the natural order appear in Rotaimo, where they receive a new body but can never leave Rotaimo again. Ruohtta is a master of death magic and will return from Rotaimo if slain in battle."
@@ -44251,6 +44693,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #gcost 0
 #size 5
 #goodleader
+#spellsinger
 #maxage 300
 #startage 60
 #end
@@ -44289,6 +44732,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #gcost 0
 #size 5
 #goodleader
+#spellsinger
 #maxage 300
 #startage 60
 #end
@@ -45531,7 +45975,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mapmove 3
 #hp 18
 #prot 0
-#size 5
+#size 3
 #str 13
 #enc 3
 #att 13
@@ -46409,6 +46853,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #coldres 5
 #reinvigoration 3
 #female
+#size 3
 #autohealer 2
 #nobadevents 15
 #armor 158
@@ -47789,6 +48234,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #coldres 10
 #okundeadleader
 #magicskill 9 1
+#pooramphibian
 #cleararmor
 #clearweapons
 #weapon 120  -- Enchanted Spear
@@ -51438,15 +51884,14 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/bowturquoise_2.tga"
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
-#rcost 1
-#ressize 2
-#gcost 10010
-#rpcost 10000
+#gcost 10
+#rpcost 4
+#rcost 0
 #hp 12
 #str 11
 #att 11
-#def 11
-#prec 10
+#def 12
+#prec 12
 #size 3
 #mr 10
 #mor 12
@@ -51454,11 +51899,12 @@ Dragon Priests can be recruited in any land fort."
 #mapmove 14
 #ap 13
 #eyes 2
-#weapon 1  -- Spear
+#weapon 357 -- Light Lance
 #weapon 264  -- Composite Bow
 #armor 149  -- Bone Cuirass
 #armor 119  -- Reinforced Leather Cap
-#mountmnr 3575 -- armored steppe horse
+--#mountmnr 3575 -- armored steppe horse
+#mountmnr 9324 -- nihuala armored steppe horse
 #mountedinspector
 #skilledrider 4
 #pillagebonus 2
@@ -51491,9 +51937,9 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
 #clearweapons
+#def 13 -- +1 because axes are intense
 #weapon 17  -- Axe
 #weapon 17  -- Axe
-#def 12 -- +1 because axes reduce by 1 each
 #ambidextrous 2
 #mobilearcher 0
 #end
@@ -51501,16 +51947,20 @@ Dragon Priests can be recruited in any land fort."
 #newmonster 6602
 #copystats 6599 -- Bow Turquoise
 #name "Bare Rider"
-#descr "After their initation ceremony, the most skilled fighters among the tribes are trained in horsemanship. They adorn their equipment with turquoise ornaments and feathers to draw attention to themselves in battle and increase their renown. The bravest of all ride into battle without any armor, trusting the spirits to protect them from harm. The sight of a Bare Rider fills other warriors with confidence and will boost their morale. Warriors that perform great acts of bravery may be awarded with rare alabaster shells, greatly increasing their renown and marking them as sacred among the tribe, and Bare Riders are much more likely than others to be awarded. Like all riders of Nihuala, Bare Riders earn experience faster than other troops. Cost 36 RP."
+#descr "After their initation ceremony, the most skilled fighters among the tribes are trained in horsemanship. They adorn their equipment with turquoise ornaments and feathers to draw attention to themselves in battle and increase their renown. The bravest of all ride into battle without any armor, trusting the spirits to protect them from harm. The sight of a Bare Rider fills other warriors with confidence and will boost their morale. Warriors that perform great acts of bravery may be awarded with rare alabaster shells, greatly increasing their renown and marking them as sacred among the tribe, and Bare Riders are much more likely than others to be awarded. Like all riders of Nihuala, Bare Riders earn experience faster than other troops. Cost 24 RP."
 #spr1 "nihuala/barerider.tga"
 #spr2 "nihuala/barerider_2.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#gcost 10015
+#gcost 10
+#rpcost 9
+#def 15 -- +3
+#att 13
 #reclimit 3
 #cleararmor
 #ap 10
 #standard 1
+#mor 15
 #aisinglerec
 #mountmnr 8867 -- slower steppe horse
 #mountedinspector
@@ -51574,8 +52024,8 @@ Dragon Priests can be recruited in any land fort."
 #holy
 #skilledrider 6
 #montag 1085
-#xpgain 35 -- +35%
-#mountmnr 3579
+#xpgain 35
+#mountmnr 9326 -- Alabaster Steppe Horse
 #mountedinspector
 #end
 
@@ -51592,8 +52042,8 @@ Dragon Priests can be recruited in any land fort."
 #holy
 #skilledrider 6
 #montag 1090
-#xpgain 35 -- +35%
-#mountmnr 3579
+#xpgain 35
+#mountmnr 9326 -- Alabaster Steppe Horse
 #mountedinspector
 #end
 
@@ -51610,8 +52060,8 @@ Dragon Priests can be recruited in any land fort."
 #holy
 #skilledrider 6
 #montag 1095
-#xpgain 35 -- +35%
-#mountmnr 3579
+#xpgain 35
+#mountmnr 9326 -- Alabaster Steppe Horse
 #mountedinspector
 #end
 
@@ -51625,12 +52075,14 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_barerider2w.tga"
 #mr 11 -- +1
 #mor 13 -- +1
+#def 16 -- +4
+#att 14
 #holy
 #skilledrider 6
 #invulnerable 10
 #montag 1100
-#xpgain 35 -- +35%
-#mountmnr 3579
+#xpgain 35
+#mountmnr 9326 -- Alabaster Steppe Horse
 #mountedinspector
 #end
 
@@ -51647,7 +52099,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1086
 #montag 1085
 #xpshape 50
-#montagweight 14 -- 15xp, 1/15
+#montagweight 9 -- 15xp, 1/10
 #end
 
 #newmonster 8828 -- 50xp non-sacred
@@ -51659,7 +52111,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1087
 #montag 1086
 #xpshape 100
-#montagweight 9 -- 50xp, 1/10
+#montagweight 7 -- 50xp, 1/8
 #skilledrider 5
 #end
 
@@ -51738,7 +52190,7 @@ Dragon Priests can be recruited in any land fort."
 
 #selectmonster 6599
 #xpshape 15
-#xpgain 35 -- +35%
+#xpgain 35
 #xpshapemon -1085
 #end
 
@@ -51752,7 +52204,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1091
 #montag 1090
 #xpshape 50
-#montagweight 14 -- 15xp, 1/15
+#montagweight 9 -- 15xp, 1/10
 #end
 
 #newmonster 8838 -- 50xp non-sacred
@@ -51764,7 +52216,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1092
 #montag 1091
 #xpshape 100
-#montagweight 9 -- 50xp, 1/10
+#montagweight 7 -- 50xp, 1/8
 #skilledrider 5
 #end
 
@@ -51843,7 +52295,7 @@ Dragon Priests can be recruited in any land fort."
 
 #selectmonster 6600
 #xpshape 15
-#xpgain 35 -- +35%
+#xpgain 35
 #xpshapemon -1090
 #end
 
@@ -51858,7 +52310,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1096
 #montag 1095
 #xpshape 50
-#montagweight 14 -- 15xp, 1/15
+#montagweight 9 -- 15xp, 1/10
 #end
 
 #newmonster 8848 -- 50xp non-sacred
@@ -51870,7 +52322,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1097
 #montag 1096
 #xpshape 100
-#montagweight 9 -- 50xp, 1/10
+#montagweight 7 -- 50xp, 1/8
 #skilledrider 5
 #end
 
@@ -51949,7 +52401,7 @@ Dragon Priests can be recruited in any land fort."
 
 #selectmonster 6601
 #xpshape 15
-#xpgain 35 -- +35%
+#xpgain 35
 #xpshapemon -1095
 #end
 
@@ -51965,7 +52417,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1101
 #montag 1100
 #xpshape 50
-#montagweight 5 -- 15xp, 1/6
+#montagweight 4 -- 15xp, 1/5
 #end
 
 #newmonster 8858 -- 50xp non-sacred
@@ -51977,7 +52429,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1102
 #montag 1101
 #xpshape 100
-#montagweight 4 -- 50xp, 1/5
+#montagweight 3 -- 50xp, 1/4
 #skilledrider 5
 #end
 
@@ -51999,7 +52451,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1103
 #montag 1102
 #xpshape 200
-#montagweight 3 -- 100xp, 1/4
+#montagweight 2 -- 100xp, 1/3
 #skilledrider 6
 #end
 
@@ -52021,7 +52473,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1104
 #montag 1103
 #xpshape 400
-#montagweight 2 -- 200xp, 1/3
+#montagweight 1 -- 200xp, 1/2
 #skilledrider 6
 #end
 
@@ -52056,7 +52508,7 @@ Dragon Priests can be recruited in any land fort."
 
 #selectmonster 6602
 #xpshape 15
-#xpgain 35 -- +35%
+#xpgain 35
 #xpshapemon -1100
 #end
 
@@ -52079,13 +52531,6 @@ Dragon Priests can be recruited in any land fort."
 #weapon 10
 #weapon 264
 #weapon 56
-#end
-
-#newmonster 8867 -- slower armored steppe horse
-#copystats 3575 -- armored steppe horse
-#copyspr 3575 -- armored steppe horse
-#ap 18
-#mr 7
 #end
 
 #newmonster 8868
@@ -52122,6 +52567,7 @@ Dragon Priests can be recruited in any land fort."
 #magicskill 1 3 -- A
 #magicskill 2 2 -- W
 #magicskill 5 3 -- D
+#magicskill 9 3 -- H
 #end
 
 #newmonster 8870 -- Drowned Mage
@@ -53995,6 +54441,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #copystats 3515
 #copyspr 3515
 #horsetattoo 1
+#mr 8
 #end
 
 #newmonster 9047
@@ -54050,6 +54497,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #hp 26
 #mr 14
 #mor 30
+#prot 2
 #gcost 0
 #holy
 #amphibian
@@ -54061,6 +54509,8 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #ap 30
 #size 5
 #str 18
+#mapmove 26
+#enc 0
 #spiritsight
 #cleararmor
 #armor 263
@@ -54474,7 +54924,7 @@ Cost 56 RP."
 #att 11
 #def 11
 #mr 12
-#mor 11
+#mor 13
 #holy
 #weapon 388  -- Pearl Spear
 #armor 523  -- Pearl Hauberk
@@ -54496,7 +54946,7 @@ Cost 56 RP."
 #att 11
 #def 11
 #mr 12
-#mor 11
+#mor 13
 #holy
 #weapon 388  -- Pearl Spear
 #armor 523  -- Pearl Hauberk
@@ -54589,7 +55039,7 @@ Cost 56 RP."
 #gcost 1
 #size 3
 #holy
-#expertleader
+#superiorleader
 #maxage 70
 #startage 40
 #end
@@ -54697,35 +55147,35 @@ Cost 56 RP."
 #copyspr 3573
 #armor 251
 #horsetattoo 1
-#mr 7
+#mr 8
 #end
 
 #newmonster 9075 -- Steppe Horse 2 Tattooed
 #copystats 3574
 #copyspr 3574
 #horsetattoo 1
-#mr 7
+#mr 8
 #end
 
 #newmonster 9076 -- Steppe Horse 3 Tattooed
 #copystats 3575
 #copyspr 3575
 #horsetattoo 1
-#mr 7
+#mr 8
 #end
 
 #newmonster 9077 -- Steppe Horse 4 Tattooed
 #copystats 3576
 #copyspr 3576
 #horsetattoo 1
-#mr 7
+#mr 8
 #end
 
 #newmonster 9078 -- Steppe Horse 4 Sacred Tattooed
 #copystats 3580
 #copyspr 3580
 #horsetattoo 1
-#mr 8
+#mr 9
 #end
 
 #newmonster 9079 -- Spirit Sorceress Horse Mount
@@ -54810,6 +55260,7 @@ Cost 56 RP."
 #str 18
 #hp 28
 #mr 8
+#holy
 #bravemount 100
 #weapon 1713 -- hooves of bucephalus
 #end
@@ -55447,6 +55898,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #miscshape
 #gcost 0
 #hp 15
+#str 15
 #size 5
 #mor 50
 #att 11
@@ -55462,6 +55914,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #magicbeing
 #heal
 #spiritsight
+#spiritform
 #weapon 90  -- Crush
 #end
 
@@ -55935,7 +56388,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #copyspr 3574
 #stealthy 25
 #horsetattoo 1
-#mr 10
+#mr 9
 #end
 
 #newmonster 9117 -- MA Pel Hierophant Water
@@ -56333,8 +56786,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 #newmonster 9138
-#copystats 6510
-#copyspr 6510
+#copystats 6514
+#copyspr 6514
 #name "Dandan"
 #descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
 #berserk 0
@@ -59546,6 +59999,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #cleararmor
 #armor 44 -- furs
 #weapon 165 -- Great Club
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 9288 -- Hare Sword
@@ -59717,6 +60171,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #armor 20 -- iron cap
 #armor 12 -- scale mail hauberk
 #weapon 18 -- battleaxe
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 9294 -- Fenno knight troll
@@ -59740,6 +60195,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #armor 12 -- scale mail hauberk
 #armor 2 -- shield
 #weapon 17 -- axe
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 9295 -- snail trebuchet main rider
@@ -60050,6 +60506,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #mor 14
 #okleader
 #holy
+#glamourmanip 1
 #end
 
 #newmonster 9307 -- Dreaming Mage
@@ -60121,7 +60578,6 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #holy
 #holycost 2
 #nightmareaura 3
-#glamourmanip 1
 #clearweapons
 #weapon 642 -- Meteorite Trident
 #weapon 1914 -- Nightmare Blast
@@ -60132,7 +60588,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr1 "magicenhanced/blue_mindslave1.png"
 #spr2 "magicenhanced/blue_mindslave2.png"
 #name "Mind Slave"
-#descr "."
+#descr "The Mind Slave is a mutated Merman, enslaved and corrupted by the masters of R'lyeh. The strange powers of transformation that Mermen possess resist the body and mind-altering experiments of the Illithids. To overcome this, a fungus harvested from the Void is implanted into the brains of merman slaves. Through some unknown power the Merman is then warped into a broken and unfeeling monster, completely subservient to the will of their masters. These creatures develop mental abilties which they can use to stun the minds of weak-willed beings. However, they are also unstable, and can be easily driven into a frenzy. This serves the purpose of the Illithids, who use Mind Slaves as shock troops and enforcers."
 #rcost 1
 #gcost 16
 #rpcost 12
@@ -60169,7 +60625,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr1 "magicenhanced/blue_mindslave1l.png"
 #spr2 "magicenhanced/blue_mindslave2l.png"
 #name "Mind Slave"
-#descr "."
+#descr "The Mind Slave is a mutated Merman, enslaved and corrupted by the masters of R'lyeh. The strange powers of transformation that Mermen possess resist the body and mind-altering experiments of the Illithids. To overcome this, a fungus harvested from the Void is implanted into the brains of merman slaves. Through some unknown power the Merman is then warped into a broken and unfeeling monster, completely subservient to the will of their masters. These creatures develop mental abilties which they can use to stun the minds of weak-willed beings. However, they are also unstable, and can be easily driven into a frenzy. This serves the purpose of the Illithids, who use Mind Slaves as shock troops and enforcers."
 #rcost 1
 #gcost 16
 #rpcost 12
@@ -60199,6 +60655,1139 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #end
 
 -- End LA R'lyeh Monsters
+
+#newmonster 9313 -- EA Ishim
+#spr1 "zion/ishim1.png"
+#spr2 "zion/ishim2.png"
+#name "Ishim"
+#descr "The Ishim are divine beings of the Celestial Sphere composed of divine fire and snow with beautiful souls of just men. Of the divine beings, they are closest to that of a man, almost within reach of the human mind, and for that reason they are called Men. They appear before Prophets to give them prophetic visions and are closest to the affairs of mortals. They appear as winged humans wielding a fiery blade and surrounded by an aura of divine splendor, and they can wield their divine power to permanently reduce the harm others can inflict, though it can be resisted by those with great conviction. Within the kingdom of Zion, even they serve the Prophet King and will go to war if commanded. Cost 56 RP."
+#rpcost 56
+#gcost 100
+#addupkeep -100
+#reclimit 1
+#mapmove 24
+#hp 17
+#size 4
+#mr 15
+#mor 15
+#str 13
+#def 13
+#att 13
+#prec 15
+#ap 12
+#enc 1
+#maxage 1000
+#startage 100
+#awe 5
+#invulnerable 15
+#fireres 5
+#coldres 5
+#standard 1
+#magicbeing
+#flying
+#holy
+#spiritsight
+#armor 136 -- bronze scale hauberk
+#armor 120 -- Leather Cap
+#weapon 1917 -- heavenly sword
+#weapon 1915 -- weakness
+#wastesurvival
+#magicskill 0 1 -- F
+#magicskill 2 1 -- W
+#magicskill 4 1 -- S
+#magicskill 9 1 -- H
+#firstshape 9314
+#end
+
+#newmonster 9314 -- Summoned Ishim
+#spr1 "zion/ishim1.png"
+#spr2 "zion/ishim2.png"
+#name "Ishim"
+#descr "The Ishim are divine beings of the Celestial Sphere composed of divine fire and snow with beautiful souls of just men. Of the divine beings, they are closest to that of a man, almost within reach of the human mind, and for that reason they are called Men. They appear before Prophets to give them prophetic visions and are closest to the affairs of mortals. They appear as winged humans wielding a fiery blade and surrounded by an aura of divine splendor, and they can wield their divine power to permanently reduce the harm others can inflict, though it can be resisted by those with great conviction."
+#rpcost 56
+#gcost 0
+#mapmove 24
+#hp 17
+#size 4
+#mr 15
+#mor 15
+#str 13
+#def 13
+#att 13
+#prec 15
+#ap 12
+#enc 1
+#maxage 1000
+#startage 100
+#awe 5
+#invulnerable 15
+#fireres 5
+#coldres 5
+#standard 1
+#magicbeing
+#flying
+#holy
+#spiritsight
+#armor 136 -- bronze scale hauberk
+#armor 120 -- Leather Cap
+#weapon 1917 -- heavenly sword
+#weapon 1915 -- weakness
+#wastesurvival
+#magicskill 0 1 -- F
+#magicskill 2 1 -- W
+#magicskill 4 1 -- S
+#magicskill 9 1 -- H
+#end
+
+#newmonster 9315 -- Devil no blood
+#copystats 304 -- Devil
+#clearmagic
+#magicskill 0 1
+#end
+
+#newmonster 9316 -- MA Arco Phalangite
+#copystats 1551 -- Phalangite
+#name "Phalangite"
+#descr "Phalangites are a recently formed elite corps of hoplites in the Arcoscephale army. They wear lighter armor than a hoplite and carry a sarissa, an extremely long two handed spear used in phalanx formations with a small shield held up with a shoulder sling."
+#spr1 "vanilla/blue_phalangite1.png"
+#spr2 "vanilla/blue_phalangite2.png"
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#def 12
+#att 12
+#str 11
+#hp 11
+#rpcost 16
+#gcost 10013
+#end
+
+#newmonster 9317 -- Prodromoi
+#copystats 1553 -- Agema Companion
+#spr1 "vanilla/blue_prodromoi1.png"
+#spr2 "vanilla/blue_prodromoi2.png"
+#unmountedspr1 "vanilla/un_blue_prodromoi1.png"
+#unmountedspr2 "vanilla/un_blue_prodromoi2.png"
+#name "Prodromoi"
+#descr "The Prodromoi are light cavalry skirmishers of Arcoscephale. They carry a xyston, a long and heavy spear requiring two hands to effectively wield, but durable with a point at both ends in case one breaks. The xyston is cumbersome in close combat and they will switch to a sword when fatigue sets in or the xyston becomes unusable."
+#cleararmor
+#clearweapons
+#armor 11 -- Ring Mail Hauberk
+#armor 118 -- Half Helmet
+#armor 1 -- Buckler
+#weapon 1919 -- Xyston
+#weapon 8 -- Broad Sword
+#weapon 21 -- Javelin
+#skilledrider 3
+#mountmnr 3514 -- Leather barding horse
+#gcost 10010
+#rpcost 13
+#hp 11
+#att 11
+#def 11
+#mor 12
+#end
+
+#newmonster 9318 -- Hetairoi
+#copystats 1553 -- Agema Companion
+#spr1 "vanilla/blue_hetairoi1.png"
+#spr2 "vanilla/blue_hetairoi2.png"
+#unmountedspr1 "vanilla/un_blue_hetairoi1.png"
+#unmountedspr2 "vanilla/un_blue_hetairoi2.png"
+#name "Hetairoi"
+#descr "The Hetairoi are heavy cavalry made up of nobility close to the king that can afford the best horses and equipment available. They carry a xyston, a long and heavy spear requiring two hands to effectively wield, but durable with a point at both ends in case one breaks. The xyston is cumbersome in close combat and they will switch to a sword when fatigue sets in or the xyston becomes unusable."
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 118 -- Half Helmet
+#armor 1 -- Buckler
+#weapon 1919 -- Xyston
+#weapon 8 -- Broad Sword
+#weapon 21 -- Javelin
+#skilledrider 5
+#mountmnr 3515 -- Light scale barding horse
+--#gcost 10010
+--#rpcost 13
+#hp 13
+#att 12
+#def 12
+#mor 12
+#str 12
+#end
+
+#newmonster 9319 -- Hipparchus
+#copystats 1554 -- Agema Commander
+#spr1 "vanilla/blue_hetairoicom1.png"
+#spr2 "vanilla/blue_hetairoicom2.png"
+#unmountedspr1 "vanilla/un_blue_hetairoicom1.png"
+#unmountedspr2 "vanilla/un_blue_hetairoicom2.png"
+#drawsize 0
+#name "Hipparchus"
+#descr "The Hipparchus is a mounted commander of Arcoscephale. Ability rather than birth decides the rank of generals in Arcoscephale, and Hipparchai are handpicked from of the Hetairoi to serve as cavalry leaders."
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 118 -- Half Helmet
+#armor 1 -- Buckler
+#weapon 1919 -- Xyston
+#weapon 8 -- Broad Sword
+#weapon 21 -- Javelin
+#skilledrider 6
+#mountmnr 3515 -- Light scale barding horse
+--#gcost 10010
+--#rpcost 13
+#hp 13
+#att 12
+#def 12
+#mor 12
+#end
+
+#newmonster 9320 -- Thorakitai
+#copystats 201 -- Peltast
+#spr1 "vanilla/blue_thorakitai1.png"
+#spr2 "vanilla/blue_thorakitai2.png"
+#name "Thorakitai"
+#descr "The thorakitai are heavy infantry of Arcoscephale. They carry a large shield and wear heavy chain armor and serve as an armored but mobile infantry."
+#cleararmor
+#clearweapons
+#weapon 1 -- Spear
+#weapon 21 -- Javelin
+#armor 8 -- Chain Mail Cuirass
+#mapmove 16
+--#armor 13 -- Chain Mail Hauberk
+#armor 20 -- Iron Cap
+#armor 3 -- Kite Shield
+#end
+
+#newmonster 9321 -- Xystophoroi
+#copystats 1553 -- Agema Companion
+#spr1 "vanilla/blue_xystophoroi1.png"
+#spr2 "vanilla/blue_xystophoroi2.png"
+#unmountedspr1 "vanilla/un_blue_prodromoi1.png"
+#unmountedspr2 "vanilla/un_blue_prodromoi2.png"
+#name "Xystophoroi"
+#descr "The Xystophoroi are light cavalry skirmishers of Arcoscephale. They carry a xyston, a long and heavy spear requiring two hands to effectively wield, but durable with a point at both ends in case one breaks. The xyston is cumbersome in close combat and they will switch to a sword when fatigue sets in or the xyston becomes unusable."
+#cleararmor
+#clearweapons
+#armor 16 -- Full Ring Mail
+#armor 118 -- Half Helmet
+#armor 1 -- Buckler
+#weapon 1919 -- Xyston
+#weapon 8 -- Broad Sword
+#weapon 21 -- Javelin
+#skilledrider 3
+#mountmnr 3514 -- Leather barding horse
+#gcost 10010
+#rpcost 13
+#hp 11
+#att 11
+#def 11
+#mor 12
+#end
+
+#newmonster 9322 -- Heart Companion x2 recruitable
+#copystats 747 -- Heart Companion
+#spr1 "vanilla/blue_heartcompanionx2.png"
+#spr2 "vanilla/blue_heartcompanion2.png"
+#name "Heart Companion"
+#descr "The Heart Companions serve the Priestesses of the temples and are famous throughout Arcoscephale. They live and fight side by side with their lovers and brothers-in-arms. The Companions are held in high esteem and it would be a most ominous event should they falter in battle.
+Companions are recruited in pairs and two must be recruited at once."
+#cleararmor
+#clearweapons
+#armor 14 -- Plate Hauberk
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#mor 14
+#str 12
+#att 12
+--#mountmnr 9323
+--#def 10 -- -3 to compensate for mounted bonus
+#summershape 9323
+#wintershape 9323
+#autumnshape 9323
+#springshape 9323
+#gcost 50
+#rpcost 46
+#rcost 28
+#end
+
+#newmonster 9323 -- Heart Companion x2 dummy
+#copystats 747 -- Heart Companion
+#spr1 "vanilla/blue_heartcompanion1.png"
+#spr2 "vanilla/blue_heartcompanion2.png"
+#cleararmor
+#clearweapons
+#armor 14 -- Plate Hauberk
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#mor 14
+#str 12
+#att 12
+#end
+
+#newmonster 8867 -- slower armored steppe horse
+#copystats 3575 -- armored steppe horse
+#spr1 "nihuala/nihorse1.png"
+#spr2 "nihuala/nihorse2.png"
+#ap 23
+#mr 7
+#cleararmor
+#armor 575
+#drawsize 0
+#end
+
+#newmonster 9324 -- Nihuala Steppe Horse
+#copystats 3575 -- Armored Steppe Horse
+#spr1 "nihuala/nihorse1.png"
+#spr2 "nihuala/nihorse2.png"
+#mr 7
+#cleararmor
+#armor 575
+#drawsize 0
+#xpgain 35
+#end
+
+#newmonster 9325 -- Jet Steppe Horse
+#copystats 3575 -- Armored Steppe Horse
+#spr1 "nihuala/jethorse1.png"
+#spr2 "nihuala/jethorse2.png"
+#mr 8
+#cleararmor
+#armor 576
+#drawsize 0
+#str 16
+#att 11
+#def 11
+#hp 24
+#xpgain 35
+#holy
+#end
+
+#newmonster 9326 -- Alabaster Steppe Horse
+#copystats 3575 -- Armored Steppe Horse
+#spr1 "nihuala/alhorse1.png"
+#spr2 "nihuala/alhorse2.png"
+#mr 8
+#cleararmor
+#armor 577
+#drawsize 0
+#str 15
+#xpgain 35
+#holy
+#end
+
+#newmonster 9327 -- Troll Wight
+#copystats 3196 -- Bakemono Wight Mage
+#spr1 "magicenhanced/blue_trollwight1.png"
+#spr2 "magicenhanced/blue_trollwight2.png"
+#hp 46
+#str 23
+#att 11
+#def 11
+#regeneration 10
+#prot 13
+#fireres -10
+#acidres -10
+#clearmagic
+#magicskill 5 2
+#end
+
+
+#newmonster 9328 -- altar
+#spr1 "magicenhanced/blue_altar.png"
+#spr2 "magicenhanced/blue_altar.png"
+#name "Altar"
+#descr "."
+#hp 40
+#str 15
+#att 5
+#def 0
+#prec 5
+#ap 0
+#mapmove 0
+#immobile
+#mor 50
+#prot 20
+#mr 12
+#size 5
+#noleader
+#miscshape
+#itemslots 1
+#coldres 10
+#poisonres 25
+#shockres 10
+#fireres 10
+#pierceres
+#slashres
+#neednoteat
+#stonebeing
+#blind
+#diseaseres 100
+#inanimate
+#amphibian
+#enc 0
+#weapon 0
+#gcost 0
+#end
+
+#newmonster 9329 -- Feaster from the Stars
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "Feaster from the Stars"
+#fixedname "Zvilpogghua"
+#descr "The Feaster from the Stars is an ancient Void Being. It takes the form of a squat, armless bipedal monster covered in wings and tentacles. The Feaster masquerades as a mindless and hungry entity, but behind this facade is a vast alien intelligence with malevolent designs on the world. The Feaster is a powerful sorcerer versed in many forms of magic, and can travel into the firmament to cross great distances each month. The Feaster's skin exudes a foul toxin that poisons any who come in contact and it can devour creatures that stray too close. Attracted to the growing influence of the Void in R'lyeh, the Feaster from the Stars obeys the commands of the Illithids with apparent loyalty, but its true ambitions are opaque."
+#gcost 0
+#size 6
+#mr 20
+#mor 30
+#str 21
+#hp 46
+#att 10
+#def 9
+#prot 8
+#prec 8
+#ap 14
+#enc 1
+#flying
+#mapmove 50
+#noleader
+#nomagicleader
+#magicbeing
+#magicskill 4 3
+#magicskill 5 2
+#magicskill 6 2
+#magicskill 7 2
+#spiritsight
+#blind
+#fear 5
+#amphibian
+#poisoncloud 6
+#poisonskin 50
+#weapon 85  -- Tentacle
+#weapon 677  -- Wing Buff
+#weapon 461 -- Swallow
+#startage 1000
+#maxage 2000
+#holy
+#unique
+#polyimmune
+#itemslots 18751488 -- feet, 3 misc, crown
+#voidsanity 20
+#voidret 100
+#end
+
+#newmonster 9330 -- Faceless One
+#copystats 7804  -- Night-gaunt
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "Faceless One"
+#fixedname "Yegg-Ha"
+#descr "The Faceless One is a strange entity from a realm of nightmares. It resembles a smooth humanoid with leather bat-like wings and a blank expanse of flesh where one would expect a face to be. The Faceless One is the master of the Night-gaunts and they are drawn to it within the dominion of the Dreaming God. It has great strength in the magic of death and dreams and is constantly surrounded by auras of sleep and nightmares. It is said that the Faceless One can never be defeated, for if killed its essence will return to the world of dreams where it will slowly reform. The motivations of the Faceless One are mercurial, but for now it has decided to side with the forces of R'lyeh and the Dreaming God."
+#mr 18
+#mor 22
+#pooramphibian
+#mor 30
+#size 5
+#hp 38
+#str 18
+#att 14
+#def 14
+#mapmove 26
+#sleepaura 4
+#nightmareaura 4
+#magicskill 5 3
+#magicskill 7 3
+#okleader
+#superiormagicleader
+#fear 5
+#holy
+#unique
+#polyimmune
+#domsummon2 7804
+#immortal
+#reformtime 3 -- 6 months
+#voidsanity 20
+#voidret 100
+#end
+
+#newmonster 9331 -- Pale Beast
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "The Pale Beast"
+#fixedname "Eihort"
+#descr "The Pale Beast is a monstrosity born deep within the Void. It resembles a huge gelatinous mass covered in a myriad of eyes and supported by a mass of undulating legs. The Pale Beast is obsessed with spreading its brood and is surrounded at all times by its swarming progeny. Enemies killed by the Beast or its offspring will soon burst open with fresh broodlings, growing and multiplying at a supernatural rate. The Pale Beast is a corrupting presence with power in tainted astral magic. It is not known what foul bargain the Illithid of R'lyeh performed to entice this entity, but it now serves the Dreaming God alongside the forces of R'lyeh."
+#miscshape
+#gcost 0
+#size 7
+#mr 18
+#mor 30
+#str 25
+#hp 82
+#att 14
+#def 11
+#prot 6
+#prec 10
+#ap 20
+#enc 1
+#mapmove 16
+#poorleader
+#goodmagicleader
+#magicbeing
+#magicskill 4 3
+#magicskill 8 3
+#spiritsight
+#bluntres
+#unsurr 8
+#poisonres 15
+#fear 10
+#amphibian
+#slimer 2
+#patrolbonus 50
+#weapon 456 -- Gaze of Fear
+#weapon 329  -- Slime
+#weapon 90  -- Crush
+#raiseonkill 100
+#raiseshape 9332 -- "Pale Broodling"
+#itemslots 3932160 -- 4 misc
+#startage 1000
+#maxage 2000
+#batstartsum4d6 9332 -- Pale Broodling
+#holy
+#unique
+#polyimmune
+#voidsanity 20
+#voidret 100
+#end 
+
+#newmonster 9332 -- Pale Broodling
+#copystats 2223  -- Large Spider
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "Pale Broodling"
+#descr "This is a squirming broodling birthed from the body of a hapless victim infected with the spawn of the Pale Beast. It superficially resembles a white gelatinous spider covered in eyes. While small and weak individually, broodlings multiply at a supernatural rate and enemies can find themselves rapidly overwhelmed if they cannot efficiently deal with the growing mass."
+#clearspec
+#clearweapons
+#undisciplined
+#magicbeing
+#spiritsight
+#unsurr 1
+#mindless
+#poisonres 15
+#amphibian
+#weapon 450  -- Tiny Bite
+#startage 1
+#maxage 2000
+#raiseonkill 100
+#raiseshape 9332 -- "Pale Broodling"
+#voidsanity 20
+#end
+
+#newmonster 9333 -- The Thing in the Pit
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "The Thing in the Pit"
+#fixedname "Ythogtha"
+#descr "The Thing in the Pit is a gargantuan monstrosity from a dimension beyond the Void. It resembles a colossal aquatic humanoid with single, huge eye in the center of its forehead and a dense mane of writhing tentacles. The Thing in the Pit was summoned many aeons ago by a race of Ancient wormlike creatures that live deep below the earths surface, but it was imprisoned by their enemies in a deep Abyss at the bottom of the ocean where they could not reach it. The Thing in the Pit is impossibly strong and tough, and has power in the magic of the earth and the deep ocean. When on land, every month a Chthonian will emerge to pay its respects to the creature. The growing influence of the Void and the Dreaming God has freed this entity, and in return it serves alongside the forces of R'lyeh."
+#gcost 0
+#size 10
+#mr 18
+#mor 30
+#str 30
+#hp 162
+#att 11
+#def 8
+#prot 16
+#prec 10
+#ap 10
+#enc 2
+#mapmove 22
+#okleader
+#goodmagicleader
+#magicbeing
+#magicskill 3 3
+#magicskill 2 2
+#spiritsight
+#fear 5
+#eyes 1
+#amphibian
+#woundfend 1
+#weapon 823  -- Claw
+#weapon 823  -- Claw
+#weapon 85  -- Tentacle
+#weapon 609 -- Grab and Swallow
+#startage 1000
+#maxage 2000
+#holy
+#unique
+#polyimmune
+#summon1 7389 -- Chthonian
+#itemslots 17768966 -- crowns only
+#voidsanity 20
+#voidret 100
+#end
+
+
+#newmonster 9334
+#copystats 3532 
+#name "War Wolf"
+#descr "The wolf is a common predator in cold climates. Wolves are used in battle by some druids and the small goblins of Jotunheim."
+#spr1 "vanilla/vs_warwolf1.png"
+#spr2 "vanilla/vs_warwolf2.png"
+#armor 578 -- Wolf Barding
+#hp 10
+#mr 7
+#def 12
+#end
+
+#newmonster 9335
+#copystats 3532 
+#name "Riding Wolf"
+#descr "The wolf is a common predator in cold climates. Wolves are used in battle by some druids and the small goblins of Jotunheim."
+#spr1 "vanilla/vs_ridewolf1.png"
+#spr2 "vanilla/vs_ridewolf2.png"
+#armor 251 -- Leather Barding
+#hp 9
+#mr 7
+#end
+
+#newmonster 9336
+#copystats 3532 
+#name "Riding Wolf"
+#descr "The wolf is a common predator in cold climates. Wolves are used in battle by some druids and the small goblins of Jotunheim."
+#spr1 "vanilla/vs_ridewolf1.png"
+#spr2 "vanilla/vs_ridewolf2.png"
+#armor 251 -- Leather Barding
+#hp 9
+#mr 7
+#def 12
+#holy
+#end
+
+
+#newmonster 9337
+#copystats 1309 -- Jotun Wolf
+#name "Landvaettir"
+#descr "Landvaettir are spirits of nature, each connected to a land they protect and preserve. Farmers, hunters, and woodsmen in their territory who care for their fields, treat the land well, and leave offerings for them will find their crops bountiful, hunts successful, and lumber sustainable. They take the appearance of a giant wolf and are revered by the Wolf Kin, who may occasionally request their aid."
+#spr1 "magicenhanced/blue_whitewolf1.png"
+#spr2 "magicenhanced/blue_whitewolf2.png"
+#drawsize -15
+#yearturn 1
+#hp 55
+#mr 15
+#def 12
+#att 13
+#str 24
+#size 7
+#prot 12
+#fear 0
+#berserk 0
+#mountainsurvival
+#holy
+#clearmagic
+#magicskill 2 1
+#magicskill 6 3
+#end
+
+
+#newmonster 9338 -- Menhir
+#copystats 473 -- Telestic Animate
+#name "Menhir"
+#descr "."
+#spr1 "magicenhanced/menhir.png"
+#spr2 "magicenhanced/menhir2.png"
+#hp 160
+#size 10
+#str 15
+#prot 25
+#masterrit 1
+#holy
+#clearmagic
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9339 -- Henge
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "."
+#hp 160
+#size 10
+#str 22
+#prot 25
+#masterrit 1
+#holy
+#clearmagic
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9340 -- Preserver
+#copystats 475 -- Crusher
+#name "Preserver"
+#descr "."
+#spr1 "magicenhanced/blue_rock1.png"
+#spr2 "magicenhanced/blue_rock2.png"
+#hp 140
+#size 10
+#str 25
+#prot 24
+#mor 50
+#holy
+#clearmagic
+#end
+
+#newmonster 9341 -- Blood Soaked Edifice
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/bloodmonolith.tga"
+#spr2 "extrapretenders/bloodmonolith2.tga"
+#name "Blood Soaked Edifice"
+#descr "."
+#hp 180
+#size 10
+#str 22
+#prot 25
+#masterrit 1
+#holy
+#clearmagic
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9342 -- Henge (blood)
+#copystats 9339
+#copyspr 9339
+#name "Henge"
+#descr "."
+#end
+
+#newmonster 9343 -- Tree 1
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/tree1.png"
+#spr2 "magicenhanced/tree2.png"
+#name "Ancient Tree"
+#descr "."
+#hp 180
+#size 10
+#str 18
+#prot 18
+#mr 12
+#mor 18
+#enc 0
+#startage 500
+#maxage 1000
+#holy
+#miscshape
+#plant
+#spiritsight
+#growthpower 1
+#masterrit 1
+#ivylord 4
+#clearweapons
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#twiceborn 7480 -- Tree of Hate
+#end
+
+#newmonster 9344 -- Forest Lord
+#copystats 931 -- Ivy king
+#name "Forest Lord"
+#descr "."
+#spr1 "magicenhanced/treant1.png"
+#spr2 "magicenhanced/treant2.png"
+#hp 85
+#size 8
+#mr 17
+#def 8
+#att 9
+#str 22
+#prot 12
+#ivylord 4
+#holy
+#clearmagic
+#clearweapons
+#weapon 92 -- Fist
+#weapon 92 -- Fist
+#weapon 240 -- Branch
+#end
+
+#newmonster 9345 -- Blood tree
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/bloodtree1.png"
+#spr2 "magicenhanced/bloodtree2.png"
+#name "Thirsting Tree"
+#descr "."
+#hp 180
+#size 10
+#str 18
+#prot 18
+#mr 12
+#mor 18
+#enc 0
+#startage 500
+#maxage 1000
+#holy
+#miscshape
+#plant
+#spiritsight
+#growthpower 1
+#masterrit 1
+#ivylord 4
+#clearweapons
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#twiceborn 7480 -- Tree of Hate
+#end
+
+#newmonster 9346 -- Vine monster
+#copystats 330 -- Dark Vine
+#name "Grasping Maw"
+#descr "."
+#spr1 "magicenhanced/blue_vinemonster1.png"
+#spr2 "magicenhanced/blue_vinemonster2.png"
+#hp 160
+#size 10
+#mr 17
+#def 6
+#att 11
+#str 22
+#prot 14
+#ivylord 4
+#holy
+#entangle
+#clearmagic
+#clearweapons
+#weapon 1672 -- Thirsting vine
+#weapon 1672 -- Thirsting vine
+#weapon 609 -- Grab and Swallow
+#end
+
+#newmonster 9347 -- Ghostly Warrior
+#copystats 1256 -- Shura
+#copyspr 1541 -- Ghost Champion
+#name "Ghostly Warrior"
+#descr "The ghost of a warrior, returned from the underworld to make war on the living. Ghosts are frightening ethereal beings that can drain the life force from living beings."
+#hp 25
+#str 14
+#att 12
+#mountainsurvival
+#forestsurvival
+#float
+#poorleader
+#okundeadleader
+#clearweapons
+#cleararmor
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
+#armor 543 -- Spectral Mail 6prot
+#armor 548 -- Spectral Cap
+#saltvul 2
+#nametype 131 -- EA Ulm Male
+#end
+
+#newmonster 9348 -- Undrjarl
+#copystats 1256 -- Shura
+#spr1 "magicenhanced/blue_undrjarl1.png"
+#spr2 "magicenhanced/blue_undrjarl2.png"
+#name "Undrjarl"
+#descr "The Undrjarl is an ancestor chief of an ancient clan, returned from the underworld to make war on the living. The Undrjarl's connection to those who served him in life is strong, and may be used to return some of their number to his side each month to raid and conquer once again. The Undrjarl's time in the underworld has given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#hp 35
+#str 16
+#att 14
+#mr 16
+#def 18
+#fear 10
+#mountainsurvival
+#forestsurvival
+#float
+#poorleader
+#okundeadleader
+#inspirational 1
+#cleararmor
+#clearweapons
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
+#armor 544 -- Spectral Mail 7prot
+#armor 125 -- Skullface
+#saltvul 2
+#magicskill 5 3 -- D
+#makemonsters2 9347 -- Ghostly Warrior
+#nametype 131 -- EA Ulm Male
+#immortal
+#reformtime 3
+#end
+
+#newmonster 9349 -- Valravn biggest
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 15 -- +3
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 23
+#drawsize 18
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9350 -- Valravn big
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 14 -- +2
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 20
+#growhp 24
+#drawsize 12
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9351 -- Valravn middle
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 13 -- +1
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 17
+#growhp 21
+#drawsize 6
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9352 -- Valravn normal
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 12
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#growhp 18
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9353 -- Valravn biggest
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 18 -- +3
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 29
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#okundeadleader
+#size 4
+#drawsize 18
+#end
+
+#newmonster 9354 -- Valravn big
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 17 -- +2
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 26
+#growhp 30
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#okundeadleader
+#size 4
+#drawsize 12
+#end
+
+#newmonster 9355 -- Valravn middle
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 16 -- +1
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 23
+#growhp 27
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#okundeadleader
+#size 4
+#drawsize 6
+#end
+
+#newmonster 9356 -- Valravn normal
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 15
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#growhp 24
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#okundeadleader
+#size 4
+#end
+
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
 
@@ -64536,6 +66125,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #str 21
 #att 11
 #mor 16
+#transformation 0
 #magicbeing
 #amphibian
 #clearweapons
@@ -64705,6 +66295,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #ap 8
 #gcost 0
 #coldres 5
+#shockres 10
 #patrolbonus 50
 #siegebonus 20
 #slashres
@@ -64799,7 +66390,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr2 "houssa/9603_2_hausa_crossbowman.png"
 #gcost 10010
 #rcost 1
-#rpcost 14000
+#rpcost 7
 #hp 10
 #str 10
 #att 8
@@ -66007,7 +67598,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eekulullushaman2.png"
 #name "Kulullu Shaman"
 #descr "The Kulullus are an ancient race of strange beings whose bodies resemble a combination of Enkidu and fish. The Kulullus have lived in the seas near Ur since before the First City was founded and they claim to have founded the first kingdom underneath the waves. Sages believe that when U'an the Apkallu emerged from the sea to bring civilization to Ur he had already brought his gifts to the Kulullus. But war and strife brought by less peaceful beings almost destroyed the Kulullu kingdom. Kulullu myths claim that an apostle of U'an will one day arrive from dry land to rebuild the old Kulullu kingdom. Kulullu shamans maintain these oral traditions. They have skill in water magic, and occasionally in astral magic as well."
-#gcost 85
+#gcost 140
 #clearweapons
 #hp 25
 #att 9
@@ -66031,7 +67622,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eetritonshaman2.png"
 #name "Turtle Tribe Shaman"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. The Turtle Tribe Tritons mimic their totem and don armor made from turtle shells. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings. Turtle Tribe Shamans have skill in water magic, and occasionally in nature magic as well."
-#gcost 70
+#gcost 120
 #clearmagic
 #clearweapons
 #poorleader
@@ -66049,7 +67640,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eemermanshaman2.png"
 #name "Merman Shaman"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Shamans have skill in water magic, and occasionally in air magic as well."
-#gcost 75
+#gcost 130
 #clearmagic
 #clearweapons
 #poorleader
@@ -66068,7 +67659,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eemermanshamanland2.png"
 #name "Merman Shaman"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Shamans have skill in water magic, and occasionally in air magic as well."
-#gcost 75
+#gcost 130
 #clearmagic
 #clearweapons
 #poorleader
@@ -66086,7 +67677,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eesahuaginshaman2.png"
 #name "Sahuagin Shaman"
 #descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air. Sahuagin Shamans have skill in water magic, and occasionally in the blood magic of sharks as well."
-#gcost 80
+#gcost 120
 #hp 13
 #att 10
 #def 10
@@ -66112,7 +67703,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eesahuaginshaman2.png"
 #name "Sahuagin Shaman"
 #descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air. Sahuagin Shamans have skill in water magic, and occasionally in blood or death magic as well."
-#gcost 80
+#gcost 120
 #hp 13
 #att 8
 #def 8
@@ -66138,7 +67729,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eeshamblershaman2.png"
 #name "Shambler Shaman"
 #descr "Shamblers are Atlantians grown to huge proportions. They use claws or clubs made from Atlantian coral in combat and do not normally don armor since it tends to be cumbersome. Shambler Shamans are the religious leaders of isolated Atlantian tribes. They have skill in water magic, and occasionally in earth magic as well."
-#gcost 85
+#gcost 140
 #mr 13
 #clearmagic
 #clearweapons
@@ -66231,6 +67822,303 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 -- END NEW UW UNITS
+
+-- EA PELAGIA REWORK
+
+#selectsite 72 -- Palace of Pearls
+#gems 2 3
+#gems 4 2 
+#gems 6 1
+#end
+
+#newmonster 9670 -- Merman Hunter
+#copystats 1291 -- Turtle Tribe
+#spr1 "wateroverhaul/light_mermanhunter.png"
+#spr2 "wateroverhaul/light_mermanhunter2.png"
+#name "Merman Hunter"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain." 
+#gcost 10
+#clearweapons
+#cleararmor
+#weapon 1578 -- Shark-Tooth Spear
+#weapon 263 -- Net
+#armor 152 -- Sharkskin Cap
+#armor 188 -- Sharkskin Cuirass
+#landshape 9671
+#float
+#end
+
+#newmonster 9671 -- Merman Hunter (Land)
+#copystats 1292 -- Turtle Tribe (Land)
+#spr1 "wateroverhaul/light_mermanhunterland.png"
+#spr2 "wateroverhaul/light_mermanhunterland2.png"
+#name "Merman Hunter"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain."
+#gcost 10
+#clearweapons
+#cleararmor
+#weapon 1578 -- Shark-Tooth Spear
+#weapon 263 -- Net
+#armor 152 -- Sharkskin Cap
+#armor 188 -- Sharkskin Cuirass
+#watershape 9670
+#amphibian
+#end
+
+#newmonster 9672 -- Coastal Warrior
+#copystats 1291 -- Turtle Tribe
+#copyspr 1291
+#name "Coastal Warrior"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#gcost 10
+#landshape 9673
+#float
+#end
+
+#newmonster 9673 -- Coastal Warrior (Land)
+#copystats 1292 -- Turtle Tribe (Land)
+#copyspr 1292
+#name "Coastal Warrior"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#gcost 10
+#watershape 9672
+#amphibian
+#end
+
+#newmonster 9674 -- Shark Clan Warrior
+#copystats 2385 -- Pelagian Soldier
+#spr1 "wateroverhaul/light_sharkclan.png"
+#spr2 "wateroverhaul/light_sharkclan2.png"
+#name "Shark Clan Warrior"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings and formed their own clans within the kingdom. Warriors from the Shark Clan sharpen their teeth and mimic the feeding frenzy of their totem. They don armor made from shark skins. They are stronger and more ferocious than their independent kin." 
+#gcost 12
+#clearweapons
+#cleararmor
+#weapon 1577 -- Shark-Tooth Dagger
+#weapon 1577 -- Shark-Tooth Dagger
+#weapon 576 -- Weak Bite
+#armor 188 -- Sharkskin Cuirass
+#mor 11
+#float
+#berserk 3
+#end
+
+#newmonster 9675 -- Turtle Clan Soldier
+#copystats 2385 -- Pelagian Soldier
+#spr1 "wateroverhaul/light_turtleclan.png"
+#spr2 "wateroverhaul/light_turtleclan2.png"
+#name "Turtle Clan Soldier"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings and formed their own clans within the kingdom. Warriors from the Turtle clan mimic the defensive nature of their totem, donning the shells of giant turtles to protect them. They are stronger, better trained, and better equipped than their independent kin." 
+#gcost 10
+#clearweapons
+#cleararmor
+#weapon 31 -- Coral Spear
+#armor 581 -- Turtle Greatshield
+#armor 579 -- Turtle Shell Breastplate
+#armor 580 -- Turtle Helm
+#float
+#end
+
+#newmonster 9676 -- Merman Vanguard
+#copystats 1048 -- Wave Warrior
+#spr1 "wateroverhaul/light_mermanvanguard.png"
+#spr2 "wateroverhaul/light_mermanvanguard2.png"
+#name "Merman Vanguard"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 31 -- Coral Spear
+#weapon 1808 -- Repelling Barbed Armor
+#weapon 640 -- Coral Tipped Javelin
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 12
+#formationfighter 2
+#poisonarmor 5
+#landshape 9677
+#float
+#end
+
+#newmonster 9677 -- Merman Vanguard (land)
+#copystats 1049 -- Wave Warrior
+#spr1 "wateroverhaul/light_mermanvanguardland.png"
+#spr2 "wateroverhaul/light_mermanvanguardland2.png"
+#name "Merman Vanguard"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 31 -- Coral Spear
+#weapon 1808 -- Repelling Barbed Armor
+#weapon 640 -- Coral Tipped Javelin
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 12
+#formationfighter 2
+#poisonarmor 5
+#watershape 9676
+#amphibian
+#end
+
+#newmonster 9678-- Merman Chieftan
+#copystats 1293 -- Turtle Tribe
+#copyspr 1293
+#name "Merman Chieftan"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#landshape 9679
+#float
+#end
+
+#newmonster 9679 -- #newmonster 9678 -- Merman Chieftan (land)
+#copystats 1294 -- Turtle Tribe (Land)
+#copyspr 1294
+#name "Merman Chieftan"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#watershape 9678
+#amphibian
+#end
+
+#newmonster 9680 -- Vanguard Captain
+#copystats 1052 -- Wave Lord
+#spr1 "wateroverhaul/light_vanguardcaptain.png"
+#spr2 "wateroverhaul/light_vanguardcaptain2.png"
+#name "Vanguard Captain"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 388 -- Pearl Spear
+#weapon 1808 -- Repelling Barbed Armor
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 105
+#goodleader
+#formationfighter 2
+#poisonarmor 5
+#landshape 9681
+#float
+#end
+
+#newmonster 9681 -- Vanguard Captain (land)
+#copystats 1053 -- Wave Lord
+#spr1 "wateroverhaul/light_vanguardcaptainland.png"
+#spr2 "wateroverhaul/light_vanguardcaptainland2.png"
+#name "Vanguard Captain"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 388 -- Pearl Spear
+#weapon 1808 -- Repelling Barbed Armor
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 105
+#goodleader
+#formationfighter 2
+#poisonarmor 5
+#watershape 9680
+#amphibian
+#end
+
+#selectmonster 2385 -- Pelagian Soldier
+#spr1 "wateroverhaul/light_pelagiansoldier.png"
+#spr2 "wateroverhaul/light_pelagiansoldier2.png"
+#armor 114 -- Turtle Hauberk
+#armor 134 -- Turtle Cap
+#end
+
+#selectmonster 2386 -- Coral Clan
+#spr1 "wateroverhaul/light_coralclan.png"
+#spr2 "wateroverhaul/light_coralclan2.png"
+#end
+
+#selectmonster 2391 -- Triton Rider
+#att 12
+#def 11
+#end
+
+#selectmonster 2387 -- Pearl Guard
+#spr1 "wateroverhaul/light_pearlguard.png"
+#spr2 "wateroverhaul/light_pearlguard2.png"
+#cleararmor
+#poisonarmor 0
+#armor 523  -- Pearl Hauberk
+#armor 522  -- Pearl Cap
+#armor 189  -- Pearl Shield
+#hp 18
+#str 13
+#mor 14
+#mr 13
+#gcost 26
+#bodyguard 4
+#end
+
+#selectmonster 2809 -- Sideraspides
+#descr "The Sideraspides, iron shields, are heavily armed mermen soldiers. Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land to trade or wage war. The extensive trade with Berytos has given Pelagia a much needed ally. In the few coastal cities Pelagia has built, Berytian infantry have helped in the defence. Over time the mermen have adopted Berytian and Therodian culture and tactics. Now there are few Berytian soldiers left in the cities and Pelagia fields its own mermen infantry. The Sideraspides are heavy mermen soldiers clad in Berytian iron armor. They are able to enter the sea, but as their armors corrode and fall apart with prolonged underwater campaigns, they mostly remain on land, defending or expanding the borders of the coastal colonies of the kingdom. The Sideraspides have slightly better morale than their turtle-shelled kin, and are skilled formation fighters like their Berytian models."
+#mor 12
+#formationfighter 2
+#end
+
+#selectmonster 2807 -- Shore Fighter
+#descr "Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land to trade or wage war. The extensive trade with Berytos has given Pelagia a much needed ally. In the few coastal cities Pelagia has built, Berytian infantry have helped in the defense. Over time the mermen have adopted Berytian and Therodian culture and tactics. Now there are few Berytian soldiers left in the cities and Pelagia fields its own mermen infantry. The Shore Fighters are light mermen infantry armed in Berytian fashion."
+#mor 11
+#end
+
+#selectmonster 2396 -- Pearl Mage
+#custommagic 11008 10
+#makepearls 4
+#end
+
+#selectmonster 2813 -- Pelagian Explorer
+#clearmagic
+#magicskill 2 1
+#custommagic 3456 100  -- F
+#researchbonus 3
+#end
+
+#selectmonster 2814 -- Pelagian Explorer (land)
+#clearmagic
+#magicskill 2 1
+#custommagic 3456 100  -- FASE
+#researchbonus 3
+#end
+
+#selectmonster 1415 -- Pelagian Mermage
+#custommagic 256 50  -- A
+#gcost 140
+#end
+#selectmonster 1416 -- Pelagian Mermage (land)
+#custommagic 256 50
+#gcost 140
+#end
+
+#selectmonster 2390 -- Pelagian Captain
+#spr1 "wateroverhaul/light_coralcommander.png"
+#spr2 "wateroverhaul/light_coralcommander2.png"
+#gcost 85
+#mor 13
+#formationfighter 2
+#end
+
+#selectmonster 2397 -- Pearl King
+#clearmagic
+#magicskill 2 4
+#magicskill 4 2  -- W4S2
+#custommagic 10496 100
+#custommagic 11008 10
+#makepearls 8
+#end
+
+#selectmonster 1058 -- Hippocampus
+#clearspec
+#animal
+#aquatic
+#float
+#heal
+#end
+
+-- END EA PELAGIA REWORK
 
 
 -- Immortal Lich/Vampire reformtime changes
@@ -67509,6 +69397,18 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 5 -- 2 -> 5
 #end
 
+#selectmonster 4110 -- Lost Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 4090 -- Sylvan Knight
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 4089 -- Antlered Hochmeister
+#skilledrider 4 -- 1 -> 4
+#end
+
 #selectmonster 3615 -- Pyrènian Marquess
 #skilledrider 6 -- 3 -> 6
 #end
@@ -67638,11 +69538,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3413 -- Wolf Brother
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 3435 -- Vaetti Herse
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 1176 -- Androphag
@@ -67954,15 +69854,15 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3418 -- Wolf Rider
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 282 -- Wolf Rider
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 283 -- Chief
-#skilledrider 3 --  -> 3
+#skilledrider 4 --  -> 4
 #end
 
 #selectmonster 1250 -- Mounted Gokenin
@@ -68375,10 +70275,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2386 -- Coral Clan Soldier poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2387 -- Pearl Guard poison barbs weapon
 #weapon 1808
 #end
 
@@ -69239,7 +71135,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #float
 #end
 
-#selectmonster 6510 -- Dandan
+#selectmonster 6514 -- Dandan
 #float
 #end
 
@@ -70020,10 +71916,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #poisonarmor 3
 #end
 
-#selectmonster 2387 -- Pearl Guard poison armor to 3
-#poisonarmor 3
-#end
-
 #selectmonster 2390 -- Pelagian Captain poison armor to 3
 #poisonarmor 3
 #end
@@ -70433,7 +72325,7 @@ Only three Queens of Elemental Water are known to exist."
 #fixedname "Limne"
 #spr1 "./magicenhanced/icequeen1.tga"
 #spr2 "./magicenhanced/icequeen2.tga"
-#hp 65
+#hp 140
 #weapon "Icicle Fist"
 #trample
 #amphibian
@@ -70444,8 +72336,8 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #goodmagicleader
 #goodleader
-#icenatprot 3
-#iceprotinspector 3
+#icenatprot 2
+#iceprotinspector 2
 #coldpower 2
 #str 18
 #att 14
@@ -70454,18 +72346,27 @@ Only three Queens of Elemental Water are known to exist."
 #waterelementals 1
 #makemonsters1 3747 -- "Ice Elemental"
 #coldres 40
-#poisonres 15
+#poisonres 25
 #fireres -10
 #size 8
 #startage 600
 #maxage 1000
-#mapmove 18
 #female
 #unique
 #magicbeing
 #magicskill 2 5
 #magicskill 1 2
 #itemslots 860678
+#mr 18
+#mapmove 14
+#neednoteat
+#recuperation
+#spiritsight
+#enc 0
+#prot 13
+#woundfend 4
+#inanimate
+#snow
 #end
 
 -- # ILLEARTH
@@ -70552,7 +72453,6 @@ Only three Queens of Elemental Water are known to exist."
 #end
 
 -- Start of New Pretender Changes and Additions
-
 
 -- FOLDUNITS
 
@@ -75238,7 +77138,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spr1 "extrapretenders/wisdomking.tga"
 #spr2 "extrapretenders/wisdomking2.tga"
 #name "Wisdom King"
-#descr "The Wisdom King is a divine warrior that was assigned to protect the Tathagata. Now with the Pantokrator gone his full powers have begun to manifest and he has amassed worshippers of his own. In his Wisdom he has realised the aspirations of the other Pretender Gods and will attain the role of Pantokrator to protect his followers. The Wisdom King is the embodiment of the wheel of injunction and teaches through fear, shocking nonbelievers into faith. He is a wrathful manifestation of the divine, many-armed and wreathed in flames. The Wisdom King is highly resilient and will suffer permanent injuries less often than most creatures."
+#descr "The Wisdom King is a divine warrior that was assigned to protect the Tathagata. Now with the Pantokrator gone his full powers have begun to manifest and he has amassed worshippers of his own. In his Wisdom he has realised the aspirations of the other Pretender Gods and will attain the role of Pantokrator to protect his followers. The Wisdom King is the embodiment of the wheel of injunction and teaches through fear, shocking nonbelievers into faith. He is a wrathful manifestation of the divine, many-armed and wreathed in flames."
 #diseaseres 100
 #gcost 300
 #startdom 3
@@ -77655,7 +79555,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moreorder -1
 #mor 30
 #hp 113
-#prot 0
+#prot 7
 #str 22
 #att 13
 #def 10
@@ -77683,11 +79583,10 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #neednoteat
 #berserk 5
 #poisonres 15
-#voidsanity 20
-#prot 7
 #startage 1000
 #maxage 2000
 #goodmagicleader
+#voidsanity 20
 #itemslots 786432
 #clearmagic
 #magicskill 0 1
@@ -80711,7 +82610,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 #newmonster 10013 -- Ceiran
 #copystats 2440
-#copyspr 6510 -- Dandan
+#copyspr 6514 -- Dandan
 #name "Great Thalassid"
 #descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
 #diseaseres 100
@@ -80814,7 +82713,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moreprod 1
 #mor 30
 #hp 200
-#prot 30
+#prot 28
 #str 15
 #att 5
 #def 0
@@ -81056,11 +82955,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 6 1
 #magicskill 7 1
 #end
-
-
-
-
-
 
 
 
@@ -83326,6 +85220,26 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 6 1
 #end
 
+#selectmonster 1348 -- Titan of Serpents & Medicine
+#descr "The Titan of Serpents and Healing is a giant of divine heritage. She is the Mother of Serpents and Mistress of the Medical Arts. Her blessings give health and her wrath gives untimely death. In combat she is always accompanied by a handful of snakes, two of which she holds in her hands as weapons to attack her enemies."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#hp 75
+#prot 3
+#str 20
+#att 14
+#def 12
+#mr 18
+#twiceborn 7231 -- Wight Giant
+#autodishealer 0
+#autohealer 3
+#itemslots 991750
+#clearmagic
+#magicskill 5 2
+#magicskill 6 3
+#end
+
 #selectmonster 1349 -- Devourer of Souls
 #descr "Once the Devourer of Souls sat at the foot of the Pantokrator's throne. The Beast would attend the Court of Eternal Judgment and wait for his masters' words as He revealed the names of sinners and the beast would hunt them down and devour their hearts and souls. Now with the Pantokrator gone, the Beast of Judgment is free to roam the world. Once the Devourer bites, the unlucky target's soul is gone. This attack cannot be resisted."
 #diseaseres 100
@@ -84892,8 +86806,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #prot 4
 #itemslots 2040326
 #clearmagic
-#magicskill 0 1
-#magicskill 5 1
+#magicskill 0 2
+#magicskill 5 3
 #end
 
 #selectmonster 2610 -- Angra Mainyu
@@ -84919,7 +86833,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #descr "The Gannag Menog is the hypostasis of Angra Mainyu, a celestial being of great might. During the reign of a previous Pantokrator, the Angra Mainyu and his Ahura twin were banned from this world. Now with the Pantokrator gone and the old decrees weakening, the Angra Mainyu has found a way to manifest his spirit as a messenger of corruption and lies. Eventually he will reenter this world and claim it as his own. The Gannag Menog is a spiritual being, able to appear wherever it wants. It commands the Daevic Heptad, six demonic manifestations of the Angra Mainyu."
 #diseaseres 100
 #gcost 240
-#pathcost 60
+#pathcost 30
 #hp 49
 #prot 1
 #str 17
@@ -84938,8 +86852,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2627 -- Daeva of Wrath
 #descr "The Daeva of the Bloody Mace is an angel of destruction emanated from the Angra Mainyu. During the reign of a previous Pantokrator, the Daevas rebelled and started a war against the Ahuras and the benevolent Mainyus. The Daeva of the Bloody Mace became the eternal enemy of the Ahura of the Oath. But when the Pantokrator tired of the war among gods, he imprisoned or banished Ahura and Daeva alike. Now with the Pantokrator gone and his prison crumbling, the Great Daeva is once more able to bring strife and destruction to this world."
 #diseaseres 100
-#gcost 220
-#pathcost 60
+#gcost 230
+#pathcost 30
 #hp 49
 #prot 1
 #str 18
@@ -85807,13 +87721,14 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 240
 #pathcost 40
 #hp 65
-#prot 13
+#prot 5
 #str 23
 #att 13
 #def 15
 #mr 18
 #batstartsum5d6 2340  -- Atlantian Shadow Soldier
 #spreaddom 1
+#invulnerable 10
 #itemslots 991750
 #clearmagic
 #magicskill 0 1
@@ -87494,6 +89409,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #def 13
 #mr 18
 #spreaddom 1
+#amphibian
 #itemslots 467486
 #clearmagic
 #magicskill 2 1
@@ -87965,32 +89881,122 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 5 2
 #end
 
-#selectmonster 1348 -- Titan of Serpents & Medicine
-#descr "The Titan of Serpents and Healing is a giant of divine heritage. She is the Mother of Serpents and Mistress of the Medical Arts. Her blessings give health and her wrath gives untimely death. In combat she is always accompanied by a handful of snakes, two of which she holds in her hands as weapons to attack her enemies."
+#selectmonster 2194 -- Draugadrott
+#name "Draugadrott"
+#descr "The Draugadrott was once a Vanadrott of great malice and might. He wielded such foul powers that he threatened the very order of the world. When he was slain by his subjects he vowed to return and avenge his death. His killers cursed his bones, his mind and his heart to prevent him from ever returning, but with the death of his last killer the fetters have crumbled and the Draugadrott has returned in his horrible might, poised to wreak vengeance on the world thet took his life.
+The malice and hateful nature of the Draugadrott is unmatched and he has claimed the ability to change shape into a horrible apparition."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
-#hp 75
-#prot 3
+#hp 45
+#prot 5
 #str 20
-#att 14
-#def 12
+#att 13
+#def 13
 #mr 18
-#twiceborn 7231 -- Wight Giant
-#autodishealer 0
-#autohealer 3
+#woundfend 1
+
 #itemslots 991750
 #clearmagic
+#magicskill 2 1
 #magicskill 5 2
-#magicskill 6 3
+#magicskill 8 1
+#end
+
+#selectmonster 2195 -- Flayed Bull
+#name "Flayed Bull"
+#descr "Hate and malice made manifest in the form of a horrible Flayed Bull. The apparition is almost impervious to mundane weapons, even though its flesh and muscles are laid bare.
+In Bull form the Draugadrott loses some of his magic powers."
+#diseaseres 100
+#gcost 220
+#pathcost 40
+#hp 140
+#prot 10
+#str 28
+#att 13
+#def 12
+#mr 18
+#woundfend 2
+#invuln 20
+#itemslots 17571840
+#clearmagic
+#magicskill 2 1
+#magicskill 5 2
+#magicskill 8 1
+#end
+
+#selectmonster 4115 -- Buraq
+#name "Buraq"
+#descr "At the dawn of time, monsters and giants roamed the world. Among these was a marvellous white horse-being with the wings of a swan, the tail of a peacock and the head of a woman. The Buraq, lightning, was faster than any other being and when the previous Pantokrator rose to power he gave her grace and purpose. She would carry him to the four corners of the world and bring word of his decrees to the faithful. So dearly did he treasure her that he fashioned a palace-stable with doors of star-shine and mother-of-pearl for her. But when the need to travel and send messages across the world ceased he locked the stable doors and forgot about his loyal servant. For decades she kicked at the doors, for centuries she wept and for millenia she waited. Now, with the Pantokrator gone, the doors of star-shine and mother-of-pearl are losing their lustre and the Buraq will soon deliver her own divine decrees to the population of the world."
+#diseaseres 100
+#gcost 140
+#pathcost 60
+#hp 122
+#prot 16
+#str 25
+#att 14
+#def 14
+#mr 18
+#mastersmith 0
+#researchbonus 0
+#woundfend 2
+#awe 4
+#itemslots 1843200
+#clearmagic
+#magicskill 1 2
+#magicskill 7 1
+#end
+
+#selectmonster 4107 -- Great Moose
+#name "Great Moose"
+#descr "At the dawn of time, monsters and giants roamed the world. Among the beasts was a Great Moose that emerged from the primal forests of the nascent world. As a creature of the wild it was worshiped by the first of men as a god of the forest and crowned king of all that lived in the woods. When the previous Pantokrator rose to power he hunted the Moose and imprisoned it in the forest from which it came. Now, with the Pantokrator gone, the shackles are weakening and the Moose can once more stalk the woodlands."
+#diseaseres 100
+#gcost 140
+#pathcost 60
+#hp 171
+#prot 16
+#str 31
+#att 12
+#def 12
+#mr 17
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 2
+#coldres 10
+#itemslots 3932160
+#clearmagic
+#magicskill 6 2
+#magicskill 7 1
+#end
+
+#selectmonster 4108 -- Ghost Moose
+#name "Ghost Moose"
+#descr "At the dawn of time, monsters and giants roamed the world. Among the beasts was a Great Moose that emerged from the primal forests of the nascent world. As a creature of the wild it was worshiped by the first of men as a god of the forest and crowned king of all that lived in the woods. When the previous Pantokrator rose to power he hunted the Moose slayed it and imprisoned its spirit in the forest from which it came. Now, with the Pantokrator gone, the shackles are weakening and the spirit of the Great Moose can manifest itself and bring good will to its worshippers."
+#diseaseres 100
+#gcost 160
+#pathcost 60
+#hp 164
+#prot 12
+#str 31
+#att 12
+#def 12
+#mr 17
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 2
+
+#itemslots 3932160
+#clearmagic
+#magicskill 4 1
+#magicskill 7 2
 #end
 
 
 
 
-
 -- ENDUNITS
-
 
 
 
@@ -88054,9 +90060,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 5 1
 #custommagic 1024 50 -- E
 #custommagic 4096 50 -- D
-#prot 5 -- matching new umbral buffs
-#darkpower 2 -- matching new umbral buffs
-#woundfend 3 -- matching new umbral buffs
+#prot 5
+#woundfend 3
+#darkpower 2
 #end
 
 
@@ -88162,6 +90168,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- Cap
+#gcost 10016
+#rpcost 8
+#coldres -3
 #end
 
 #selectmonster 82  -- Aby Infantry
@@ -88175,6 +90184,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
+#gcost 10016
+#rpcost 8
+#coldres -3
 #end
 
 #selectmonster 83  -- Aby Infantry
@@ -88189,6 +90201,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #armor 20 -- cap
 #armor 4 -- Tower Shield
 #prot 3
+#gcost 10016
+#rpcost 8
+#coldres -3
 #end
 
 #selectmonster 84  -- Aby Infantry
@@ -88203,6 +90218,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #armor 4 -- Tower Shield
+#gcost 10016
+#rpcost 8
+#coldres -3
 #end
 
 #selectmonster 85  -- A Salamander
@@ -88215,6 +90233,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
+#coldres -3
 #end
 
 #selectmonster 86  -- EA Abysia Anathemant Dragon
@@ -88228,6 +90247,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
 #neednoteat
+#coldres -3
 #end
 
 #selectmonster 87  -- Demonbred
@@ -88240,6 +90260,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #iceprotinspector -1
 #prot 5
 #rpcost 2
+#coldres -3
 #end
 
 
@@ -88249,6 +90270,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 90  -- Lava Warrior
@@ -88262,6 +90284,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #neednoteat
+#coldres -3
 #end
 
 #selectmonster 121  -- Demonbred
@@ -88272,6 +90295,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 118  -- War Master
@@ -88281,6 +90305,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 119  -- Warlord
@@ -88291,6 +90316,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 214  -- Beast Trainer
@@ -88304,6 +90330,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88315,6 +90342,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 429  -- Slayer
@@ -88325,6 +90353,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88347,6 +90376,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88375,6 +90405,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 923  -- Warlock Apprentice
@@ -88384,6 +90415,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88396,6 +90428,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1092  -- Sang Anathemant
@@ -88407,6 +90440,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1536  -- Anointed of Rhuax
@@ -88417,7 +90451,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#gcost 675
+#gcost 650
 #clearmagic
 #magicskill 0 4
 #magicskill 3 2
@@ -88427,6 +90461,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 4
+#size 5
+#coldres -3
 #end
 
 #selectmonster 1537  -- Demonbred
@@ -88438,6 +90474,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 1538  -- Warlock
@@ -88449,6 +90486,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1542  -- W Apprentice
@@ -88460,6 +90498,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1543  -- Burning One
@@ -88471,9 +90510,13 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#size 5
+#formationfighter -1
 #cleararmor
-#armor 570 -- Half Plate
+--#armor 570 -- Half Plate
+#armor 14 -- Plate Hauberk
 #armor 20 -- cap
+#coldres -3
 #end
 
 #selectmonster 1661  -- Misbred
@@ -88485,6 +90528,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 1667  -- Malphas the Warlock
@@ -88494,6 +90538,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88505,6 +90550,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1699  -- EA Anathemant Dragon
@@ -88516,6 +90562,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #iceprotinspector -1
 #prot 3
 #neednoteat
+#coldres -3
 #end
 
 
@@ -88527,6 +90574,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1966  -- Slayer Anathemant
@@ -88537,6 +90585,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1967  -- S Sanguine
@@ -88547,6 +90596,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1968  -- Slayer Dragon
@@ -88556,6 +90606,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1969  -- A Salamander LA
@@ -88567,6 +90618,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1970  -- LA Abysia Anathemant Dragon
@@ -88584,6 +90636,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88595,6 +90648,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
+#gcost 10020
 #end
 
 #selectmonster 2511  -- Lavaborn Comm
@@ -88607,6 +90662,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
+#gcost 10025
 #end
 
 
@@ -88618,6 +90675,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -88626,7 +90684,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 #selectmonster 88  -- Fiend of Darkness
 #montag 1054
-#custommagic 36864 100 -- 100% DB
+#custommagic 4096 75 -- D
+#custommagic 32768 75 -- B
+--#custommagic 36864 100 -- 100% DB
 #end
 
 
@@ -88647,6 +90707,13 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 134  -- Royal Guard
 #bodyguard 4
+#end
+
+#selectmonster 148  -- friar
+#bodyguard 4
+#gcost 60
+#poormagicleader
+#magiccommand -5
 #end
 
 
@@ -88736,7 +90803,9 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 304  -- Devil
-#custommagic 32896 100 -- 100% FB
+#custommagic 128 75 -- F
+#custommagic 32768 75 -- B
+--#custommagic 32896 100 -- 100% FB
 #montag 1054
 #montagweight 2
 #end
@@ -89168,7 +91237,9 @@ Initiates of the Deep can be recruited in any land fort."
 #spr2 "vanilla/frostfiend2.tga"
 #armor 231 -- heavy magic robes
 #mapmove 22 -- compensating for robes
-#custommagic 33280 100 -- 100% WB
+#custommagic 512 75 -- W
+#custommagic 32768 75 -- B
+--#custommagic 33280 100 -- 100% WB
 #end
 
 #selectmonster 450  -- Horse Brother
@@ -89241,7 +91312,12 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 489  -- Demon Knight
-#custommagic 33792 100 -- 100% EB
+#custommagic 1024 75 -- E
+#custommagic 32768 75 -- B
+--#custommagic 33792 100 -- 100% EB
+#clearweapons
+#weapon 4 -- Broad Sword
+#weapon 477 -- Unholy Sword
 #end
 
 #selectmonster 490  -- Al-Khazim
@@ -89384,6 +91460,34 @@ Initiates of the Deep can be recruited in any land fort."
 #custommagic 128 50  -- 50% F
 #montag 1051
 #prot 7
+#end
+
+#selectmonster 518 -- Troll
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 519 -- Troll King
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 1037 -- War Troll
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 1086 -- Troll Moose Knight
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 2219 -- Forest Troll
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 2220 -- Troll Shaman
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 2221 -- Troll Seithberender
+#twiceborn 9327 -- Troll Wight
 #end
 
 #selectmonster 521  -- Abomination
@@ -89695,7 +91799,9 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 632  -- Storm Demon
-#custommagic 33024 100 -- 100% AB
+#custommagic 256 75 -- A
+#custommagic 32768 75 -- B
+--#custommagic 33024 100 -- 100% AB
 #end
 
 #selectmonster 633  -- Werewolf
@@ -89817,6 +91923,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #armor 546 -- spectral plate
 #armor 549 -- spectral helmet
 #mr 11
+#formationfighter 2
 #end
 
 #selectmonster 3063  -- Hellbred Horite
@@ -91769,7 +93876,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 1356 -- Ozelotl
-#magicskill 7 1 -- 1B
+#magicskill 8 1 -- 1B
 #custommagic 128 50 -- 50%F
 #end
 
@@ -91977,7 +94084,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #selectmonster 1483  -- Tzitzimitl
 #magicskill 4 1  -- S1
 #magicskill 9 1 -- H1
-#custommagic 32768 50 -- 50%SB
+#custommagic 32768 50 -- 50%B
 #end
 
 #selectmonster 1484  -- Tlaloque
@@ -92029,6 +94136,12 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #magicskill 5 1  -- 1D
 #custommagic 1024 50  -- 50% E
 #magicskill 9 1 -- 1H
+#end
+
+
+#selectmonster 1541  -- Ghost Champion
+#clearweapons
+#weapon 1924 -- Ghostly Sword
 #end
 
 #selectmonster 1511  -- vanadis
@@ -92372,6 +94485,10 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #armor 549 -- spectral helm
 #magicskill 0 1 -- 1F
 #custommagic 4096 50 -- 50%D
+#end
+
+#selectmonster 1657 -- Longdead Triarius
+#formationfighter 2
 #end
 
 #selectmonster 1971  -- Smoulderghost LA
@@ -93404,6 +95521,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #twiceborn 7343 -- Size 2 Wight Beast
 #end
 
+#selectmonster 2129 -- Logrian Cavalry
+#gcost 5
+#end
+
 
 #selectmonster 2139  -- LA Midgard Jarl
 #spr1 "vanilla/jarl1.tga"
@@ -93477,6 +95598,20 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2190  -- Draug
 #armor 20 -- iron cap
+#str 16
+#prot 5
+#def 13
+--#fear 0
+--#glamour
+#end
+
+#selectmonster 2191  -- Draug big
+#armor 20 -- iron cap
+#str 19
+#prot 6
+#def 13
+--#fear 0
+--#glamour
 #end
 
 #selectmonster 2196  -- Swamp Drake
@@ -93573,6 +95708,18 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2267  -- Melqart
 #twiceborn 7231 -- Wight Giant
+#popkill 3
+#incunrest 20
+#poormagicleader
+#magiccommand 10
+#end
+
+#selectmonster 2430  -- King of the City
+#twiceborn 7231 -- Wight Giant
+#popkill 4
+#incunrest 30
+#poormagicleader
+#magiccommand 10
 #end
 
 #selectmonster 2270  -- Tathagada
@@ -93745,9 +95892,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #def 9
 #end
 
-#selectmonster 2387 -- Pearl Guard
-#bodyguard 4
-#end
+
 
 #selectmonster 2391 -- Triton Rider
 #spr1 "vanilla/tritonrider1.tga"
@@ -94908,27 +97053,14 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #twiceborn 6644 -- Wight Beast
 #end
 
-#selectmonster 2968  -- Hell Spawn salamandar/abysian
+#selectmonster 2968  -- Hellspawn
 #poorundeadleader
-#neednoteat
-#icenatprot -1
 #end
 
-#selectmonster 2969  -- Hell Spawn salamandar/abysian armed 
+#selectmonster 2969  -- Hellspawn
 #poorundeadleader
-#neednoteat
-#icenatprot -1
 #end
 
-#selectmonster 2970 -- Hell Spawn spike fiend/abysian
-#neednoteat
-#icenatprot -1
-#end 
-
-#selectmonster 3061 -- Hell Spawn Salamander/Burning One
-#neednoteat 
-#icenatprot -1
-#end
 
 #selectmonster 3003  -- Great Bear
 #clearweapons
@@ -94937,6 +97069,162 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #twiceborn 7443 -- Size 4 Wight Beast
 #darkvision 50
 #end
+
+#selectmonster 3022 -- Erytheian Hoplite water
+#att 11
+#def 11
+#gcost 10011
+#end
+
+#selectmonster 3023 -- Erytheian Hoplite land
+#att 11
+#def 11
+#gcost 10011
+#end
+
+#selectmonster 3020 -- Erytheian Phalangite water
+#spr1 "vanilla/blue_eryphalangite1w.png"
+#spr2 "vanilla/blue_eryphalangite2w.png"
+#cleararmor
+#clearweapons
+#armor 12 -- Scale Mail Hauberk
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#def 12
+#rpcost 18
+#gcost 10012
+#end
+
+#selectmonster 3021 -- Erytheian Phalangite land
+#spr1 "vanilla/blue_eryphalangite1l.png"
+#spr2 "vanilla/blue_eryphalangite2l.png"
+#cleararmor
+#clearweapons
+#armor 12 -- Scale Mail Hauberk
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#def 12
+#rpcost 18
+#gcost 10012
+#end
+
+#selectmonster 3051 -- Soldier of the Setting Sun water
+#sunawe 3
+#str 12
+#att 12
+#end
+
+#selectmonster 3052 -- Soldier of the Setting Sun land
+#sunawe 3
+#str 12
+#att 12
+#end
+
+#selectmonster 747 -- Heart Companion
+#spr1 "vanilla/blue_heartcompanion1.png"
+#spr2 "vanilla/blue_heartcompanion2.png"
+#cleararmor
+#clearweapons
+#armor 14 -- Plate Hauberk
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#mor 14
+#str 12
+#att 12
+#end
+
+#selectmonster 14 -- Hoplite
+#spr1 "vanilla/blue_hoplite1.png"
+#spr2 "vanilla/blue_hoplite2.png"
+#def 11
+#gcost 10011
+#end
+
+#selectmonster 16 -- Hypaspist
+#def 11
+#att 12
+#def 13
+#gcost 10012
+#ap 14
+#end
+
+#selectmonster 1551 -- LA Arco Phalangite
+#name "Argyraspide"
+#descr "Argyraspides, the silver-shields, are elite phalangites of Arcoscephale. They wear lighter armor and carry a sarissa, an extremely long two handed spear used in phalanx formations with a small shield held up with a shoulder sling."
+#spr1 "vanilla/blue_argyraspide1.png"
+#spr2 "vanilla/blue_argyraspide2.png"
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#def 11
+#rpcost 16
+#gcost 10012
+#end
+
+#selectmonster 1552 -- LA Arco Phalangite Commander
+#name "Lokhagos"
+#descr "The Lokhagos is a captain in the Arcoscephale army. Ability rather than birth decides the rank of the generals in Arcoscephale."
+#spr1 "vanilla/blue_lokhagos1.png"
+#spr2 "vanilla/blue_lokhagos2.png"
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#def 12
+#gcost 80
+#end
+
+#selectmonster 15 -- MA Arco Hypaspist Commander
+#name "Lokhagos"
+#descr "The Lokhagos is a captain in the Arcoscephale army. Ability rather than birth decides the rank of the generals in Arcoscephale."
+#spr1 "vanilla/blue_lokhagos1.png"
+#spr2 "vanilla/blue_lokhagos2.png"
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 123 -- Hoplite Helmet
+#armor 1 -- Buckler
+#weapon 1918 -- Sarissa
+#def 12
+#gcost 80
+#end
+
+#selectmonster 1553 -- Agema Companion
+#spr1 "vanilla/blue_agemacompanion1b.png"
+#spr2 "vanilla/blue_agemacompanion2b.png"
+#descr "The Agema Companions are elite heavy cavalry made up of nobility that can afford the best horses and equipment available. They are often led by commanders of royal blood, which has given them their name. They carry a xyston, a long and heavy spear requiring two hands to effectively wield, but durable with a point at both ends in case one breaks. The xyston is cumbersome in close combat and they will switch to a sword when fatigue sets in or the xyston becomes unusable."
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 118 -- Half Helmet
+#armor 1 -- Buckler
+#weapon 1919 -- Xyston
+#weapon 8 -- Broad Sword
+#weapon 21 -- javelin
+#end
+
+#selectmonster 1554 -- Agema Commander
+#spr1 "vanilla/blue_agemacompanioncom1b.png"
+#spr2 "vanilla/blue_agemacompanioncom2b.png"
+#descr "The Agema Companions are elite heavy cavalry made up of nobility that can afford the best horses and equipment available. They are often led by commanders of royal blood, which has given them their name. They carry a xyston, a long and heavy spear requiring two hands to effectively wield, but durable with a point at both ends in case one breaks. The xyston is cumbersome in close combat and they will switch to a sword when fatigue sets in or the xyston becomes unusable."
+#cleararmor
+#clearweapons
+#armor 570 -- Half Plate
+#armor 118 -- Half Helmet
+#armor 2 -- Shield
+#weapon 1919 -- Xyston
+#weapon 8 -- Broad Sword
+#weapon 21 -- javelin
+#end
+
 
 
 #selectmonster 3061  -- Hellspawn
@@ -95023,11 +97311,13 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #selectmonster 3137 -- Cyclope Hurler
 #prot 8
 #gcost 10030
+#rpcost 13
 #end
 
 #selectmonster 3136 -- Cyclops Warrior
 #prot 8
 #gcost 10030
+#rpcost 13
 #end
 
 #selectmonster 3138  -- Phlegra Elder Cyclopes
@@ -95042,9 +97332,11 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3140  -- Gigante
-#descr "The Phlegran Gigantes are the descendants of the Gigantes of Mekone, who once declared war upon the gods of men. Punished for their hubris the Gigantes were cursed by a celestial decree. They have grown larger than both the giants of Jotunheim and Ashdod, but they have lost much of the discipline and skills of earlier times and their bodies show signs of the curse. The curse has also made them violent and easy to anger. Gigantes are frightening to behold with long hair and serpentine scales covering their legs, and their bodies have become resistant to heat and poison. While their Tyrants still wear armaments crafted by the Elder Cyclopes, most Gigante Warriors wear simple armor of leather and metal scales. Gigante Warriors are arrogant and proud and never take command from human-sized generals. Cost 44 RP."
+#descr "The Phlegran Gigantes are the descendants of the Gigantes of Mekone, who once declared war upon the gods of men. Punished for their hubris the Gigantes were cursed by a celestial decree. They have grown larger than both the giants of Jotunheim and Ashdod, but they have lost much of the discipline and skills of earlier times and their bodies show signs of the curse. The curse has also made them violent and easy to anger. Gigantes are frightening to behold with long hair and serpentine scales covering their legs, and their bodies have become resistant to heat and poison. While their Tyrants still wear armaments crafted by the Elder Cyclopes, most Gigante Warriors wear simple armor of leather and metal scales. Gigante Warriors are arrogant and proud and never take command from human-sized generals. Cost 36 RP."
 #twiceborn 7231 -- Wight Giant
 #incunrest 5 -- 10 -> 5
+#gcost 10040
+#rpcost 36
 #end
 
 #selectmonster 3141 -- Cyclops Shepherd
@@ -95098,6 +97390,11 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3170  -- Kuon Khyrseos
 #bodyguard 5
+#end
+
+#selectmonster 3198  -- Archousa
+#magicskill 6 2 -- N2
+#gcost 265
 #end
 
 
@@ -95321,12 +97618,76 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #gcost 10070
 #end
 
+#selectmonster 3401 -- Vaetti Archer
+#rpcost 6
+#end
+
+#selectmonster 3402 -- Light Vaetti Infantry w/ hatchet
+#rpcost 8
+#end
+
+#selectmonster 3403 -- Vaetti Spearman
+#rpcost 8
+#end
+
+#selectmonster 3412 -- Vaetti Crossbowman
+#end
+
+#selectmonster 3417 -- Light Vaetti Infantry w/ spear
+#rpcost 8
+#end
+
 #selectmonster 3405  -- Hirdvaetti
 #bodyguard 3
+#rpcost 15
+#end
+
+#selectmonster 3404  -- Vaetti Berserker
+#rpcost 20
 #end
 
 #selectmonster 3406  -- Rimvaetti
 #mountainsurvival
+#rpcost 23
+#end
+
+#selectmonster 3411 -- Vaetti Gode
+#spr1 "vanilla/vs_vaettigode1.png"
+#spr2 "vanilla/vs_vaettigode2.png"
+#mountmnr 9336 -- sacred riding wolf
+#end
+
+#selectmonster 3435 -- Vaetti Herse
+#spr1 "vanilla/vs_vaettiherse1.png"
+#spr2 "vanilla/vs_vaettiherse2.png"
+#mountmnr 9335 -- riding wolf
+#end
+
+#selectmonster 3418 -- Vaetti Wolf Rider
+#spr1 "vanilla/vs_wolfrider1.png"
+#spr2 "vanilla/vs_wolfrider2.png"
+#mountmnr 9335 -- riding wolf
+#clearweapons
+#weapon 357 -- Light Lance
+#end
+
+#selectmonster 3413 -- Vaetti Wolf Brother
+#spr1 "vanilla/vs_wolfbrother1.png"
+#spr2 "vanilla/vs_wolfbrother2.png"
+#mountmnr 9334 -- armored wolf
+#clearweapons
+#weapon 357 -- Light Lance
+#end
+
+#selectmonster 3408 -- Vaetti Gygja
+#clearmagic
+#magicskill 9 1 -- H
+#magicskill 5 1 -- D
+#magicskill 6 1 -- N
+#custommagic 29184 100 -- WDNG
+#custommagic 51712 100 -- SWGB
+#custommagic 29184 10 -- WDNG
+#gcost 265
 #end
 
 #selectmonster 3420  -- Rimvaetti summon
@@ -95491,12 +97852,14 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #att 12
 #def 12
 #mor 13
-#gcost 10020
+#gcost 10018
+#rpcost 18
 #end
 
 #selectmonster 3598 -- Mairu Hurler
 #prot 8
 #gcost 10030
+#rpcost 18
 #darkvision 50
 #end
 
@@ -95504,6 +97867,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #prot 8
 #gcost 10030
 #darkvision 50
+#rpcost 18
 #end
 
 #selectmonster 3599 -- Mairu Champion
@@ -95525,6 +97889,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #prot 9
 #end
 
+#selectmonster 3589 -- Bekryde Scout
+#descr "Bekryde scouts are remarkably skilled at hiding in the wild. Strong, resilient to the elements and endowed with night vision they would outperform most human scouts."
+#end
+
 #selectmonster 3610 -- pyrenian man at arms
 #bodyguard 4
 #end
@@ -95543,7 +97911,8 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 --The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one half the dominion score of the province, rounded up."
 #descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns.
 The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one third the dominion score of the province, rounded up."
-#gcost 10050
+--#gcost 10050
+#startingaff 2 -- Cursed
 #extralives 33
 --#coldres 10
 #rpcost 46
@@ -95680,13 +98049,151 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #bodyguard 4
 #end
 
-#selectmonster 3846 -- Calystri Man at Arms
+
+#selectmonster 3840 -- Calystri Militia
+#clearspec
 #appetite 3
+#darkvision 50
 #end
 
-#selectmonster 3847 -- sennatorial guard
-#bodyguard 4
+#selectmonster 3841 -- Calystri City Guard
+#clearspec
+#appetite 3
+#darkvision 50
+#castledef 1
+#patrolbonus 1
 #end
+
+#selectmonster 3842 -- Calystri Crossbowman
+#clearspec
+#appetite 3
+#darkvision 50
+#end
+
+#selectmonster 3843 -- Calystri Footman
+#clearspec
+#appetite 3
+#darkvision 50
+#formationfighter 2
+#end
+
+#selectmonster 3844 -- Calystri Soldier
+#clearspec
+#appetite 3
+#darkvision 50
+#formationfighter 2
+#end
+
+#selectmonster 3845 -- Calystri Pikeneer
+#clearspec
+#appetite 3
+#darkvision 50
+#formationfighter 2
+#end
+
+#selectmonster 3846 -- Calystri Man at Arms
+#clearspec
+#appetite 3
+#darkvision 50
+#end
+
+#selectmonster 3847 -- Calystri Senatorial Guard
+#clearspec
+#appetite 3
+#darkvision 50
+#bodyguard 4
+#formationfighter 2
+#end
+
+#selectmonster 3848 -- Calystri Scout
+#clearspec
+#appetite 3
+#darkvision 50
+#stealthy 20
+#wastesurvival
+#mountainsurvival
+#forestsurvival
+#end
+
+#selectmonster 3849 -- Calystri Commander
+#clearspec
+#appetite 3
+#darkvision 50
+#end
+
+#selectmonster 3919 -- Calystri Presbyter
+#clearspec
+#appetite 3
+#darkvision 50
+#holy
+#end
+
+#selectmonster 3920 -- Apprentice Magus
+#clearspec
+#appetite 3
+#darkvision 50
+#end
+
+#selectmonster 3921 -- Calystri Magus
+#clearspec
+#appetite 3
+#darkvision 50
+#end
+
+#selectmonster 3922 -- Calystri Magistrate
+#clearspec
+#appetite 3
+#darkvision 50
+#holy
+#incprovdef 1
+#taxcollector
+#end
+
+#selectmonster 3923 -- Presbyter Magistrate
+#clearspec
+#appetite 3
+#darkvision 50
+#holy
+#incprovdef 2
+#incunrest -10
+#end
+
+#selectmonster 3924 -- Magistrate Magus
+#clearspec
+#appetite 3
+#darkvision 50
+#holy
+#taxcollector
+#end
+
+#selectmonster 3925 -- Calystri Senator
+#clearspec
+#appetite 3
+#darkvision 50
+#holy
+#rpcost 4
+#end
+
+#selectmonster 3973 -- Calystri General
+#clearspec
+#appetite 3
+#darkvision 50
+#end
+
+#selectmonster 3974 -- Serene One
+#clearspec
+#darkvision 50
+#holy
+#end
+
+#selectmonster 3975 -- Serene Master
+#clearspec
+#darkvision 50
+#holy
+#end
+
+
+
 
 #selectmonster 3857 -- LA Cap Starspawn Dreamer
 #copystats 3858 -- LA Starspawn for Void Summoning
@@ -95816,6 +98323,113 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #selectmonster 4037 -- pyrenian man at arms
 #bodyguard 3
 #end
+
+#selectmonster 4091 -- Sacred Moose
+#magicpower 1
+#end
+
+#selectmonster 4068 -- Zemaite Archer
+#nametype 189
+#end
+
+#selectmonster 4069 -- Zemaite Warrior
+#nametype 189
+#end
+
+#selectmonster 4070 -- Zemaite Warrior
+#nametype 189
+#end
+
+#selectmonster 4071 -- Zemaite Infantry
+#nametype 189
+#end
+
+#selectmonster 4072 -- Zemaite Heavy Infantry
+#nametype 189
+#end
+
+#selectmonster 4073 -- Zemaite Chud Warrior
+#nametype 189
+#end
+
+#selectmonster 4074 -- Zemaite Crossbowman
+#nametype 189
+#end
+
+#selectmonster 4073 -- Zemaite Chud Warrior
+#nametype 189
+#end
+
+#selectmonster 4077 -- Zemaite Skinshifter
+#nametype 189
+#end
+
+#selectmonster 4079 -- Zemaite Chud Skins...
+#nametype 189
+#end
+
+#selectmonster 4090 -- Sylvan Knight
+#nametype 189
+#end
+
+#selectmonster 4081 -- Scout
+#nametype 189
+#end
+
+#selectmonster 4082 -- Zemaite Chieftain
+#nametype 189
+#end
+
+#selectmonster 4083 -- Seniunas
+#nametype 189
+#end
+
+#selectmonster 4085 -- Vedun
+#nametype 189
+#end
+
+#selectmonster 4081 -- Scout
+#nametype 189
+#end
+
+#selectmonster 4082 -- Zemaite Chieftain
+#nametype 189
+#end
+
+#selectmonster 4084 -- Chud Seniunas
+#nametype 189
+#end
+
+#selectmonster 4085 -- Vedun
+#nametype 189
+#end
+
+#selectmonster 4086 -- Chud Vedun
+#nametype 189
+#end
+
+#selectmonster 4084 -- Chud Seniunas
+#nametype 189
+#end
+
+#selectmonster 4086 -- Chud Vedun
+#nametype 189
+#end
+
+#selectmonster 4087 -- Antlered Vedun
+#nametype 189
+#end
+
+#selectmonster 4089 -- Antlered Hochmeister
+#nametype 189
+#end
+
+#selectmonster 4092 -- Lauma
+#nametype 190
+#end
+
+
+
 
 -- END OF VANILLA MONSTER CHANGES
 
@@ -96139,10 +98753,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectmonster 8505 -- Divine Cattle
-#mr 7 -- 5 -> 7
-#end
-
-#selectmonster 9046 -- War Horse
 #mr 7 -- 5 -> 7
 #end
 
@@ -99425,7 +102035,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #armor 158 -- Robes
 #end
 
-#selectmonster 3989 -- Small Animated Shrub
+#selectmonster 3982 -- Gnome
 #armor 158 -- Robes
 #end
 
@@ -110892,6 +113502,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 -- ENDUNITS END OF SHAPE CHANGE MONSTERS
 
 
+
+
 #selectnametype 170
 #addname "Fuqtus"
 #addname "Mrd"
@@ -112990,6 +115602,812 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #addname "The Zealous"
 #end
 
+
+
+#selectnametype 189 -- LA Zemaitia Male fixing "No Name" bug
+#addname "Anakletas"
+#addname "Kanapinskas"
+#addname "Vytautas"
+#addname "Dulinskas"
+#addname "Kipras"
+#addname "Jozelenas"
+#addname "Emilijus"
+#addname "Atkociunas"
+#addname "Zenonas"
+#addname "Nececkas"
+#addname "Deividas"
+#addname "Lesevicius"
+#addname "Balys"
+#addname "Gircys"
+#addname "Martynas"
+#addname "Chaleckas"
+#addname "Evaldas"
+#addname "Langas"
+#addname "Dionizas"
+#addname "Grigelis"
+#addname "Pijus"
+#addname "Kviecinskas"
+#addname "Mantas"
+#addname "Kanapkis"
+#addname "Gražvydas"
+#addname "Saldaitis"
+#addname "Leonas"
+#addname "Sipaila"
+#addname "Kestutis"
+#addname "Petryla"
+#addname "Liudvikas"
+#addname "Levanauskas"
+#addname "Napalys"
+#addname "Drusutis"
+#addname "Kulbys"
+#addname "Vieraitis"
+#addname "Mamertas"
+#addname "Miliauskas"
+#addname "Jonas"
+#addname "Vileika"
+#addname "Eduardas"
+#addname "Gintaras"
+#addname "Noreikavicius"
+#addname "Skaistis"
+#addname "Bzezinskas"
+#addname "Eimantas"
+#addname "Krizanauskas"
+#addname "Ulijonas"
+#addname "Ezerskis"
+#addname "Stanislovas"
+#addname "Rabacauskas"
+#addname "Teodoras"
+#addname "Zvalauskas"
+#addname "Modestas"
+#addname "Vienazindis"
+#addname "Zigmas"
+#addname "Jasaitis"
+#addname "Alfonsas"
+#addname "Dukynas"
+#addname "Mykolas"
+#addname "Gintautas"
+#addname "Vladislovas"
+#addname "Sakurskis"
+#addname "Jaseliunas"
+#addname "Pranas"
+#addname "Legas"
+#addname "Emilis"
+#addname "Janickas"
+#addname "Aurimas"
+#addname "Kantautas"
+#addname "Oskaras"
+#addname "Kamorunas"
+#addname "Žygimantas"
+#addname "Nikstele"
+#addname "Kristupas"
+#addname "Judeikis"
+#addname "Mindaugas"
+#addname "Buzius"
+#addname "Gustavas"
+#addname "Petruitis"
+#addname "Girenas"
+#addname "Kiskiunas"
+#addname "Valdemaras"
+#addname "Biriukas"
+#addname "Vytis"
+#addname "Veitas"
+#addname "Aivaras"
+#addname "Lianzbergas"
+#addname "Dainius"
+#addname "Lanekeris"
+#addname "Edvinas"
+#addname "Sirka"
+#addname "Marijus"
+#addname "Opcikas"
+#addname "Lauras"
+#addname "Josiukas"
+#addname "Aurelijus"
+#addname "Krauleidys"
+#addname "Venckevicius"
+#addname "Orestas"
+#addname "Leskys"
+#addname "Saulenis"
+#addname "Repecka"
+#addname "Kajetonas"
+#addname "Belozaras"
+#addname "Albertas"
+#addname "Vegelis"
+#addname "Romualdas"
+#addname "Vilbutas"
+#addname "Celestinas"
+#addname "Kiskionis"
+#addname "Kisielius"
+#addname "Elvinas"
+#addname "Girstautas"
+#addname "Žydrunas"
+#addname "Sakalinskas"
+#addname "Bajoraitis"
+#addname "Feliksas"
+#addname "Gecevicius"
+#addname "Jokubas"
+#addname "Dicbanis"
+#addname "Kestas"
+#addname "Grikala"
+#addname "Vainius"
+#addname "Suliokas"
+#addname "Apolinaras"
+#addname "Ceckevicius"
+#addname "Karolis"
+#addname "Bedulskis"
+#addname "Raimondas"
+#addname "Puzinauskas"
+#addname "Renatas"
+#addname "Ulcinas"
+#addname "Skomantas"
+#addname "Nevirauskas"
+#addname "Romas"
+#addname "Gudelis"
+#addname "Benediktas"
+#addname "Mikas"
+#addname "Gedgaudas"
+#addname "Juras"
+#addname "Gira"
+#addname "Bernardas"
+#addname "Martinka"
+#addname "Jogaila"
+#addname "Glemza"
+#addname "Jaselis"
+#addname "Andrius"
+#addname "Brazas"
+#addname "Adomas"
+#addname "Banys"
+#addname "Liucijus"
+#addname "Lionginas"
+#addname "Oniunas"
+#addname "Aistis"
+#addname "Grinciunas"
+#addname "Kuzma"
+#addname "Vainikevicius"
+#addname "Gabrielius"
+#addname "Norgilas"
+#addname "Juozapas"
+#addname "Vigontas"
+#addname "Vilhelmas"
+#addname "Meskela"
+#addname "Šarunas"
+#addname "Ancevicius"
+#addname "Ažuolas"
+#addname "Zuoza"
+#addname "Kastytis"
+#addname "Rumsa"
+#addname "Vakaris"
+#addname "Svidrauskas"
+#addname "Virgilijus"
+#addname "Buika"
+#addname "Vaidas"
+#addname "Kastecka"
+#addname "Spokas"
+#addname "Vilmanas"
+#addname "Julius"
+#addname "Bakas"
+#addname "Jankauskas"
+#addname "Depolskis"
+#addname "Nerijus"
+#addname "Neifaltas"
+#addname "Krogertas"
+#addname "Adolfas"
+#addname "Chodakauskas"
+#addname "Justas"
+#addname "Maceika"
+#addname "Giedrius"
+#addname "Kostas"
+#addname "Suliauskas"
+#addname "Valerijonas"
+#addname "Jurkunas"
+#addname "Vincas"
+#addname "Krapavickas"
+#addname "Nekvedavicius"
+#addname "Pakulnis"
+#addname "Dominykas"
+#addname "Brazaitis"
+#addname "Navikauskas"
+#addname "Henrikas"
+#addname "Jonyla"
+#addname "Ricardas"
+#addname "Vaira"
+#addname "Radvilas"
+#addname "Legeckas"
+#addname "Vincentas"
+#addname "Rumbutis"
+#addname "Nolis"
+#addname "Baltrus"
+#addname "Kuslys"
+#addname "Bandzevicius"
+#addname "Vytenis"
+#addname "Palaitis"
+#addname "Stragis"
+#addname "Svikstys"
+#addname "Krutulis"
+#addname "Straigis"
+#addname "Jeronimas"
+#addname "Stravinskas"
+#addname "Paksys"
+#addname "Umantas"
+#addname "Stepas"
+#addname "Valentas"
+#addname "Birzys"
+#addname "Salemonas"
+#addname "Glasas"
+#addname "Mikalojus"
+#addname "Danisevicius"
+#addname "Titas"
+#addname "Krasnadamskis"
+#addname "Vygintas"
+#addname "Lankas"
+#addname "Arminas"
+#addname "Talocka"
+#addname "Eligijus"
+#addname "Petrulis"
+#addname "Giniunas"
+#addname "Rabacius"
+#addname "Vidmantas"
+#addname "Ulozas"
+#addname "Kunstas"
+#addname "Žilvinas"
+#addname "Rezas"
+#addname "Vaisnora"
+#addname "Tomas"
+#addname "Sulaitis"
+#addname "Morkus"
+#addname "Suksta"
+#addname "Kelmelis"
+#addname "Pavlavicius"
+#addname "Ipolitas"
+#addname "Navikas"
+#addname "Sviderskis"
+#addname "Sperauskas"
+#addname "Gvidonas"
+#addname "Spirkavicius"
+#addname "Tadas"
+#addname "Vingrys"
+#addname "Marius"
+#addname "Speicys"
+#addname "Kanapickas"
+#addname "Jeckus"
+#addname "Vinkauskas"
+#addname "Asutaitis"
+#addname "Hubertas"
+#addname "Žymantas"
+#addname "Izidorius"
+#addname "Gintas"
+#addname "Julijonas"
+#addname "Sukadolskis"
+#addname "Naglis"
+#addname "Brazevicius"
+#addname "Jurgis"
+#addname "Pakstaitis"
+#addname "Kraveckis"
+#addname "Bagdonas"
+#addname "Kulbis"
+#addname "Macinskas"
+#addname "Vincevicius"
+#addname "Laimis"
+#addname "Levickas"
+#addname "Musteikis"
+#addname "Ugnius"
+#addname "Ulba"
+#addname "Kusleika"
+#addname "Petrulionis"
+#addname "Baltramiejus"
+#addname "Palavinskas"
+#addname "Mantvydas"
+#addname "Veiksas"
+#addname "Algimantas"
+#addname "Krusinskas"
+#addname "Gytis"
+#addname "Sviackis"
+#addname "Inocentas"
+#addname "Ulcickas"
+#addname "Ramunas"
+#addname "Radavicius"
+#addname "Onaitis"
+#addname "Švitrigaila"
+#addname "Muzikevicius"
+#addname "Albinas"
+#addname "Jukna"
+#addname "Bronius"
+#addname "Bagurskis"
+#addname "Anupras"
+#addname "Danenas"
+#addname "Boleslovas"
+#addname "Brazionis"
+#addname "Vinickis"
+#addname "Joakimas"
+#addname "Pauliukaitis"
+#addname "Ernestas"
+#addname "Gudeliunas"
+#addname "Lydekaitis"
+#addname "Zuzevicius"
+#addname "Jasenas"
+#addname "Vitalijus"
+#addname "Bukauskas"
+#addname "Cikas"
+#addname "Kizlaitis"
+#addname "Leipus"
+#addname "Jucevicius"
+#addname "Kanys"
+#addname "Rulys"
+#addname "Buksaitis"
+#addname "Gudzevicius"
+#addname "Audrius"
+#addname "Pyragius"
+#addname "Herkus"
+#addname "Drutys"
+#addname "Leonardas"
+#addname "Orintas"
+#addname "Žygis"
+#addname "Macaitis"
+#addname "Sinkavicius"
+#addname "Didzgalvis"
+#addname "Sostakauskas"
+#addname "Gulbinas"
+#addname "Vaclovas"
+#addname "Runta"
+#addname "Laurynas"
+#addname "Sakavicius"
+#addname "Liudas"
+#addname "Zurauskas"
+#addname "Gataveckas"
+#addname "Augustinas"
+#addname "Andrasunas"
+#addname "Leikauskas"
+#addname "Klepeckas"
+#addname "Ivanauskas"
+#addname "Bajorunas"
+#addname "Lapenas"
+#addname "Virginijus"
+#addname "Vekerotas"
+#addname "Teofilis"
+#addname "Kulbe"
+#addname "Kantaravicius"
+#addname "Jarosekas"
+#addname "Griliauskas"
+#addname "Kasparas"
+#addname "Martisauskas"
+#addname "Gausas"
+#addname "Vainikonis"
+#addname "Cinsas"
+#addname "Velykis"
+#addname "Runkauskas"
+#addname "Norkus"
+#addname "Kleopas"
+#addname "Milkeraitis"
+#addname "Severinas"
+#addname "Remezas"
+#addname "Ruseckas"
+#addname "Rusas"
+#addname "Lazaunikas"
+#addname "Valdas"
+#addname "Stramaitis"
+#addname "Udrys"
+#addname "Vileisis"
+#addname "Mecys"
+#addname "Zutelis"
+#addname "Skirgaila"
+#addname "Vaiksnoras"
+#addname "Osvaldas"
+#addname "Paulikas"
+#addname "Zurinskas"
+#addname "Omelis"
+#addname "Vladas"
+#addname "Svilainis"
+#end
+
+#selectnametype 190 -- LA Zemaitia female fixing "No Name" bug
+#addname "Agniete"
+#addname "Dereskaite"
+#addname "Katre"
+#addname "Srajeryte"
+#addname "Dagne"
+#addname "Kantautaite"
+#addname "Audra"
+#addname "Viliusyte"
+#addname "Doroteja"
+#addname "Stramaityte"
+#addname "Diana"
+#addname "Kaniusiene"
+#addname "Rozalija"
+#addname "Cikiene"
+#addname "Eugenija"
+#addname "Kuodiene"
+#addname "Venckuviene"
+#addname "Cecilija"
+#addname "Semetulskiene"
+#addname "Ciapaite"
+#addname "Šarune"
+#addname "Marmakevicius"
+#addname "Frida"
+#addname "Girutyte"
+#addname "Aura"
+#addname "Petruityte"
+#addname "Gerda"
+#addname "Jasikaite"
+#addname "Svaja"
+#addname "Žvingeliene"
+#addname "Brone"
+#addname "Kantaraviciene"
+#addname "Domante"
+#addname "Didziuliene"
+#addname "Valerija"
+#addname "Krizinauskiene"
+#addname "Jomante"
+#addname "Gudeniene"
+#addname "Elze"
+#addname "Kemezyte"
+#addname "Dange"
+#addname "Pajaujyte"
+#addname "Migle"
+#addname "Uleviciute"
+#addname "Marijona"
+#addname "Kristonaityte"
+#addname "Vida"
+#addname "Bironaite"
+#addname "Vidugiriene"
+#addname "Skaidrina"
+#addname "Kleinickiene"
+#addname "Rita"
+#addname "Novikiene"
+#addname "Bernadeta"
+#addname "Cilciene"
+#addname "Juta"
+#addname "Krupaviciene"
+#addname "Žydre"
+#addname "Brazdziute"
+#addname "Živile"
+#addname "Vilniskaityte"
+#addname "Magde"
+#addname "Sudziute"
+#addname "Gina"
+#addname "Zuselyte"
+#addname "Jurate"
+#addname "Spakauskaite"
+#addname "Teofile"
+#addname "Pranskuniene"
+#addname "Stefanija"
+#addname "Leskeviciene"
+#addname "Alma"
+#addname "Bedulskiene"
+#addname "Inge"
+#addname "Juskeliuniene"
+#addname "Ruta"
+#addname "Uginciene"
+#addname "Grinceviciute"
+#addname "Magdalena"
+#addname "Juskaite"
+#addname "Kunigunda"
+#addname "Bradunaite"
+#addname "Indre"
+#addname "Bikinaite"
+#addname "Sabina"
+#addname "Brazenaite"
+#addname "Daiva"
+#addname "Naidiciene"
+#addname "Palmira"
+#addname "Žvirbliene"
+#addname "Vaiva"
+#addname "Pajediene"
+#addname "Sukiene"
+#addname "Egle"
+#addname "Lapauskiene"
+#addname "Siraviciute"
+#addname "Venclovaite"
+#addname "Evelina"
+#addname "Diciute"
+#addname "Benedikta"
+#addname "Girniute"
+#addname "Ledaite"
+#addname "Nijole"
+#addname "Jaruseviciene"
+#addname "Lolita"
+#addname "Paleviciene"
+#addname "Liucina"
+#addname "Leseckiene"
+#addname "Meskeliene"
+#addname "Sigita"
+#addname "Ceckeviciene"
+#addname "Kazimiera"
+#addname "Jarosekaite"
+#addname "Skaiste"
+#addname "Banionyte"
+#addname "Jura"
+#addname "Naciunaite"
+#addname "Auksuole"
+#addname "Banyte"
+#addname "Laisve"
+#addname "Petrosiute"
+#addname "Mante"
+#addname "Umantiene"
+#addname "Vileikiene"
+#addname "Andželika"
+#addname "Venceviciene"
+#addname "Uršule"
+#addname "Grigeniene"
+#addname "Muskietaite"
+#addname "Rumcikaite"
+#addname "Norgelaite"
+#addname "Janina"
+#addname "Vatneryte"
+#addname "Karolina"
+#addname "Cimolonskyte"
+#addname "Paula"
+#addname "Birgiliene"
+#addname "Petre"
+#addname "Strazdiene"
+#addname "Sriubiene"
+#addname "Dana"
+#addname "Lazareviciene"
+#addname "Fida"
+#addname "Ulevskiene"
+#addname "Norgailaite"
+#addname "Opcikaite"
+#addname "Alge"
+#addname "Norkeliunaite"
+#addname "Jurgita"
+#addname "Kasperaviciute"
+#addname "Marcele"
+#addname "Meskelyte"
+#addname "Ernesta"
+#addname "Zutoniene"
+#addname "Ilma"
+#addname "Vekerotiene"
+#addname "Danieliene"
+#addname "Ogilviene"
+#addname "Aukse"
+#addname "Vilcinskiene"
+#addname "Laima"
+#addname "Lusyte"
+#addname "Goda"
+#addname "Lanekeryte"
+#addname "Bite"
+#addname "Kuosaite"
+#addname "Dorota"
+#addname "Cicenaite"
+#addname "Adelina"
+#addname "Palcauskaite"
+#addname "Mingaile"
+#addname "Krusnauskiene"
+#addname "Natalija"
+#addname "Grinceliene"
+#addname "Aušra"
+#addname "Ginkuviene"
+#addname "Elinga"
+#addname "Svilponiene"
+#addname "Krumskiene"
+#addname "Neringa"
+#addname "Velyvyte"
+#addname "Gyte"
+#addname "Omelyte"
+#addname "Straigyte"
+#addname "Rusinaite"
+#addname "Agota"
+#addname "Gauliaite"
+#addname "Almante"
+#addname "Pranskeviciene"
+#addname "Brigita"
+#addname "Janciuviene"
+#addname "Akvile"
+#addname "Lanekeriene"
+#addname "Žvinakeviciene"
+#addname "Dumasiuviene"
+#addname "Džiuginta"
+#addname "Sruogaite"
+#addname "Rimante"
+#addname "Spudikaite"
+#addname "Rože"
+#addname "Jovarauskaite"
+#addname "Bujanauskaite"
+#addname "Daniele"
+#addname "Muzikeviciute"
+#addname "Petrusauskiene"
+#addname "Jaseliuniene"
+#addname "Aldona"
+#addname "Girciene"
+#addname "Danileviciene"
+#addname "Ale"
+#addname "Vidzickiene"
+#addname "Gaiva"
+#addname "Kiviliute"
+#addname "Eglija"
+#addname "Vaiciulionyte"
+#addname "Milda"
+#addname "Mikolajunaite"
+#addname "Sulcaite"
+#addname "Vika"
+#addname "Deveikyte"
+#addname "Marta"
+#addname "Reziene"
+#addname "Amelija"
+#addname "Nezabitauskiene"
+#addname "Giedra"
+#addname "Bavarskiene"
+#addname "Kristina"
+#addname "Maceniene"
+#addname "Caplikiene"
+#addname "Juceviciute"
+#addname "Adele"
+#addname "Puzinaite"
+#addname "Inga"
+#addname "Seperyte"
+#addname "Aide"
+#addname "Žiede"
+#addname "Bauzyte"
+#addname "Paksiene"
+#addname "Silvija"
+#addname "Vailenkiene"
+#addname "Lina"
+#addname "Arstikaitiene"
+#addname "Dalia"
+#addname "Straziene"
+#addname "Kanisauskiene"
+#addname "Saulene"
+#addname "Birulinaite"
+#addname "Spirikeviciute"
+#addname "Alsauskaite"
+#addname "Ilona"
+#addname "Arlauskaite"
+#addname "Elzbieta"
+#addname "Zuralyte"
+#addname "Roberta"
+#addname "Martinoniene"
+#addname "Jasikiene"
+#addname "Semplinskiene"
+#addname "Liberiene"
+#addname "Vebriene"
+#addname "Valentina"
+#addname "Udaviciute"
+#addname "Jone"
+#addname "Chaleckaite"
+#addname "Aine"
+#addname "Kriukelyte"
+#addname "Ambrazeviciute"
+#addname "Emilija"
+#addname "Palciene"
+#addname "Polina"
+#addname "Birgioliene"
+#addname "Virginija"
+#addname "Rasuole"
+#addname "Necioniene"
+#addname "Iveta"
+#addname "Salciuviene"
+#addname "Julija"
+#addname "Jadvyga"
+#addname "Ulinskaite"
+#addname "Irma"
+#addname "Sineviciute"
+#addname "Žvingilaite"
+#addname "Katryna"
+#addname "Bukaitiene"
+#addname "Kanapickiene"
+#addname "Beatrice"
+#addname "Senvaitiene"
+#addname "Jarutiene"
+#addname "Kuneviciene"
+#addname "Baikstyte"
+#addname "Baikauskaite"
+#addname "Otilija"
+#addname "Velikaite"
+#addname "Lankutyte"
+#addname "Terese"
+#addname "Stralkute"
+#addname "Beata"
+#addname "Paliakiene"
+#addname "Liuka"
+#addname "Jurkstiene"
+#addname "Mikalina"
+#addname "Dementaviciene"
+#addname "Alvyda"
+#addname "Meldeikiene"
+#addname "Ramute"
+#addname "Gumbaragiene"
+#addname "Martyna"
+#addname "Orzekauskaite"
+#addname "Jolita"
+#addname "Svitryte"
+#addname "Maciokaite"
+#addname "Pranciška"
+#addname "Gausaite"
+#addname "Elena"
+#addname "Žutautiene"
+#addname "Banguole"
+#addname "Pakeriene"
+#addname "Liaukuviene"
+#addname "Straksiene"
+#addname "Pridotkiene"
+#addname "Merkeviciute"
+#addname "Aiste"
+#addname "Baniulyte"
+#addname "Vinickyte"
+#addname "Jancyte"
+#addname "Cibulskaite"
+#addname "Liveta"
+#addname "Tekle"
+#addname "Janeliuniene"
+#addname "Ema"
+#addname "Deleckiene"
+#addname "Armoniene"
+#addname "Pratusiene"
+#addname "Greta"
+#addname "Ciplijauskaite"
+#addname "Juste"
+#addname "Vingyte"
+#addname "Geciauskaite"
+#addname "Spangeleviciute"
+#addname "Edita"
+#addname "Salkauskaite"
+#addname "Jarockiene"
+#addname "Guoste"
+#addname "Kasubiene"
+#addname "Audrone"
+#addname "Lavinskiene"
+#addname "Zita"
+#addname "Paldauskiene"
+#addname "Bujauskiene"
+#addname "Meksriunaite"
+#addname "Leikauskaite"
+#addname "Olimpija"
+#addname "Palietyte"
+#addname "Jucaityte"
+#addname "Regina"
+#addname "Vaisnoraite"
+#addname "Liepa"
+#addname "Kukuraitiene"
+#addname "Irena"
+#addname "Klevinskiene"
+#addname "Ginte"
+#addname "Vencloviene"
+#addname "Genovaite"
+#addname "Petukauskiene"
+#addname "Giedre"
+#addname "Kvalkauskiene"
+#addname "Palaimaite"
+#addname "Vilte"
+#addname "Vekerotaiye"
+#addname "Vitalija"
+#addname "Svirskaite"
+#addname "Judita"
+#addname "Raceviciute"
+#addname "Liudvika"
+#addname "Bekeriene"
+#addname "Nele"
+#addname "Didvaliene"
+#addname "Žemyna"
+#addname "Beksiene"
+#addname "Bauziene"
+#addname "Rutiene"
+#addname "Gabija"
+#addname "Gecaite"
+#addname "Rezaite"
+#addname "Dukaityte"
+#addname "Kemezaite"
+#addname "Barbora"
+#addname "Repeckaite"
+#addname "Vilhelmina"
+#addname "Giniuniene"
+#addname "Gintare"
+#addname "Banioniene"
+#addname "Kliciuviene"
+#addname "Milkeraitiene"
+#addname "Daina"
+#addname "Brazeviciene"
+#addname "Jolanta"
+#addname "Bekeraite"
+#addname "Paulina"
+#addname "Gedaraviciute"
+#addname "Veronika"
+#addname "Buividaite"
+#addname "Leikiene"
+#addname "Margarita"
+#addname "Naciuniene"
+#addname "Žvikiene"
+#addname "Ermolaitiene"
+#end
+
+
 #newsite 2101
 #name "Kata Tjuta"
 #path 7
@@ -113206,6 +116624,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 8
 #gems 1 1
 #gems 6 1
+#homemon 9313 -- Ishim
 #summonlvl2 7120 -- Jinn Warrior
 #end
 
@@ -114303,6 +117722,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 1
 #homemon 7122 -- shamir
 #homemon 7120 -- Jinn warrior
+#homemon 9314 -- Ishim summon
 #homecom 7121 -- bird
 #homecom 7119 -- Jinn
 #homecom 2056 -- malakh
@@ -114325,6 +117745,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 489 -- knight
 #homemon 632 -- storm
 #homemon 449 -- frost
+#homemon 2073 -- shedim
 #homecom 305
 #homecom 826
 #homecom 827
@@ -114557,7 +117978,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6511 -- shiqq
 #homemon 3476 -- binn
 #homemon 3367 -- hinn
-#homemon 6510 -- dandan
+#homemon 6514 -- dandan
 #homecom 7172 -- nasnas
 #homecom 3481 -- ghulah
 #homecom 7601 -- ghaddar
@@ -114637,6 +118058,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9286 -- troll gramps
 #homecom 8114 -- rotaimo
 #homecom 8113 -- gold deer
+
 --#homecom 8084
 --#homecom 518
 --#homecom 9288 -- war bjergtroll
@@ -114819,7 +118241,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7120 -- jinn warrior
 #homemon 7171 -- brass guard
 #homemon 7176 -- brass golem
-#homemon 6510 -- dandan
+#homemon 6514 -- dandan
 #end
 
 #newsite 2917
@@ -114921,6 +118343,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2363 -- gloso
 #homemon 3747 -- ice ele
 #homecom 7332 -- jotun werewolf
+#homecom 9337 -- Landvaettir
 #homecom 844 -- Niefel Jarl
 #homecom 3425 -- dwarf
 #homecom 3426 -- dwarf
@@ -115207,6 +118630,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2398 -- elephant
 #homemon 7654 -- indus worm
 #homemon 7704 -- blemmyes
+#homemon 9314 -- Ishim summon
 #homemon 3381 -- cyclops
 #homecom 8606 -- cyclops chief
 #homecom 2056 -- malakh
@@ -115255,7 +118679,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3476 -- binn
 #homemon 3367 -- hinn
 #homemon 3354 -- jinn
-#homemon 6510 -- dandan
+#homemon 6514 -- dandan
 #end
 
 #newsite 2295
@@ -116785,6 +120209,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7654 -- indus worm
 #homemon 9280 -- Cametheternis snail
 #homemon 7704 -- blemmyes
+#homemon 9314 -- Ishim summon
 #homemon 3381 -- cyclops
 #homemon 9288 -- thinis sword
 #homemon 9289 -- thinis mace
@@ -117724,6 +121149,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 966 -- Formless Spawn
 #homemon 3852 -- Void Dreamer
 #homecom 3853 -- Void Herald
+#homecom 7393 -- Yithian
 #end
 
 #newsite 2447
@@ -118099,6 +121525,12 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 8020 -- dire bear
 #homemon 2190 -- draug
 #homemon 3747 -- ice ele s8
+#homemon 9347 -- Ghostly Warrior
+#homemon 9352 -- Valravn
+#homecom 9356 -- Valravn Lord
+#homecom 9348 -- Undrjarl
+#homecom 7329 -- drauga
+#homecom 7330 -- draugherse
 #homecom 8673 -- fire dragon
 #homecom 8678 -- lindwurm
 #homecom 7253 -- aesir
@@ -118113,6 +121545,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 1
 #homecom 3881
 #homecom 3883
+#homecom 3885
 #end
 
 #newsite 2469
@@ -118621,6 +122054,23 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7659 -- puck
 #homecom 7660 -- korrig
 #homecom 7237 -- horned one
+#end
+
+#newsite 2621
+#name "EA Marverni Deities"
+#level 0
+#rarity 5
+#path 6
+#look 4
+#homecom 9328 -- Altar
+#homecom 9338
+#homecom 9339
+#homecom 9340
+#homecom 9341
+#homecom 9343
+#homecom 9344
+#homecom 9345
+#homecom 9346
 #end
 
 #newsite 2500
@@ -119867,7 +123317,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 0
 #look 4
 #homecom 121 -- demonbred
-#homecom 7313 -- magma spirit
+--#homecom 7313 -- magma spirit
 #homecom 7569 -- bane spirit
 #homecom 1649 -- scorp man
 #homecom 7459 -- balrog
@@ -120421,6 +123871,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1947 -- simargl
 --#homemon 6673 -- ubir
 --#homemon 7831 -- chort
+#homecom 1948 -- bukav
 #end
 
 #newsite 2613
@@ -120435,15 +123886,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1943 -- alk
 #homecom 1944 -- gama
 #homecom 1945 -- sirin
-#homecom 1948 -- bukav
 #homecom 1949 -- lesh
 #homecom 1952 -- likho
 #homecom 1953 -- vody
 #homecom 1954 -- rusalk
 #homecom 1955 -- bere
 #homecom 1956 -- midday
-
 #homecom 4092 -- Lauma
+#homecom 7835 -- Kikimora
+#homecom 7834 -- Domovoy
+#homecom 7253 -- Aesir
+#homecom 7254 -- Aesir
 --#homecom 7832 -- bies
 --#homecom 7834 -- domov
 --#homecom 7835 -- kiki
@@ -120456,7 +123909,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 3
---#homecom 4110 -- Visvaldes
+#homecom 4110 -- Visvaldes
 #end
 
 
@@ -120512,6 +123965,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 4 
 #level 0
 #end
+
+-- 2621 used by Marverni forest lords
 
 -- 2917 used by iram summons
 
@@ -121360,6 +124815,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 1145 -- Troll Pit
+#name "Sea Troll Pit"
 #rarity 1
 #end
 
@@ -121562,6 +125018,26 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #selectsite 9 -- The Temple City
 #gems 5 3
 #homemon 8574 -- Temple Chariot
+#end
+
+#selectsite 10 -- Tower of a Thousand Stars
+#clear
+#rarity 5
+#path 4
+#look 3
+#gems 4 4 -- S
+#gems 6 1 -- N
+#homecom 301 -- Astrologer
+#homemon 9322 -- Heart Companion x2
+#homemon 9318 -- Hetairoi
+#end
+
+#selectsite 124 -- Gymnasium
+#clear
+#rarity 5
+#path 2
+#look 3
+#homemon 9322 -- Heart Companion x2
 #end
 
 #selectsite 39 -- The Smouldercone LA
@@ -123179,6 +126655,29 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #com 9663 -- Merman Shaman
 #end
 
+#selectsite 425 -- Academy of High Magics
+#name "Academy of the Hidden Flame"
+#end
+
+#selectsite 486 -- Academy of High Magics
+#name "Academy of Storms and Thunder"
+#end
+
+#selectsite 543 -- Academy of High Magics
+#name "Academy of Deep Waters"
+#end
+
+#selectsite 621 -- Academy of High Magics
+#name "Academy of the Deeper Earth"
+#end
+
+#selectsite 708 -- Academy of High Magics
+#name "Academy of the Spheres"
+#end
+
+#selectsite 983 -- Academy of High Magics
+#name "Academy of Unseen Colors"
+#end
 
 
 #selectnation 181
@@ -123196,8 +126695,8 @@ Priests: Strong"
 #idealcold -1
 #flag "chaco/flagea.tga"
 #buildfort 27  -- Fortified Villages / Wooden Forts
-#labcost 600
-#templecost 600
+--#labcost 600
+--#templecost 600
 #startsite "Sipapu"
 
 #futuresite "EA Chaco Summons"
@@ -123895,7 +127394,7 @@ Priests: Average, can Blood Sacrifice"
 #descr "Zion is a hot, dry land inhabited by twelve ancient tribes. The secret of iron has not yet been discovered and horses have only just begun to be used in war. Recently a great Prophet King has ascended the throne and unified the tribes under one monarchy for the first time. The Prophet King has devoted himself to a newly Awakening God, receiving gifts of wisdom and knowledge for his devotion.  First among these gifts are Seals of great power that can compel the Jinn of the desert and even demons into service.
 Now the armies of Zion march accompanied by powerful spirit beings marshaled by the Kohanim. The enemies of the faithful will surely fall before the might of the Prophet King and his hosts."
 #summary "Race: Humans. Prefers Heat scale +1.
-Military: Human infantry, chariots & some cavalry. Many summoned spirit beings are available.
+Military: Human infantry, chariots & some cavalry. Many summoned spirit beings are available. Capital allows summoning one Jinn a turn with a priest.
 Magic: Fire, Air, Astral and Nature.
 Priests: Average"
 #brief "Zion is a nation of human tribes unified and lead by their Prophet King. Powerful spirit beings are compelled to serve as warriors."
@@ -123912,7 +127411,8 @@ Priests: Average"
 #futuresite "EA Zion Demons"
 #futuresite "EA Zion Heroes"
 #templepic 32
-#templecost 900
+--#templecost 900
+#blessbonus 1
 #hero1 7123 -- Temple Architect
 #hero2 7124 -- Bride of the King
 #hero3 7125 -- High Priest
@@ -123934,11 +127434,16 @@ Priests: Average"
 #addrecunit 7108 -- Hornblower
 #addrecunit 7109 -- Horseman
 #addrecunit 7110 -- Chariot
+
 #homerealm 10
 #homerealm 5  -- Middle East
 #addgod 1025 -- Divine Glyph
 
-#addgod 8341 -- Demiurge
+#addgod 3416 -- Great Archon
+#addgod 3395 -- Demiurge
+#addgod 215 -- Virtue
+
+#addgod 8341 -- Great Creator
 #addgod 8342 -- Elohim
 #cheapgod20 8338 -- Burning Bush
 #cheapgod20 8342 -- Elohim
@@ -123946,7 +127451,7 @@ Priests: Average"
 #delgod 8451 -- Infernal Spirit
 #delgod 120  -- Moloch
 
-#startcom 7113 -- Sar
+#startcom 7114 -- Aluf
 #startunittype1 7101 -- Spearman
 #startunitnbrs1 25
 #startunittype2 7104 -- Swordsman
@@ -124211,7 +127716,7 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #flag "fennoscandia/flag.tga"
 #buildfort 27  -- Fortified Villages / Wooden Forts
 #homefort 2  -- Fortress
-#labcost 600
+--#labcost 600
 #templecost 300
 #coastnation
 #tradecoast 10
@@ -124300,6 +127805,7 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #addgod 2800
 #addgod 2801
 #addgod 3086
+#addgod 2194 -- Draugadrott
 #addgod 8493 -- Idol of War
 #addgod 8459 -- Idol of Winter
 #addgod 8447 -- Idol of Watery Wisdom
@@ -124312,10 +127818,18 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #addgod 8474 -- Ancestral Barrow
 #addgod 8419 -- Sun Father
 #addgod 8492
-#addgod 8304
+--#addgod 8304
 #addgod 3692
 #addgod 3693
 #addgod 8349 -- Great Gull
+
+#addgod 8456 -- Blood Soaked Edifice
+#addgod 8491 -- Hanging Tree
+#addgod 4107 -- Great Moose
+#addgod 4108 -- Ghost moose
+#addgod 1229 -- Son of Fenrir
+#addgod 8494 -- Icon of Fertility
+
 #cheapgod20 3692 -- Stag
 #cheapgod20 3693 -- Stag
 #cheapgod20 8492 -- Idol of Thunder
@@ -124839,8 +128353,8 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #startscout 6689
 #startunittype1 6683 -- spear warrior w/ shield
 #startunitnbrs1 30
-#startunittype2 6680 -- hunter
-#startunitnbrs2 30
+#startunittype2 6685 -- possum warrior
+#startunitnbrs2 20
 #moremagic 1
 #moreheat 1
 #defdrain -1
@@ -125200,7 +128714,7 @@ Priests: Average"
 #era 2
 #descr "Nihuala is a nation of nomadic tribes. The Nihualan people were driven from their ancestral homelands by foreign invaders, and the First People wiped out. Now, communing with spirits is only possible for a select few known as Spirit Speakers. Chiefs of the tribes closely heed the words of these Spirit Speakers and direct their people accordingly. Horses have become symbols of status and strength, and light cavalry composes a large portion of Nihuala's armies. Metal weaponry has replaced the crude armaments of the past, but Nihualans still wear armor composed of bone and hide, believing it offers superior spiritual protection. Some Nihualans can trace their heritage back to the First People, and these elite warriors maintain the tradition of fighting with obsidian weapons and armor."
 #summary "Race: Humans, prefers Heat scale +1
-Military: Human infantry and cavalry, Turquoise Riders may become White Shell Riders with XP stars (6.67% chance, increases per star)
+Military: Human infantry and cavalry, Turquoise Riders may become White Shell Riders with XP stars (10% chance, increases per star)
 Magic: Fire, Air, Earth, Nature, some Water
 Priests: Average, can cure disease"
 #brief "Nihuala is a nation of nomadic tribes. Though the First People have been wiped out, Nihualans still commune with natural spirits for guidance."
@@ -126391,6 +129905,16 @@ Priests: Average"
 
 #futuresite "EA Pyrène Summons"
 #futuresite "EA Pyrène Heroes"
+
+#startcom 3594 -- Bekryde Commander
+#startunittype1 3591 -- Bekryde Infantry
+#startunitnbrs1 20
+#startunittype2 3592 -- Bekryde Heavy Infantry
+#startunitnbrs2 20
+#startscout 3589 -- Scout
+
+#likespop 104 --Bekrydes
+#likespop 84 --Cavemen--
 #end
 
 #selectnation 62 -- MA Pyrene
@@ -126421,6 +129945,8 @@ Priests: Average"
 #futuresite "LA Pyrène Summons"
 #futuresite "LA Pyrène Heroes"
 
+#likespop 62 --Bekrydes--
+#likespop 84 --cavemen--
 #end
 
 #selectnation 124 -- LA Zemaitia
@@ -126455,6 +129981,7 @@ Priests: Average"
 #startscout 426  -- Scout
 
 #futuresite "EA Marverni Summons"
+#futuresite "EA Marverni Deities"
 #futuresite "EA Marverni Heroes"
 #end
 
@@ -126585,6 +130112,7 @@ Priests: Powerful, can perform blood sacrifices"
 #futuresite "EA Abysia Heroes"
 #futuresite "River of Lava"
 
+#likespop 94 --Lavaborn--
 #end
 
 #selectnation 24 -- EA Caelum
@@ -126869,6 +130397,7 @@ Priests: Powerful, can perform blood sacrifices"
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
 
+#futuresite "Celestial Garden"
 #futuresite "EA Kailasa Summons"
 #futuresite "EA Kailasa Summons Continued"
 #futuresite "EA Kailasa Heroes"
@@ -126923,6 +130452,11 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #futuresite "EA Yomi Summons Continued"
 #futuresite "EA Yomi Heroes"
 #futuresite "Blessing of the Four Holy Beasts"
+
+#likespop 86 -- bakemono 
+#likespop 87 -- bakemono 
+#likespop 88 -- ko-oni 
+
 #end
 
 #selectnation 17 -- EA Hinnom
@@ -127038,6 +130572,8 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #futuresite "EA Xibalba Summons"
 #futuresite "Xibalba Chaac & Balam"
 #futuresite "EA Xibalba Heroes"
+
+#likespop 93 --zotz--
 #end
 
 #selectnation 6 -- MEKONE
@@ -127228,18 +130764,39 @@ Dominion: Dominion hides province ownership."
 #cheapgod40 8477 -- Mother of Pearls
 #startcom 2390  -- Pelagian Captain
 #startscout 1050  -- Merman Scout
-#startunittype1 2383  -- Turtle Tribe Triton
-#startunitnbrs1 30
+
+#startunittype1 2385  -- Pelagian Soldier
+#startunitnbrs1 20
 #startunittype2 2386  -- Coral Clan Soldier
 #startunitnbrs2 20
 
+#clearrec
 
-#plainfortrec 1291 -- Turtle Warrior
-#forestfortrec 1291
-#mountainfortrec 1291
-#swampfortrec 1291
-#wastefortrec 1291
-#farmfortrec 1291
+#addrecunit 2384    -- Knife Militia
+#addrecunit 9670    -- Merman Hunter
+#addrecunit 9672    -- Coastal Warrior
+#addrecunit 2385    -- Pelagian Soldier
+#addrecunit 9675    -- Turtle Clan Soldier
+#addrecunit 9674    -- Shark Clan Warrior
+#addrecunit 9676    -- Vanguard Soldier
+#addrecunit 2386    -- Coral Clan Soldier
+#addrecunit 2391    -- Triton Rider
+
+#addreccom 1050    -- Merman Scout
+#addreccom 9678    -- Merman Chief
+#addreccom 2390    -- Pelagian Captain
+#addreccom 9680    -- Vanguard Captain
+#addreccom 1696    -- Merman Priest
+#addreccom 2395    -- Pearl Clan Priest
+#addreccom 1415    -- Pelagian Mermage
+#addreccom 2396    -- Pearl Mage
+
+-- Coastal forts -- troops
+#coastfortrec 9672   -- Coastal Warrior
+
+-- Coastal forts -- commanders
+#coastfortcom 9678   -- Merman Chief
+#coastfortcom 2805   -- Ichtyid Pearl Mage
 
 #plainfortrec 2807 -- Shore fighter
 #forestfortrec 2807
@@ -127255,13 +130812,6 @@ Dominion: Dominion hides province ownership."
 #wastefortrec 2809
 #farmfortrec 2809
 
-#plainfortcom 1293 -- Turtle chief
-#forestfortcom 1293
-#mountainfortcom 1293
-#swampfortcom 1293
-#wastefortcom 1293
-#farmfortcom 1293
-
 #plainfortcom 1696 -- Priest
 #forestfortcom 1696
 #mountainfortcom 1696
@@ -127276,13 +130826,12 @@ Dominion: Dominion hides province ownership."
 #wastefortcom 2811
 #farmfortcom 2811
 
-#plainfortcom 2813 -- Explorer
-#forestfortcom 2813
-#mountainfortcom 2813
-#swampfortcom 2813
-#wastefortcom 2813
-#farmfortcom 2813
-
+#plainfortcom 2814 -- Explorer
+#forestfortcom 2814
+#mountainfortcom 2814
+#swampfortcom 2814
+#wastefortcom 2814
+#farmfortcom 2814
 
 #futuresite "Pearl Armory"
 #futuresite "EA Pelagia Summons"
@@ -127457,6 +131006,93 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #futuresite "Arcoscephale Adventurers"
 #futuresite "Arcoscephale Divine Heroes"
 #futuresite "MA Arcoscephale Heroes"
+
+#clearrec -- Normal addrec commands do not work on this nation
+
+
+#plainfortcom 431 -- Scout
+#forestfortcom 431 -- Scout
+#mountainfortcom 431 -- Scout
+#swampfortcom 431 -- Scout
+#wastefortcom 431 -- Scout
+#farmfortcom 431 -- Scout
+#cavefortcom 431 -- Scout
+
+#plainfortcom 15 -- Hypaspist Commander / MA Lokhagos
+#forestfortcom 15 -- Hypaspist Commander / MA Lokhagos
+#mountainfortcom 15 -- Hypaspist Commander / MA Lokhagos
+#swampfortcom 15 -- Hypaspist Commander / MA Lokhagos
+#wastefortcom 15 -- Hypaspist Commander / MA Lokhagos
+#farmfortcom 15 -- Hypaspist Commander / MA Lokhagos
+#cavefortcom 15 -- Hypaspist Commander / MA Lokhagos
+
+#plainfortcom 9319 -- Mounted Commander / Hipparchus
+#forestfortcom 9319 -- Mounted Commander / Hipparchus
+#mountainfortcom 9319 -- Mounted Commander / Hipparchus
+#swampfortcom 9319 -- Mounted Commander / Hipparchus
+#wastefortcom 9319 -- Mounted Commander / Hipparchus
+#farmfortcom 9319 -- Mounted Commander / Hipparchus
+#cavefortcom 9319 -- Mounted Commander / Hipparchus
+
+#plainfortcom 746 -- Strategos
+#forestfortcom 746 -- Strategos
+#mountainfortcom 746 -- Strategos
+#swampfortcom 746 -- Strategos
+#wastefortcom 746 -- Strategos
+#farmfortcom 746 -- Strategos
+#cavefortcom 746 -- Strategos
+
+#plainfortcom 311 -- Mystic
+#forestfortcom 311 -- Mystic
+#mountainfortcom 311 -- Mystic
+#swampfortcom 311 -- Mystic
+#wastefortcom 311 -- Mystic
+#farmfortcom 311 -- Mystic
+#cavefortcom 311 -- Mystic
+
+#plainfortcom 3198 -- Archousa
+#forestfortcom 3198 -- Archousa
+#mountainfortcom 3198 -- Archousa
+#swampfortcom 3198 -- Archousa
+#wastefortcom 3198 -- Archousa
+#farmfortcom 3198 -- Archousa
+#cavefortcom 3198 -- Archousa
+
+#plainfortcom 242 -- Hiereia
+#forestfortcom 242 -- Hiereia
+#mountainfortcom 242 -- Hiereia
+#swampfortcom 242 -- Hiereia
+#wastefortcom 242 -- Hiereia
+#farmfortcom 242 -- Hiereia
+#cavefortcom 242 -- Hiereia
+
+#plaincom 242 -- Hiereia
+#forestcom 242 -- Hiereia
+#mountaincom 242 -- Hiereia
+#swampcom 242 -- Hiereia
+#wastecom 242 -- Hiereia
+#farmcom 242 -- Hiereia
+#cavecom 242 -- Hiereia
+
+
+
+#addrecunit 50 -- Slinger
+#addrecunit 201 -- Peltast
+#addrecunit 199 -- Cardaces
+#addrecunit 14 -- Hoplite
+#addrecunit 9316 -- Phalangite
+#addrecunit 16 -- Hypaspist
+#addrecunit 9317 -- Prodromoi
+--#addrecunit 9318 -- Hetairoi
+#addrecunit 200 -- Chariot
+#addrecunit 150 -- Elephant
+
+#startcom 15 -- Lokhagos
+#startscout 431 -- Scout
+#startunittype1 201 -- Peltast
+#startunitnbrs1 20
+#startunittype2 14 -- Hoplite
+#startunitnbrs2 20
 
 #end
 
@@ -127764,6 +131400,8 @@ Priests: Powerful, can perform blood sacrifices"
 #futuresite "MA Abysia Summons"
 #futuresite "MA Abysia Heroes"
 #futuresite "River of Lava"
+
+#likespop 94 --Lavaborn--
 #end
 
 #selectnation 71 -- MA Caelum
@@ -127957,6 +131595,8 @@ Nation: Reduced income. Halved population growth from Growth scales."
 #startunitnbrs1 30
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
+
+#futuresite "Celestial Garden"
 #futuresite "MA Bandar Log Summons"
 #futuresite "MA Bandar Log Summons Continued"
 #futuresite "MA Bandar Log Blood & Death Summons"
@@ -127982,6 +131622,11 @@ Nation: Reduced income. Halved population growth from Growth scales."
 #futuresite "MA Shinuyama Uniques"
 #futuresite "MA Shinuyama Heroes"
 #futuresite "Blessing of the Four Holy Beasts"
+
+#likespop 86 -- bakemono 
+#likespop 87 -- bakemono 
+#likespop 88 -- ko-oni 
+
 #end
 
 #selectnation 64 -- MA Ashdod
@@ -128084,6 +131729,8 @@ Nation: Reduced income. Halved population growth from Growth scales."
 #futuresite "MA Xibalba Summons"
 #futuresite "Xibalba Chaac & Balam"
 #futuresite "MA Xibalba Heroes"
+
+#likespop 93 --zotz--
 #end
 
 #selectnation 51 -- MA Phlegra
@@ -128489,6 +132136,13 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #wastefortrec 971
 #farmfortrec 971
 
+#plainfortcom 1519 -- Slave Mage land shape
+#forestfortcom 1519
+#mountainfortcom 1519
+#swampfortcom 1519
+#wastefortcom 1519
+#farmfortcom 1519
+
 #plainfortcom 443 -- Star Child
 #forestfortcom 443
 #mountainfortcom 443
@@ -128797,6 +132451,8 @@ Priests: Weak, magical"
 #end
 
 #selectnation 95 -- LA Arco
+#descr "Arcoscephale is an old kingdom that once ruled much of the known world. With the fall of the Old Kingdom centuries ago, tradition was the only thing that remained to the population. Mystics and priestesses of the old cult still serve the kings of Arcoscephale. The infantry and cavalry are still hopelessly archaic, but the Awakening of the New God has brought some changes. Some traditions have been abandoned and the cavalry has been improved. Skilled and lightly armed phalangites are starting to replace the heavier hoplites and the cardaces. Although the wise Astrologers who aided past kings were killed or disbanded, a new breed of seeresses called the Sibyls has appeared. The Sibyls offer great help in maneuvering the once-mighty kingdom to a powerful platform for the Awakening God. Priestesses with great knowledge of healing are trained in ancient temples built during the peak of the Old Kingdom. The priestesses are able to scry upon enemy troops and provinces that are located within the God's Dominion.
+The former conquest of the known world has led to an acceptance of strange cultures and beliefs. The Arcoscephalian population are quick to adopt foreign cults, but only to incorporate them into their own belief system. The Awakening God is viewed as the Master of All and all other gods are just aspects of the Great One. Temples and religious sites of other faiths are converted and the faith of the Awakening One is imposed upon newly conquered lands."
 #hero1 371  -- Anthromacus
 #hero2 587  -- Orokestes
 #hero3 954  -- Son of Titans
@@ -128809,6 +132465,35 @@ Priests: Weak, magical"
 #futuresite "LA Arcoscephale Summons Continued"
 #futuresite "Arcoscephale Divine Heroes"
 #futuresite "LA Arcoscephale Heroes"
+
+#clearrec
+#addrecunit 50 -- Slinger
+#addrecunit 201 -- Peltast
+#addrecunit 9320 -- Thorakitai
+#addrecunit 1551 -- Phalangite / Argyraspides
+#addrecunit 9321 -- Xystophoroi
+#addrecunit 1553 -- Agema Companion
+#addrecunit 1555 -- Elephant Rider
+
+#addreccom  431 -- Scout
+#addreccom 1552 -- Phalangite Commander / Lokhagos
+#addreccom 746 -- Strategos
+#addreccom 1554 -- Agema Commander
+#addreccom 311 -- Mystic
+#addreccom 3128 -- Orphic Mystic
+#addreccom 3199 -- Neokoros
+#addreccom 3200 -- Panageis
+
+#defcom1 1552 -- Phalangite Commander / Lokhagos
+#defcom2 3199 -- Neokoros
+#defunit1 1551 -- Phalangite / Argyraspides
+#defmult1 10
+#defunit1b 201 -- Peltast
+#defmult1b 10
+#defunit2 9320 -- Thorakitai
+#defmult2 10
+#defunit2b 9321 -- Xystophoroi
+#defmult2b 3
 
 #end
 
@@ -129115,6 +132800,7 @@ Priests: Powerful, can perform blood sacrifices"
 #caverecpt 10
 
 #homeheatscaleres 2
+#likespop 94 --Lavaborn--
 #end
 
 #selectnation 106 -- LA Caelum
@@ -129341,6 +133027,8 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 #futuresite "LA Xibalba Summons"
 #futuresite "Xibalba Chaac & Balam"
 #futuresite "LA Xibalba Heroes"
+
+#likespop 93 --zotz--
 #end
 
 #selectnation 96
@@ -130154,6 +133842,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Forked Lightning"
 #descr "The caster calls a bolt of lightning from the heavens. Where the bolt lands lightning will strike a nearby unit and continue to travel to other nearby units until it eventually dissipates."
 #researchlevel 7
+#precision 6
 #damage 1015 -- 17+
 #fatiguecost 20
 #nextspell 2044
@@ -130438,6 +134127,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #damage 1006 -- 7+
 #aoe 1003 -- 4+
 #researchlevel 4
+#precision 5
 #spec 576  -- AP, Cold
 #nextspell 2071
 #end
@@ -130567,7 +134257,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 0 2
 #pathlevel 0 5
 #path 1 7
-#pathlevel 1 4
+#pathlevel 1 2
 #fatiguecost 300
 #effect 11
 #aoe 666
@@ -130892,6 +134582,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #effect 96  -- Damage to inanimate
 #damage 2001 -- 5++
 #range 20
+#precision 3
 #aoe 2001 -- 5++
 #ainocast 1
 #flightspr 10018
@@ -131359,7 +135050,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 2
 #damage 68719476736  -- Slow
 #fatiguecost 200
-#spec 25165840  -- UW Ok, MR Neg, Magic Beings Only
+#spec 8392720  -- UWOK, MRN, Magic Beings Only
 --#spec 17592194433040  -- UW Ok, MR Hard Neg, Magic Beings Only
 #nextspell 2162
 #end
@@ -131410,23 +135101,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #damage 274 -- Ench74  -- Lunar Potency
 #nreff 1
 #fatiguecost 6000
-#end
-
-#selectspell 2167
-#name "Solomon's Demise"
-#descr "Through careful application of arcane formulae the caster weakens the magic used in spells of binding across the world. This is highly dangerous to those that use binding magic to control powerful and vengeful beings such as the denizens of the lower planes. Whilst this spell is in effect any creature summoned with a spell of binding may break free and attempt to attack a commander in their province. Larger concentrations of such beings increase the likelihood of an attack. Unique creatures that break their bindings will instead quickly escape back to their own realm. This spell was first used to overthrow the ancient King Solomon who controlled many Demons through the use of a magic ring."
-#details "Any province containing creatures summoned via Binding spells may have one break free (5% chance per month, additional 5% if 5 or more are in the province). Units will attack a random commander in the province, whilst Unique commanders will escape."
-#portent "By the might of ##godname## the shackles binding demonic creatures have been weakened! All those that consort with demons and other foul denizens of the underworld shudder as those they master now seek to master them. Wise men mutter that the natural order has been upset and dire consequences may result. Who knows what other elements of magic may be weakening even now?"
---#cure ""
-#school 5
-#researchlevel 8
-#path 0 4
-#pathlevel 0 5
-#effect 10081
-#damage 211  -- Weaken Bindings
-#nreff 1
-#fatiguecost 9000
-#spec 8388608
 #end
 
 #selectspell 2168
@@ -131638,7 +135312,8 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #copyspell 106  -- Record of Creation
 #name "Mysteries of the Astral Plane"
 #descr "Learned Sages tell of a mysterious spirit that inhabits the Astral Plane and knows many ancient secrets of magic. With this spell the caster prepares a subject to travel to the astral plane to find and seek knowledge from this spirit. The chosen individual will gain great insights, becoming able to perform more powerful rituals. The target must be in the same province as the caster and must carry a Ring of Returning to enable them to return from the Astral plane. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. Once the spirit has imparted its knowledge it will leave the Astral for even higher planes, and any further attempts to cast the spell will fail and the gems will be wasted."
-#details "Grants Master Ritualist 1, further casts will fail."
+#details "Grants Master Ritualist 1, further casts will fail.
+Requires a Ring of Returning equipped to the recipient."
 #school 5
 #researchlevel 7
 #path 0 4
@@ -132264,6 +135939,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 1000
 #nreff 1002 -- 5+
 #damage 8020
+#restricted 12 -- Marverni
+#restricted 81 -- Nidavangr
+#restricted 79 -- vanarus
+#restricted 124 -- zemaitia
 #notfornation 32 -- Rus
 #end
 
@@ -132889,7 +136568,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 20
 #damage 70437463654400  -- Slashing Res & 5 Prot
-#spec 549470208  -- UWOK, lifeless immune, Friendlies only
+#spec 549470212  -- UWOK, lifeless immune, Friendlies only, no spiritform
 #end
 
 #selectspell 2295
@@ -132912,7 +136591,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #explspr 10181  -- Falling Rain
 #sound 31
 #spec 8404992
-#spec 549470208  -- UWOK, lifeless immune, Friendlies only
+#spec 549470212  -- UWOK, lifeless immune, Friendlies only, no spiritform
 #end
 
 #selectspell 2296
@@ -133404,7 +137083,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #precision 8
 #casttime 100
 #fatiguecost 25
-#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, Undead & lifeless immune, MR-Hard Neg
+#flightspr -1
+#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, MR-Hard Neg
 #godpathspell 2
 #end
 
@@ -133435,7 +137115,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #school 7
 #path 0 9
 #aoe 1001
-#damage 2
+#damage 5
 #range 35
 #pathlevel 0 2
 #precision 8
@@ -133483,10 +137163,16 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #godpathspell 6
 #end
 
+#selectspell 4360
+#copyspell 21 -- "major fear"
+#name "Visions of Despair"
+#spec 8831104  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, UWOK
+#end
+
 #selectspell 2346
 #copyspell 1389 -- Agony
 #name "Fear of God"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are overwhelmed by visions of pain and despair."
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are overwhelmed by pain and despair."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -133497,7 +137183,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #precision 8
 #casttime 100
 #fatiguecost 25
+#effect 109
 #spec 17592194875520  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, UWOK, MR-Hard Neg
+#nextspell 4360
 #godpathspell 8
 #end
 
@@ -133642,6 +137330,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 10
 #casttime 100
 #godpathspell 0
+#precision 4
 #end
 
 #selectspell 2357
@@ -133670,7 +137359,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 2
 #pathlevel 1 1
 #aoe 1
-#damage 1010
+#damage 2016
+#range 30
+#precision 4
 #spec 1099520016448 -- Armour Piercing, Slashing Damage, UWOK
 #fatiguecost 10
 #casttime 100
@@ -133687,7 +137378,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
-#nreff 12
+#nreff 18
+#damage 2012 -- 14
 #fatiguecost 10
 #casttime 100
 #godpathspell 3
@@ -133704,12 +137396,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 4
 #pathlevel 1 1
 #nreff 2
-#damage 8
-#precision 4
+#damage 1007
+#precision 6
 #fatiguecost 10
 #casttime 100
 #godpathspell 4
-#nogeosrc 4096  -- Cave
 #end
 
 #selectspell 2361
@@ -133723,9 +137414,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 5
 #pathlevel 1 1
 #aoe 1
-#damage 1008
+#damage 1013 -- 14+
 #fatiguecost 10
 #casttime 100
+#range 1029
+#precision 4
 #godpathspell 5
 #end
 
@@ -133741,7 +137434,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 10
 #range 5025
-#aoe 1001
+#aoe 1002
 #precision 4
 #casttime 100
 #godpathspell 6
@@ -133750,7 +137443,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2363
 #copyspell 1419 -- Harm
 #name "Channel Divine Harm"
-#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure agony. Channelling the power of a God in this way is somewhat tiring to the priest."
+#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure torment. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -133758,7 +137451,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 8
 #pathlevel 1 1
 #range 30
-#aoe 1
+#aoe 1001 -- 1+
+#damage 1001 -- 2+
 #fatiguecost 10
 #casttime 100
 #godpathspell 8
@@ -133943,7 +137637,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #effect 2
 #nreff 1
-#damage 10
+#damage 15
 #spec 17592194965640  -- Poison Damage, Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
 
@@ -133964,6 +137658,12 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #nextspell "Banish Demon"
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
+
+#selectspell 205 -- Cleansing
+#damage 3002
+#end
+
+
 
 #selectspell 2383
 #copyspell 1085 -- Clockwork Soldiers
@@ -134031,7 +137731,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster calls on the power of the Zodiac and light from a stellar body will shower down upon a few enemies. Everyone caught in the shower of light will become exhausted as the light sucks energy through their skin."
 #researchlevel 0
 #pathlevel 0 1
-#aoe 1
+#aoe 3
 #precision 5
 #restricted 50
 #nogeosrc 4096  -- Cannot cast in Caves
@@ -134063,7 +137763,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "According to a group of Philosophers known as Atomists all things are composed of tiny components they call 'Atoms' or 'indivisibles'. This spell attempts to prove this principle by separating a few creatures into their component Atoms. The targets will instantly dissolve, however the magic can be resisted. According to the theories of the Atomists Ethereal creatures can survive with their atoms separated and they will be very difficult to affect with this spell"
 #researchlevel 7
 #aoe 1
-#fatiguecost 40
+#fatiguecost 20
 #spec 10506624  -- MR negates, Slays Soul, ignores armor & shields, Use UW, hard to hit Ethereal
 #restricted 5  -- EA Arco
 #restricted 50 -- MA Arco
@@ -134950,6 +138650,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2453
@@ -134968,6 +138669,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #spec 8536192  -- Ignores armor & shields, UW OK, no effect on mindless.
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2454
@@ -134985,6 +138687,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2455
@@ -135002,6 +138705,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2456
@@ -135051,6 +138755,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2460
@@ -135213,6 +138918,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 78 -- MA Vanheim
 #restricted 79 -- Vanarus
 #restricted 81 -- Nidavangr
+#restricted 124 -- Zemaitia
 #end
 
 #selectspell 2471
@@ -135225,6 +138931,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #spec 8667264  -- AN, ignores shields, enemies only, UW OK
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2472
@@ -135972,6 +139679,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #name "Control Unruly Spirits"
 #descr "With the coming of the Barbarian Kings and the return of ancestor worship spells for controlling unruly spirits have become commonplace in T'ien Ch'i. The caster takes control over some undead beings. Powerful undead will be able to resist the necromancer."
 #researchlevel 0
+#precision 12
 #restricted 109 -- LA Tien Chi
 #end
 
@@ -136436,10 +140144,14 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #selectspell 2561
 #copyspell 1324 -- Charm Animal
 #name "King of Beasts"
-#descr "The Lion Clan of Machaka have taken the mantle of King of the Beasts from their Totem and animals of all kinds will bow to their will. With this spell an animal is charmed by the mage."
+#descr "The Lion Clan of Machaka have taken the mantle of King of the Beasts from their Totem and animals of all kinds will bow to their will. With this spell a small group of animals is charmed by the mage."
 #details "Charm. This spell can only affect animals."
 #researchlevel 1
 #restricted 28
+#aoe 1
+#casttime 75
+#range 25
+#fatiguecost 10
 #end
 
 #selectspell 2562
@@ -136703,6 +140415,8 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #path 1 5
 #pathlevel 1 1
 #nreff 1000
+#fatiguecost 10
+#precision 5
 #restricted 28 -- EA Machaka
 #restricted 76 -- MA Machaka
 #end
@@ -136719,7 +140433,8 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #pathlevel 1 1
 #aoe 3
 #nreff 1000
-#fatiguecost 30
+#precision 5
+#fatiguecost 10
 #restricted 76 -- MA Machaka
 #nextspell "Area Weak Poison"
 #end
@@ -137386,6 +141101,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
 #restricted 104 -- LA Abysia
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2627
@@ -137403,7 +141119,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #copyspell 783 -- Enlarge
 #name "Rhuax Legacy"
 #descr "The caster invokes the power of Rhuax in a few nearby soldiers. The affected units will grow in size and will radiate hellish heat that will severely burn attackers."
-#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, +5 Fire Resistance, Fire Shield: 9 AP fire dmg, reduced by weapon length"
+#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, Fire Shield: 9 AP fire dmg, reduced by weapon length"
 #researchlevel 4
 #path 0 0
 #pathlevel 0 3
@@ -137443,7 +141159,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #copyspell 783 -- Enlarge
 #name "Outer Furnace"
 #descr "The caster calls on the power of Rhuax in troops around them to unleash the fire within their spirit. The affected units will grow in size and will radiate hellish heat that will severely burn attackers."
-#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, +5 Fire Resistance, Fire Shield: 9 AP fire dmg, reduced by weapon length"
+#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, Fire Shield: 9 AP fire dmg, reduced by weapon length"
 #researchlevel 7
 #path 0 0
 #pathlevel 0 3
@@ -137588,13 +141304,13 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #selectspell 2640
 #copyspell 992 -- Summon Lesser Fire Elemental
 #name "Magmatic Summoning"
-#descr "The caster reaches into the depths of the earth and draws up a primal elemental being of magma to the surface. The creature appears in a great shower of magma and rocks that will kill anyone stood near to the eruption. The creature is surrounded by a cloud of heat and is a sacred reminder of the heritage of the Abysian people. It has some skill in the magics of Fire and Earth and will serve the caster before sinking back into the fiery depths."
+#descr "The caster reaches into the depths of the earth and draws up a primal elemental being of magma to the surface. The creature appears in a great shower of magma and rocks that will kill anyone stood near to the eruption. The creature is surrounded by a cloud of heat and is a sacred reminder of the heritage of the Abysian people. It can throw bolts of magma and will serve the caster before sinking back into the fiery depths."
 #researchlevel 6
 #pathlevel 0 3
 #path 1 3
 #pathlevel 1 1
 #fatiguecost 100
-#effect 21
+#effect 1
 #range 10
 #damage 7313 -- Magma Spirit
 #restricted 16
@@ -137969,7 +141685,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 5
 #pathlevel 1 1
 #aoe 1
-#fatiguecost 40
+#fatiguecost 30
 #range 25
 #nextspell 2663
 #restricted 106 -- LA Caelum
@@ -137978,6 +141694,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #selectspell 2665
 #name "Release Anu"
 #descr "The caster shatters the celestial prison of Anu, the first Annunaki. Anu was the first of the Annunaki, giants of divine heritage that appeared in ancient times. He was granted dominion over the Heavens by the Pantokrator and was supreme amongst the Annunaki. In time he came to think himself the equal of the Pantokrator and was imprisoned for his impudence. Anu is powerful in the magics of the Sky and the Heavens and as first of the Annunaki has additional powers."
+#details "Anu is a divinely powerful being and may rebel if allowed to roam outside your Dominion."
 #school 0
 #researchlevel 8
 #path 0 4
@@ -138102,7 +141819,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Release Sheut"
 #descr "In C'tis the soul is composed of many parts. Some progress to the afterlife after death and some remain in this world. With this spell the caster attempts to release the targets Sheut or Shadow Soul. Releasing the Sheut may kill weak willed targets. If this occurs the soulless body will be forced to serve the caster until the soul returns and can complete the journey to the afterlife."
 #researchlevel 4
-#fatiguecost 30
+#fatiguecost 20
 #precision 100
 #range 30
 #flightspr -1
@@ -138586,7 +142303,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 8
 #pathlevel 0 3
 #pathlevel 1 1
-#aoe 1001
+#aoe 1005 -- 8+
 #damage 17592186044544  -- Enrage & destroy armor
 #fatiguecost 30
 #spec 1152921505152258048  -- MR Negates, Ignore Shields, No Effect on Mindless or Lifeless, UWOK
@@ -139272,7 +142989,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #pathlevel 0 3
 #range 20
 #aoe 2004
-#fatiguecost 50
+#fatiguecost 40
 #spec 8671232  -- Enemies only, ignores shields, use UW, MRN
 #restricted 11 -- Tir na Nog
 #restricted 85 -- Ys
@@ -139523,9 +143240,10 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Bring Forth the Cauldron Born"
 #descr "The Cauldron of Rebirth will allow up to 200 corpses in the same province to be reanimated as soulless to serve the bearer of the cauldron."
 #researchlevel 0
+#provrange 0
 #school -1
-#nolandtrace 1
-#nowatertrace 1
+--#nolandtrace 1
+--#nowatertrace 1
 #fatiguecost 10
 #restricted 10 -- EA Fomoria
 #end
@@ -140066,6 +143784,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 31 -- EA Helheim
 #restricted 78 -- MA Vanheim
 #restricted 79 -- Vanarus
+#restricted 81 -- Nidavangr
 #restricted 115 -- LA Midgard
 #nextspell 2813
 #end
@@ -140252,8 +143971,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 4
 #pathlevel 0 2
 #range 25
-#aoe 1002
-#fatiguecost 30
+#aoe 1004
+#fatiguecost 20
+#precision 8
 #sound 39
 #restricted 33 -- Niefelheim
 #spec 279040  -- Enemies only, Cold, ignores shields
@@ -140394,7 +144114,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #details "Target suffers 12+ cold damage and is encased in ice for 10 points. Each point grants +1 prot. Str roll vs 12 reduces the number of encase points. Target gets 5 cold fatigue dmg each turn while encased."
 #researchlevel 7
 #pathlevel 0 2
-#fatiguecost 40
+#fatiguecost 20
 #restricted 33 -- Niefelheim
 #restricted 80 -- Jotunheim
 #restricted 118 -- Vaettiheim
@@ -140937,6 +144657,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
+#precision 5
 #restricted 23 -- Yomi
 #end
 
@@ -141209,7 +144930,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2898
 #name "Call the Tesso"
 #descr "When someone of strong faith dies in the service of their God their soul is sometimes reborn in Yomi. They appear as Tesso, ratlike creatures with great iron teeth and a zealous hatred of those that deny the true God. These creatures can be called by Sorcery to descend on the temples of false faiths. The rat-demons will appear with a horde of vermin and quickly devour every sacred text, holy book and icon they find, even grinding precious statues to dust in their iron teeth. If they cannot locate a temple in the province they will simply run amok, causing unrest amongst the populace. When they have completed their rampage they will return to their abode in Yomi."
-#details "Unrest +35, Gold -50, temple destroyed if present and -2 Dominion."
+#details "Unrest +35, Gold -50, temple destroyed if present and -2 Dominion. Does not destroy temple if province is under siege."
 #school 0
 #researchlevel 6
 #path 0 0
@@ -141579,6 +145300,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
 #restricted 119 -- Feminie
+#ainocast 1
 #end
 
 #selectspell 2923
@@ -142015,8 +145737,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 1
 #pathlevel 0 3
 #nreff 505
-#damage 3726 -- Size 5 Air Elemental
-#fatiguecost 800
+#damage 3727 -- Size 4 Air Elemental
+#fatiguecost 700
 #restricted 32 -- Rus
 #restricted 29 -- Berytos
 #restricted 77 -- Phaecia
@@ -142563,7 +146285,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #effect 10021
 #fatiguecost 4500
 #spec 41943040  -- Useable Underwater only
-#onlygeosrc 2048  -- Deep Sea
+--#onlygeosrc 2048  -- Deep Sea
 #damage 7226 -- Dagon
 #nreff 1
 #restricted 43 -- EA Atlantis
@@ -142793,7 +146515,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 6000
 #damage 7345
 #nreff 2004 -- 10++
-#onlygeosrc 2048
+--#onlygeosrc 2048
 #restricted 88 -- MA Atlantis
 #restricted 126 -- LA Atlantis
 #restricted 206 -- Dirgen
@@ -142924,7 +146646,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The Aboleths can use their mastery of mental magic to overload the minds of a few lesser beings. If successful, the targets experience overwhelming pain as their minds are damaged. The spell is very accurate and always finds its intended target."
 #researchlevel 4
 #aoe 1
-#fatiguecost 40
+#fatiguecost 20
 #restricted 44
 #end
 
@@ -142933,7 +146655,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Enslavement"
 #descr "The Aboleths have perfected the enslavement of lesser races and can affect multiple beings at once. This spell enslaves the body and mind of a few targets. The victims lose their will, along with their ability to command and cast magic. All the Pretender Gods are immune to this spell."
 #researchlevel 7
-#fatiguecost 40
+#fatiguecost 20
 #aoe 1
 #restricted 44
 #end
@@ -143052,7 +146774,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 2
 #pathlevel 0 2
 #nreff 1
-#effect 4011
+#effect 11
 #damage 134217728  -- Slime
 #range 5010
 #aoe 1002
@@ -143060,6 +146782,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #flightspr -1
 #sound 21
 #fatiguecost 20
+#precision 5
 #spec 41959424  -- UW Only, Ignores shields
 #restricted 44
 #nextspell "Area Weak Poison"
@@ -143194,8 +146917,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3031
 #name "Power of the Void"
-#descr "The Illithid can open their minds directly to the void to enhance their magical abilities. This is very dangerous as the conduit will act as a beacon for horrors and other void creatures to enter the world. The casters magical abilities are all increased by 2 and they will be protected by astral energies, however for every minute the battle lasts, there is a chance that a Horror will materialize in the vicinity of the caster. This spell cannot be cast by a mindless unit."
-#details "Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4. Paralysis vs attackers at strength 12 + astral mage level (reduced by weapon length, magic resistance negates)."
+#descr "The Illithid can open their minds directly to the void to enhance their magical abilities. This is very dangerous as the conduit will act as a beacon for horrors to enter the world. The casters magical abilities are all increased by 2 and they will be empowered by the astral energies, however for every minute the battle lasts, there is a chance that a Horror will materialize in the vicinity of the caster. This spell cannot be cast by a mindless unit."
+#details "Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4."
 #school 5
 #researchlevel 3
 #path 0 4
@@ -143210,7 +146933,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8404992  -- Ignores shields, UW OK
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
-#nextspell 1140 -- Astral shield
+#nextspell 4 -- Horror Mark
 #end
 
 #selectspell 3032
@@ -143711,10 +147434,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 1
 #pathlevel 1 1
-#fatiguecost 30
+#fatiguecost 10
+#casttime 75
 #aoe 1
 #damage 2008
-#range 20
+#range 5030
+#precision 10
 #restricted 43
 #restricted 40
 #restricted 41
@@ -143736,9 +147461,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 5
 #path 1 1
 #pathlevel 1 1
-#fatiguecost 40
-#aoe 1001
-#range 20
+#fatiguecost 20
+#aoe 1003 -- 6+
+#range 5020
+#precision 10
 #restricted 43
 #restricted 40
 #restricted 41
@@ -143860,12 +147586,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3082
-#name "Ichtyid Shaman"
+#name "Ichtyid Shamans"
 #school -1
 #researchlevel 0
 #effect 10021
 #damage 2804  -- Ichtyid Shaman
-#nreff 1
+#nreff 2
 #spec 8388608
 #nextspell 3081
 #end
@@ -143908,7 +147634,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Summon Hippocampoi"
 #descr "The Pearl Kings long ago learned how to tame the Hippocampoi, magical steeds of the deeps. These magical creatures are able to strike enemies or heal themselves with their horns."
 #pathlevel 0 1
-#fatiguecost 1200
+#fatiguecost 1000
 #damage 1058
 #restricted 40
 #end
@@ -144863,6 +148589,7 @@ All effects scale with friendly Dominion."
 #descr "The Magisters of Man study and debate the principles of magic and all those who pass the Arcane exams know some basic spells. This spell hurls a bolt of lightning towards an enemy. The lightning bolt can be hurled quite accurately over long distances and is very useful for eliminating heavily armored targets."
 #researchlevel 0
 #restricted 100 -- LA Man
+#damage 1015 -- 17+
 #end
 
 #selectspell 3188
@@ -145101,11 +148828,13 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3213
-#copyspell 1180 -- Dispel
+#copyspell 1226 -- Disenchantment
 #name "Greater Dispel"
 #descr "With further research the Magisters have uncovered yet easier ways to negate Global Enchantments. As the number of gems required to cast the dispel has been reduced, more will be available for matching the enemies strength."
+#details "Destroys a global enchantment if cast with enough power. Lowers the overcast level of a global enchantment by half the overcast level of Disenchantment."
+#pathlevel 0 4
 #researchlevel 7
-#fatiguecost 1000
+#fatiguecost 2500
 #restricted 100 -- LA Man
 #end
 
@@ -145519,9 +149248,9 @@ All effects scale with friendly Dominion."
 #path 1 5
 #pathlevel 1 1
 #range 25
-#aoe 1001
-#precision 3
-#fatiguecost 30
+#aoe 1003 -- 6+
+#precision 6
+#fatiguecost 20
 #restricted 53 -- MA Asphodel
 --#spec 1152921505152647168  -- Ignore Shields, UW OK, Undead & Lifeless immune, Secondaryeffect
 #end
@@ -145687,6 +149416,7 @@ All effects scale with friendly Dominion."
 #restricted 32 -- Rus
 #restricted 79 -- Vanarus
 #restricted 116 -- Bogarus
+#restricted 124 -- Zemaitia
 #end
 
 #selectspell 3261
@@ -145702,6 +149432,7 @@ All effects scale with friendly Dominion."
 #restricted 32 -- Rus
 #restricted 79 -- Vanarus
 #restricted 116 -- Bogarus
+#restricted 124 -- Zemaitia
 #end
 
 #selectspell 3262
@@ -145893,6 +149624,8 @@ All effects scale with friendly Dominion."
 #descr "Nazcans venerate the sun, bringer of warmth and light. By calling on the power of the Sun the mage causes a searing beam of light to strike his enemies. The light is very accurate and will burn and blind those it strikes."
 #researchlevel 3
 #path 0 0
+#fatiguecost 10
+#damage 1013
 #spec 96  -- AP, Fire damage
 #nextspell 849 -- Blindness
 #restricted 72 -- Nazca
@@ -146652,8 +150385,9 @@ All effects scale with friendly Dominion."
 #researchlevel 4
 #pathlevel 0 2
 #range 25
-#aoe 1002
-#fatiguecost 30
+#aoe 1004
+#fatiguecost 20
+#precision 8
 #sound 39
 #restricted 187 -- Bhod Kingdom
 #restricted 188 -- shambhala
@@ -146834,7 +150568,7 @@ All effects scale with friendly Dominion."
 #researchlevel 4
 #path 1 9
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 800
 #nreff 34
 #damage 1380
 #restricted 186 -- Zion
@@ -146846,12 +150580,12 @@ All effects scale with friendly Dominion."
 #descr "Through the seals of the Prophet King the spirits of the air can be bound to service. A host of invisible spirit beings are bound by a seal of the Prophet King and compelled to create a wondrous temple dedicated to the Awakening God. They will create a mighty jeweled edifice in a province of the casters choosing before being released from their bondage."
 #school 0
 #effect 10042
-#researchlevel 3
+#researchlevel 0
 #path 0 1
 #pathlevel 0 2
 #path 1 9
 #pathlevel 1 1
-#fatiguecost 1200
+#fatiguecost 1000
 #onlyowndst 1
 #damage 45
 #restricted 186 -- Zion
@@ -146860,15 +150594,15 @@ All effects scale with friendly Dominion."
 #selectspell 3344
 #copyspell 935 -- Pack of Wolves
 #name "Bind Fiends of the Abyss"
-#descr "Through the seals of the Prophet King the demons of the abyss can be bound to service. A fiend of darkness, a foul demonic being of the abyss, will appear when the spell is cast and is bound by a seal of the Prophet King. A demon so bound will be forced to obey the caster, and will be unable to escape its bondage unless banished or the seal is destroyed."
+#descr "Through the seals of the Prophet King the demons of the abyss can be bound to service. A few fiends of darkness, a foul demonic being of the abyss, will appear when the spell is cast and is bound by a seal of the Prophet King. A demon so bound will be forced to obey the caster, and will be unable to escape its bondage unless banished or the seal is destroyed."
 #researchlevel 1
 #path 0 4
 #pathlevel 0 2
 #path 1 9
 #pathlevel 1 1
-#fatiguecost 500
+#fatiguecost 300
 #damage 88  -- Fiend
-#nreff 4
+#nreff 3
 #restricted 186 -- Zion
 #end
 
@@ -146884,22 +150618,6 @@ All effects scale with friendly Dominion."
 #fatiguecost 600
 #damage 526  -- Serpent Fiend
 #nreff 12
-#restricted 186 -- Zion
-#end
-
-#selectspell 3346
-#copyspell 935 -- Pack of Wolves
-#name "Bind Devils of the Fiery Inferno"
-#descr "Through the seals of the Prophet King the demons of the inferno can be bound to service. A devil, a foul demonic being of the inferno, will appear when the spell is cast and is bound by a seal of the Prophet King. A demon so bound will be forced to obey the caster, and will be unable to escape its bondage unless banished or the seal is destroyed."
-#school 0
-#researchlevel 2
-#path 0 0
-#pathlevel 0 2
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 500
-#damage 304  -- Devil
-#nreff 3
 #restricted 186 -- Zion
 #end
 
@@ -146921,11 +150639,11 @@ All effects scale with friendly Dominion."
 #selectspell 3348
 #copyspell 935 -- Pack of Wolves
 #name "Bind Evil Trinity of the Inferno"
-#descr "Under the direct guidance of the Prophet King his seals can be used for even greater feats. With great care the caster binds 3 devils along with their attendant imps into his service. These demons will be forced to obey the caster, and will be unable to escape their bondage unless banished or the seal is destroyed."
+#descr "Through the seals of the Prophet King the demons of the inferno can be bound to service. With great care the caster binds a trio of devils along with their attendant imps into his service. These demons will be forced to obey the caster, and will be unable to escape their bondage unless banished or the seal is destroyed."
 #school 0
-#researchlevel 4
+#researchlevel 2
 #path 0 0
-#pathlevel 0 3
+#pathlevel 0 1
 #path 1 9
 #pathlevel 1 1
 #fatiguecost 300
@@ -146933,7 +150651,23 @@ All effects scale with friendly Dominion."
 #nreff 3
 #restricted 186 -- Zion
 #nextspell 2058
-#onlyatsite 2122 -- Palace of the Prophet King
+--#onlyatsite 2122 -- Palace of the Prophet King
+#end
+
+#selectspell 3346
+#copyspell 935 -- Pack of Wolves
+#name "Bind Devils of the Fiery Inferno"
+#descr "Through the seals of the Prophet King the demons of the inferno can be bound to service. A group of devils, foul demonic beings of the inferno, will appear when the spell is cast and is bound by a seal of the Prophet King. A demon so bound will be forced to obey the caster, and will be unable to escape its bondage unless banished or the seal is destroyed."
+#school 0
+#researchlevel 5
+#path 0 0
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 1
+#fatiguecost 500
+#damage 304  -- Devil
+#nreff 7
+#restricted 186 -- Zion
 #end
 
 #selectspell 3347
@@ -146946,7 +150680,7 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #nreff 1
-#fatiguecost 1800
+#fatiguecost 1600
 #damage 7119 -- Jinn
 #restricted 186 -- Zion
 #end
@@ -146955,13 +150689,15 @@ All effects scale with friendly Dominion."
 #copyspell 1410 -- Horde from Hell
 #name "Send Demonic Host"
 #descr "Through the seals of the Prophet King the demons of the inferno can be bound to service. A demonic host consisting of Imps led by a Devil are bound and sent to a distant province. The host remains after battle and may continue to serve the caster in vanquishing the enemies of Zion. All the demons so bound will be forced to obey the caster, and will be unable to escape their bondage unless banished or the seal is destroyed."
+#details "Summons a Devil with F1 magic leading 39 Imps"
 #school 0
 #researchlevel 5
 #path 0 0
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 1100
+#farsumcom 9315 -- Devil
 #restricted 186 -- Zion
 #end
 
@@ -147004,7 +150740,7 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #damage 262400  -- Quicken & Rage
-#fatiguecost 40
+#fatiguecost 20
 #aoe 1003
 #ainocast 1
 #explspr 10003
@@ -147017,10 +150753,11 @@ All effects scale with friendly Dominion."
 #copyspell 1423 -- Ritual of five gates
 #name "Bind Infernal Host"
 #descr "Under the direct guidance of the Prophet King his seals can be used for even greater feats. With great care the caster manipulates a great Prince of Demons to provide servants from each of the Infernal realms. Five demonic beings will be extorted and forced to serve the caster. This spell can only be cast at the Palace of the Prophet King."
+#details "Summons a Fiend of Darkness, Devil, Frost Fiend, Storm Demon, and Demon Knight."
 #school 0
 #researchlevel 5
 #path 0 4
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
 #fatiguecost 800
@@ -147070,7 +150807,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #path 1 9
 #pathlevel 1 3
-#fatiguecost 4500
+#fatiguecost 4000
 #onlyatsite 2122 -- Palace of the Prophet King
 #restricted 186 -- Zion
 #end
@@ -147086,7 +150823,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 3
 #fatiguecost 1000
 #damage 526  -- Serpent Fiend
-#nreff 2012 -- 18++
+#nreff 2014 -- 20++
 #onlyatsite 2122 -- Palace of the Prophet King
 #restricted 186 -- Zion
 #end
@@ -147109,7 +150846,7 @@ All effects scale with friendly Dominion."
 #copyspell 935 -- Pack of Wolves
 #name "Bind Host of the Fiery Inferno"
 #descr "Through the seals of the Prophet King the demons of the abyss can be bound to service. A host of devils, foul demonic beings of the inferno, will appear when the spell is cast and are bound by a powerful seal under the guidance of the Prophet King. The demons so bound will be forced to obey the caster, and will be unable to escape their bondage unless banished or the seal is destroyed."
-#researchlevel 9
+#researchlevel 8
 #path 0 0
 #pathlevel 0 4
 #path 1 9
@@ -147879,7 +151616,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #damage 6512 -- Ghawwas
 #fatiguecost 500
-#nreff 1002 -- 3+
+#nreff 503 -- 3+1/2
 #restricted 18 -- Ubar
 #restricted 65 -- Na'Ba
 #restricted 197 -- Iram
@@ -147913,7 +151650,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 3
 #fatiguecost 100
 #effect 43  -- Single border summoning
-#damage 6510 -- Dandan
+#damage 6514 -- Dandan
 #nreff 1
 #explspr -1
 #spec 41943040  -- UW Only
@@ -147948,7 +151685,8 @@ All effects scale with friendly Dominion."
 #researchlevel 5
 #path 0 2
 #pathlevel 0 3
-#fatiguecost 30
+#fatiguecost 20
+#spec 17592227987456
 #range 5010
 #spec 41943040  -- UW Only
 #restricted 18 -- Ubar
@@ -148016,7 +151754,7 @@ All effects scale with friendly Dominion."
 #effect 10021
 #nreff 1
 #damage 7119
-#fatiguecost 1800
+#fatiguecost 1600
 #restricted 197 -- Iram
 #end
 
@@ -148077,6 +151815,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #fatiguecost 99
 #restricted 194
+#precision 10
 #end
 
 #selectspell 3443
@@ -150747,7 +154486,7 @@ All effects scale with friendly Dominion."
 #selectspell 3623
 #copyspell 1251
 #descr "Under the fata morgana life seems much easier and everyone is happy. Phantasmal Warriors will assist the local defence in defending the province against invaders and enemy scouts will be fooled by illusionary armies. All provinces in friendly dominion will be affected by the fata morgana. The enchantment lasts until it is dispelled or the caster dies."
-#details "Province Defense 1+: +2 Phantasmal Warriors, +1 Phantasmal Archers. Province Defense 20+: +1 Phantasmal Knight. Unrest -10 per turn. False scout reports."
+#details "Province Defense 1+: +2 Warrior Illusions, +1 Archer Illusion. Province Defense 20+: +1 Knight Illusion. Unrest -10 per turn. False scout reports."
 #researchlevel 7
 #pathlevel 0 5
 #fatiguecost 5000
@@ -150841,6 +154580,7 @@ All effects scale with friendly Dominion."
 --#damage 33554432  -- Unholy Power
 #damage 68719476740 -- reinvig + swiftness
 #spec 46219264  -- UW Only, Affects friendly airbreathers only, ignores shields
+#nextspell 4283 -- Permanent Water Breathing
 #end
 
 #selectspell 3706
@@ -151570,7 +155310,7 @@ All effects scale with friendly Dominion."
 #nreff 1002
 #path 1 3
 #pathlevel 1 1
-#precision 3
+#precision 6
 #nextspell 674 -- Fire Cloud
 #end
 
@@ -151697,38 +155437,6 @@ All effects scale with friendly Dominion."
 #fatiguecost 2500
 #damage 7224
 #nreff 1
-#end
-
-#selectspell 3784
-#copyspell 737
-#name "Fire Elemental Attack"
-#descr "Elemental farsummon for Elemental Barrage."
-#school -1
-#researchlevel 0
-#path 0 0
-#pathlevel 0 0
-#damage 7386
-#nreff 1
-#fatiguecost 0
-#nextspell 0
-#end
-
-#selectspell 3785
-#name "Elemental Barrage"
-#descr "The caster summons several Fire Elementals and launches them towards an enemy army camp located in a province far away. The elementals will cause damage as they land in the camp and will then animate to attack whatever they find. The more units present in the camp, the greater the chance of hitting a target. The spell can also be used to harass a besieging force of enemies."
-#details "Deals 15AP damage to up to 15 targets, creates 1 size 6, 2 size 4 and 1D6 size 3 Fire Elementals to attack province defenders."
-#school -1
-#researchlevel 7
-#path 0 0
-#pathlevel 0 4
-#effect 10091
-#damage 15
-#spec 96  -- Fire damage, Armour Piercing
-#nreff 1012
-#fatiguecost 1500
-#nogeodst 4100  -- Not to Caves or Sea
-#provrange 3
-#nextspell 3784
 #end
 
 #selectspell 3786
@@ -152386,6 +156094,7 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #school -1
 #aoe 10
 #range 0
+#nextspell 4283 -- Permanent Water Breathing
 #end
 
 #selectspell 3836 -- Water Breathing, 1 -> 60 gow
@@ -155899,12 +159608,13 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #descr "Aiur is the corruption of Adur, an energy that holds everything together. Adur can be found in all manner of beings and is used by witches and warlocks to cast their spells. By corrupting it and projecting it against their enemies it turns foul and hostile. Their fortune turns against them and their blood spills readily as the magic tries to rend apart their body."
 #fatiguecost 20
 #researchlevel 3
-#aoe 1
+#aoe 1002 -- 4+
+#precision 10
 #pathlevel 0 2
 #restricted 14 -- EA Pyrene
 #restricted 62 -- MA Pyrene
 #restricted 123 -- LA Pyrene
-#nextspell 3903 -- Cursed Lucke
+#nextspell 3903 -- Cursed Luck
 #end
 
 #selectspell 4101 -- Pact Storm Demon
@@ -156398,8 +160108,8 @@ Animals only: Protective Force 20"
 #selectspell 4135 -- Revisit Tech Duinn teleport
 #copyspell 1303 -- teleport
 #name "Revisit Tech Duinn"
-#descr "The God-Kings of Fomoria once guarded the dark and stormy ocean realm of the drowned dead. With the ascendancy of the Pantokrator they were punished for their sins and banished from their dark home. Now with the Pantokrator gone, the Fomorians can again claim mastery over the drowned dead. The Fomorian King revisits Tech Duinn, the realm of the watery dead, and reinstates his place as one of its lords. He will gain power over both Water and Death and he will be able to command the watery dead. The Fomorian King may return to the world into any friendly sea province, and he will open a gateway by which the dead may follow to serve. A host of Drowned Ones will accompany him and a few Drowned will come through the gateway each month after."
-#details "Can only be cast by Fomorian Kings or God-Kings. Fomorian Kings will become God-Kings, gaining W2 and D3 magic if lower.
+#descr "The God-Kings of Fomoria once guarded the dark and stormy ocean realm of the drowned dead. With the ascendancy of the Pantokrator they were punished for their sins and banished from their dark home. Now with the Pantokrator gone, the Fomorians can again claim mastery over the drowned dead. The Fomorian King revisits Tech Duinn, the realm of the watery dead, and reinstates his place as one of its lords. He will gain power over both Water and Death, his divine power will increase, and he will be able to command the watery dead. The Fomorian King may return to the world into any friendly sea province, and he will open a gateway by which the dead may follow to serve. A host of Drowned Ones will accompany him and a few Drowned will come through the gateway each month after."
+#details "Can only be cast by Fomorian Kings or God-Kings. Fomorian Kings will become God-Kings, gaining W2 and D3 magic if lower, and gaining H3.
 Gateway to Tech Duinn will open where cast, where 1d6 Drowned Soulless, Longdead or Ghosts may appear each month. This spell can only target friendly underwater provinces. The gateway lasts the province is lost."
 #path 0 5 -- D
 #path 1 1 -- A
@@ -157158,6 +160868,7 @@ Applies the effects of Holy Avenger to the caster"
 #descr "The caster cloaks a small group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
 #details "Images created: 2"
 #aoe 3
+#range 5
 #fatiguecost 40
 #researchlevel 4
 #path 0 7
@@ -157173,6 +160884,7 @@ Applies the effects of Holy Avenger to the caster"
 #descr "The caster cloaks a large group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
 #details "Images created: 2"
 #aoe 2002 -- 10+2
+#range 5
 #fatiguecost 100
 #researchlevel 8
 #path 0 7
@@ -157855,10 +161567,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 1
 #path 1 7
 #pathlevel 1 1
-#range 30
+#range 5030
 #aoe 1
+#damage 1011 -- 12+
 #fatiguecost 10
 #casttime 100
+#precision 6
+#spec 17188524160 -- Enemy only
 #godpathspell 7
 #end
 
@@ -158019,7 +161734,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #descr "There was a time in which there existed nothing but darkness and an abyss of waters, wherein resided a most hideous being. This was Tiamat, and in the darkness she gave birth to a multitude of children. The Children of Tiamat can regenerate wounds and wield magical tridents forged in ages past. Their skin is as hard as iron and they constantly exude a potent poison. The caster summons several of such Children to serve. This spell can only be cast underwater."
 #researchlevel 7
 #pathlevel 0 4
-#nreff 510
+#nreff 515
 #fatiguecost 3000
 #damage 7582 -- Child of Tiamat
 #end
@@ -158294,6 +162009,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #path 1 7 -- Glamour
 #pathlevel 1 1
 #aoe 3003 -- 12+3
+#precision 10
 #fatiguecost 30
 #range 30
 #damage 256
@@ -158401,8 +162117,8 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #selectspell 4280 -- Yeti Crab
 #copyspell 945 -- Call Kraken
 #name "Bind Abyssal Crabs"
-#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlantians consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat.
-This spell can only be cast in a deep water province."
+#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlantians consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
+#details "This spell can only be cast in a deep water province."
 #researchlevel 3
 #path 0 2
 #path 1 3 
@@ -158419,8 +162135,8 @@ This spell can only be cast in a deep water province."
 #selectspell 4281 -- Vampire Squid
 #copyspell 945 -- Call Kraken
 #name "Call Vampire Squid"
-#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters within seconds. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised.
-This spell can only be cast in a deep water province."
+#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters within seconds. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised."
+#details "This spell can only be cast in a deep water province."
 #researchlevel 7
 #path 0 5
 #path 1 2 
@@ -159164,7 +162880,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #fatiguecost 10
 #end
 
-#selectspell 4329 -- Stealth Breath nextspell
+#selectspell 4329 -- Steal Breath nextspell
 #copyspell 241 -- Chestwound
 #name "Chest Wound"
 #descr "."
@@ -159216,6 +162932,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #school 2
 #aoe 0
 #researchlevel 5
+#precision 4
 #nextspell 0
 #end
 
@@ -159227,6 +162944,401 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #damage 10
 #end
 
+#selectspell 4334 -- Summon Ishim
+#copyspell 935 -- Pack of Wolves
+#name "Call Ishim"
+#descr "The caster calls down a divine beings of the Celestial Sphere. They appear as winged humans wielding a fiery blade and surrounded by an aura of divine splendor, and they can wield their divine power to permanently reduce the harm others can inflict, though it can be resisted by those with great conviction."
+#school 0
+#researchlevel 5
+#path 0 4
+#pathlevel 0 2
+#fatiguecost 500
+#damage 9314 -- Ishim
+#nreff 3
+#restricted 186 -- Zion
+#restricted 67 -- Ind
+#restricted 120 -- Piconye
+#end
+
+#selectspell 4335 -- Calm Self
+#copyspell 1276 -- Calm Emotions
+#name "Tranquility"
+#descr "The caster is filled with calming emotions."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#aoe 0
+#range 0
+#school -1
+#researchlevel -1
+#spec 8536064 -- Ignore shields, no mindless, UWOK
+#end
+
+
+
+#selectspell 4336 -- Taurus EPower
+#name "Taurus Sign"
+#descr "."
+#aoe 666
+#researchlevel -1
+#school -1
+#damage 4096
+#path 0 4
+#pathlevel 0 1
+#spec 8404992
+#end
+
+#selectspell 4337 -- Taurus
+#copyspell 975 -- LotNS
+#name "Light of the Taurus Constellation"
+#descr "The caster draws upon the light of the Taurus constellation to permeate the battlefield. The entire battlefield will be greatly reinvigorated and casters of Earth and Astral will have their magic elevated. Only one constellation can be drawn upon at a time."
+#details "Entire battlefield: Earthpower giving 4 Reinvigoration and Earth magic +1, Astral magic +1
+Incompatible with other Constellations, and Light of the Northern Star when cast by Arcoscephale."
+#researchlevel 6
+#pathlevel 0 4
+#path 1 3 -- E
+#pathlevel 1 1
+#restricted 50 -- MA Arco
+#nextspell 4336
+#end
+
+
+#selectspell 4338 -- Aries FR
+#copyspell 19 -- Fire Resistance
+#name "Aries Resistance"
+#descr "."
+#aoe 1
+#researchlevel -1
+#school -1
+#path 0 4
+#pathlevel 0 1
+#spec 8404992
+#end
+
+#selectspell 4339 -- Aries FPower
+#name "Aries Sign"
+#descr "."
+#aoe 666
+#effect 23
+#damage 262144 -- Fire Power
+#researchlevel -1
+#school -1
+#path 0 4
+#pathlevel 0 1
+#spec 8404992
+#nextspell 4338
+#end
+
+#selectspell 4340 -- Aries
+#copyspell 975 -- LotNS
+#name "Light of the Aries Constellation"
+#descr "The caster draws upon the light of the Aries constellation to permeate the battlefield. The entire battlefield will become resistant to flames and casters of Fire and Astral will have their magic elevated. Only one constellation can be drawn upon at a time."
+#details "Entire battlefield: Phoenix Power giving +5 Fire Resistance and Fire magic +1, Astral magic +1
+Incompatible with other Constellations, and Light of the Northern Star when cast by Arcoscephale."
+#researchlevel 4
+#pathlevel 0 4
+#path 1 0 -- F
+#pathlevel 1 1
+#restricted 50 -- MA Arco
+#nextspell 4339
+#end
+
+#selectspell 4341 -- Cetus Curse
+#name "Cetus Sign"
+#descr "."
+#aoe 666
+#effect 11
+#damage 32 -- Curse of Stones
+#researchlevel -1
+#school -1
+#path 0 4
+#pathlevel 0 1
+#spec 8404992
+#end
+
+#selectspell 4342 -- Cetus
+#copyspell 975 -- LotNS
+#name "Light of the Cetus Constellation"
+#descr "The caster draws upon the light of the Cetus constellation to impose on the battlefield. The constellation will weigh heavy on all under its light, and the entire battlefield will become sluggish and fatigued by the burden. Casters of Astral may draw upon it and their magic will be elevated."
+#details "Entire battlefield: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Astral magic +1.
+Incompatible with other Constellations, and Light of the Northern Star when cast by Arcoscephale."
+#researchlevel 5
+#pathlevel 0 4
+#path 1 2 -- W
+#pathlevel 1 1
+#restricted 50 -- MA Arco
+#nextspell 4341
+#end
+
+#selectspell 4343 -- Libra Sight
+#name "Libra Sign"
+#descr "."
+#aoe 666
+#effect 23
+#damage 137438953472 -- Spirit Sight
+#researchlevel -1
+#school -1
+#path 0 4
+#pathlevel 0 1
+#spec 8404992
+#end
+
+#selectspell 4344 -- Libra
+#copyspell 975 -- LotNS
+#name "Light of the Libra Constellation"
+#descr "The caster draws upon the light of the Libra constellation to permeate the battlefield. All on the battlefield will be able to see with complete clarity under its light, and hiding within it would prove impossible. Casters of Astral may draw upon it and their magic will be elevated."
+#details "Entire battlefield: Spirit Sight, Astral magic +1
+Incompatible with other Constellations, and Light of the Northern Star when cast by Arcoscephale."
+#researchlevel 7
+#pathlevel 0 6
+#restricted 50 -- MA Arco
+#nextspell 4343
+#end
+
+#selectspell 4345 -- Elemental Barrage
+#copyspell 687 -- Falling Fires
+#name "Elemental Barrage"
+#descr "Flaming elemental orbs are created above the battlefield to fall upon the caster's enemies."
+#aoe 0
+#path 0 0
+#pathlevel 0 3
+#researchlevel 8
+#nreff 3006 -- 15+3
+--#nreff 2002 -- 8+2
+#damage 1021 -- 24+
+#precision 8
+#nogeosrc -1
+#spec 16480 -- Fire, AP, Ignore shields
+--#spec 576460752303439968 -- Fire, AP, Ignore shields, Next Spell
+#flightspr 10071
+#explspr 10091
+#fatiguecost 20
+#casttime 125
+#end
+
+#selectspell 4346
+#copyspell 635 -- Flame Bolt
+#name "Wild Fire"
+#descr "Three bolts of flame are thrown toward the caster's target."
+#damage 15
+#school -1
+#researchlevel -1
+--#researchlevel 3
+#pathlevel 0 2
+#fatiguecost 5
+#casttime 125
+#nreff 3
+#precision -2
+#end
+
+
+#selectspell 4347
+#name "Call Landvaettir"
+#descr "The Vaetti know how to call to the Landvaettir, spirits of nature connected to a specific land, and request their aid with an offering of gems. Farmers, hunters, and woodsmen in their territory who care for their fields, treat the land well, and leave offerings for them will find their crops bountiful, hunts successful, and lumber sustainable. They take the appearance of a giant wolf and are revered by the Wolf Kin."
+#school 0
+#researchlevel 4
+#path 0 6 -- N
+#path 1 9 -- H
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10021
+#nreff 1
+#damage 9337 -- Landvaettir
+#fatiguecost 2000
+#restricted 118 -- LA Vaettiheim
+#end
+
+--#selectspell 4348 -- Incite Temper
+--#copyspell 1307
+--#name "Incite Temper"
+--#descr "The caster incites the temper of a small group of soldiers, forcing them to go berserk. This spell is only effective on small beings like Vaetti."
+--#details "Can be negated by large beings"
+--#school 6
+--#path 0 8 -- B
+--#researchlevel 2
+--#precision 100
+--#ainocast 1
+--#fatiguecost 20
+--#casttime 75
+--#range 5
+--#spec 145136084451456 -- AN, no mindless, friendly only, uwok, inanimate immune, size negates, no user
+--#restricted 118 -- LA Vaettiheim
+--#end
+
+
+#selectspell 4349 -- Darkness battle enchantment
+#name "Dark Clouds"
+#descr "The skies are darkened by ominous clouds."
+#researchlevel 1
+#school -1
+#path 0 1
+#pathlevel 0 1
+#nreff 1
+#fatiguecost 400
+#effect 10083
+#damage 97
+#end
+
+#selectspell 4350
+#name "Gloom"
+#descr "The spell will cause the province to become covered in gloomy clouds and unnaturally dark for an entire month. Any battles fought there will have partial darkness."
+#details "Battlefield darkness -3, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+#school 1
+#researchlevel 3
+#path 0 1 -- A
+#pathlevel 0 1
+#path 1 5 -- D
+#pathlevel 1 2
+#nreff 1
+#fatiguecost 400
+#effect 10042
+#damage 4300
+#provrange 2
+#restricted 81 -- Nidavangr
+#nextspell "Dark Clouds"
+#end
+
+#selectspell 4351 -- Polar Night battle enchantment
+#name "Sunless Sky"
+#descr "The skies are unnaturally dark."
+#researchlevel 1
+#school -1
+#path 0 1
+#pathlevel 0 1
+#nreff 1
+#fatiguecost 500
+#effect 10082
+#damage 97
+#end
+
+#selectspell 4352
+#name "Polar Night"
+#descr "The caster causes an unnatural darkness to take hold over a province for three months. Any battles fought there will have partial darkness."
+#details "Battlefield darkness -3, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+#school 1
+#researchlevel 5
+#path 0 1 -- A
+#pathlevel 0 2
+#path 1 5 -- D
+#pathlevel 1 3
+#nreff 1
+#fatiguecost 600
+#effect 10042
+#damage 4301
+#provrange 2
+#restricted 81 -- Nidavangr
+#nextspell "Sunless Sky"
+#end
+
+#selectspell 4353 -- Sonarblot
+#copyspell 1277 -- Scrying Pool
+#name "Sónarblót"
+#descr "By making a sacrifice to the Awakening God, their ability to scry may be extended to a distant province outside of their dominion."
+#school 6
+#path 0 8
+#path 1 -1
+#fatiguecost 200
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4354 -- Sonarblot
+#copyspell 1314 -- Gift of the Furies
+#name "Sigrblót"
+#descr "The caster sacrifices a few slaves at the eve of battle to grant their companions and allies power in the name of victory. They will strike with greater precision and and their morale will be bolstered."
+#details "Attack skill +2, morale +2."
+#school 6
+#researchlevel 6
+#path 0 8
+#path 1 -1
+#fatiguecost 400
+#aoe 666
+#path 0 8 -- B
+#pathlevel 0 4
+#path 1 9 -- H
+#pathlevel 1 1
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4355
+#copyspell 939 -- Summon Lesser Fire Elemental
+#name "Raise Ghostly Warriors"
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call to the spirits of a few such warriors, and a band of ghostly beings will quickly manifest to aid the caster where they will fight until the battle ends. More powerful casters will summon larger bands of warriors."
+#researchlevel 5
+#path 0 5 -- D
+#pathlevel 0 2
+#fatiguecost 100
+#damage 9347 -- Warrior Spirit
+#nreff 1001 -- 3+
+#spec 8388608
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4356
+#name "Undrjarl's Host"
+#descr "Summon 15 ghosts."
+#school -1
+#researchlevel 0
+#path 0 5
+#pathlevel 0 1
+#effect 10001
+#damage 9347  -- Ghost
+#nreff 15
+#end
+
+#selectspell 4357
+#name "Call Undrjarl"
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call a great Undrjarl and a few of his retainers to lead the undead hosts of Nidavangr. The Undrjarl's connection to those who served him in life is strong, and may be used to return some of their number to his side each month to raid and conquer once again. The Undrjarl's time in the underworld will have given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#school 0
+#researchlevel 6
+#path 0 5
+#pathlevel 0 3
+#effect 10021
+#fatiguecost 8000
+#damage 9348 -- Ghost King
+#nreff 1
+#restricted 81 -- Nidavangr
+#nextspell 4356
+#end
+
+#selectspell 4358
+#copyspell 942
+#name "Call of the Valravne"
+#descr "The caster calls an unkindness of ravens and sends them to where a battle took place so they may feast upon the fallen and be transformed into Valravne with blood and sacrifice. The Valravne appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#details "Summons 20 Valravn led by a Valravn Lord. Valravn will grow in strength as they eat corpses.
+This spell may only target friendly provinces."
+#school 6
+#researchlevel 4
+#path 0 8
+#pathlevel 0 1
+#path 1 1
+#pathlevel 1 2
+#fatiguecost 3500
+#effect 10037
+#damage 9352 -- Valravn
+#farsumcom 9356 -- Valravn Lord
+#nreff 21
+#provrange 5
+#onlyowndst 1
+#nogeodst 4 -- Sea
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4359
+#copyspell 935 -- Pack of Wolves
+#name "Bind Demons of the Desert"
+#descr "Through the seals of the Prophet King the Shedim that roam deserts and wastelands can be bound to service. A trio of Shedim will appear when the spell is cast and is bound by a powerful seal, forced to aid the tribes of Zion in performing wondrous tasks. The Shedim are winged, ox-headed storm demons and possibly servants of Pazuzu. This spell can only be cast in the wastelands."
+#school 0
+#researchlevel 4
+#path 0 1
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 1
+#fatiguecost 1200
+#damage 2073 -- Shedim
+#nreff 3
+#restricted 186 -- Zion
+#onlygeosrc 64 -- waste
+#end
+
+--- spell 4360 taken by fear of god nextspell, continue at 4361)
 
 
 -- END OF NEW SPELLS
@@ -159579,7 +163691,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 
 #selectspell 247 -- Flying Shards
 #damage 1010 -- 11+1
-#nreff 
+--#nreff 2002
 #end
 
 #selectspell 249 -- Hand of Dust
@@ -159615,6 +163727,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #pathlevel 0 1
 #casttime 100
 #damage 3012 -- 15+++
+#precision 5
 #end
 
 #selectspell 664 -- Magma Bolts
@@ -159716,6 +163829,13 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 
 #selectspell 287 -- Huli Jing
 #fatiguecost 2500
+#end
+
+#selectspell 286 -- Celestial Chastisement
+#descr "The mage invokes the laws of the Celestial Bureaucracy and chastises a magical being for serving a false god. The target is wounded, regardless of armor, and is compelled to switch sides. Powerful beings often disregard the compulsion."
+#pathlevel 0 2
+#range 25
+#spec 17592194449552 -- +MRNH
 #end
 
 #selectspell 288 -- Thousand Year Ginseng
@@ -159874,6 +163994,19 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #selectspell 345 -- Strange Fire
 #restricted 186 -- Zion
 #restricted 95 -- LA Arco
+#damage 1010 -- 12+
+#precision 10
+#end
+
+#selectspell 448 -- Holy Pyre
+#damage 1008 -- 10+
+#precision 10
+#fatiguecost 10
+#end
+
+
+#selectspell 437 -- Vengeful Vines
+#fatiguecost 10
 #end
 
 #selectspell 346 -- Memories of Stone
@@ -160045,6 +164178,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 566247568  -- AN, Ignores Shields, Affects Friendly non-lifeless Magic Beings Only, UWOK, MR-Negates Easily
 #end
 
+#selectspell 436 -- Sleep Vines
+#precision 8
+#fatiguecost 10
+#end
+
 #selectspell 438
 #restricted 58 -- Eriu
 #pathlevel 0 1
@@ -160090,7 +164228,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 461 -- Parting of the Soul
 #nogeosrc 4096  -- Cannot cast in Caves
 #researchlevel 4
-#fatiguecost 30
+#fatiguecost 20
 #range 35
 #end
 
@@ -160137,6 +164275,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 477 -- contact angel of the host
 #restricted 190 -- LA Rotterland
 #restricted 201 -- LA Venedia
+#pathlevel 0 2
 #end
 
 #selectspell 478 -- Contact Harbinger
@@ -160239,16 +164378,20 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 519 -- Break the First Soul -- Bleed / Disease
+#precision 10
 #end
 
 #selectspell 520 -- Break the Second Soul -- Limp
+#precision 10
 #end
 
 #selectspell 521 -- Break the Third Soul -- fatigue
+#precision 10
 #spec 545800320
 #end
 
 #selectspell 522 -- Break the Fourth Soul -- Curse
+#precision 10
 #end
 
 #selectspell 523 -- Gift of the First Soul -- Regen
@@ -160353,7 +164496,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nreff 507
 #end
 
-#selectspell 562 -- Summon Kimpurushas
+
+#selectspell 563 -- Summon Kimpurushas
 #nreff 507
 #end
 
@@ -160549,6 +164693,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 640 -- Cold Bolt
 #damage 1014 -- 16+
+#precision 5
 #end
 
 #selectspell 1275 -- Steal Breath
@@ -160562,6 +164707,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 644 -- Star Fires
 #nogeosrc 4096  -- Cannot be cast in caves
+#precision 6
 #end
 
 #selectspell 647 -- Bewitching Lights
@@ -160571,8 +164717,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1270 -- Fascination
 #aoe 1
-#range 25
-#spec 25559168 -- AN, MRNE, mindless immune, enemies only, UWok
+#range 30
+#spec 8786048 -- AN, MRN, mindless immune, enemies only, UWok
 #end
 
 #selectspell 1273 -- Bonds of Fire
@@ -160606,6 +164752,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 657 -- Ephemeral Bolt
 #damage 1011 -- 13+ from 4+
+#precision 8
+#spec 17188524160 -- Enemy only
 #end
 
 #selectspell 5 -- Thunder Shock
@@ -160642,7 +164790,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 652 -- lightning bolt
 #spec 8589953152 -- Ignore Shield, Shock, AN, Affects both Rider and Mount (not UWOK)
-#damage 1015 -- 17+
+#damage 1013 -- 15+
 #end
 
 #selectspell 661 -- Rain
@@ -160695,6 +164843,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 671 -- Elf Shot
 #fatiguecost 5
 #spec 266368 -- MRN, AN, enemy only
+#precision 5
 #end
 
 #selectspell 669 -- Poison Darts
@@ -160758,6 +164907,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 692 -- Hidden Flame
 #pathlevel 1 2
 #damage 3019 -- 25+++
+#precision 5
+#end
+
+#selectspell 690 -- Liquid Flames of Rhuax
+#casttime 100
+#end
+
+#selectspell 691 -- Splash of Molten Metal
+#aoe 5
+#damage 18
 #end
 
 #selectspell 696 -- Earthquake
@@ -160827,14 +164986,14 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 723 -- Ice Strike
 #copyspell 694 -- Falling Frost
 #name "Ice Strike"
-#descr "The caster conjures ice spikes above their enemies to fall upon and impale them. Cold resistance offers no protection against this spell, but heavy armor does."
+#descr "The caster conjures ice spikes above their enemies to fall upon and impale them. Cold resistance offers no protection against this spell, but heavy armor does. More powerful casters can create more spikes."
 #aoe 0
 #path 0 2
 #pathlevel 0 2
 #pathlevel 1 0
 #researchlevel 7
-#nreff 3004 -- 10+3
-#damage 18
+#nreff 4002 -- 10+4
+#damage 20
 #nogeosrc -1
 #spec 564324342972480 -- Piercing, Slashing, AP, Ignore shields, More likely to hit head
 #flightspr 10068
@@ -160861,7 +165020,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 740 -- Pillar of Fire
 #fatiguecost 10
-#precision 6
+#precision 8
 #end
 
 #selectspell 746 -- Vortex of Unlife
@@ -160934,11 +165093,19 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 1099514773504 -- Non-magical, defense negates, slashing - Unarmored spiritform beings don't need this in their life
 #damage 1007 -- 12+ -- Damage buffed to compensate
 #aoe 2008 -- 12++ -- AOE buffed to compensate
+#ainocast
+#end
+
+#selectspell 815 -- Curse of Stones
+#spec 8654848 -- MRNE -> MRN
+#pathlevel 0 4
+#casttime 225
 #end
 
 #selectspell 814 -- Destruction
 #fatiguecost 20
 #aoe 2004 -- 10++
+#precision 8
 #end
 
 #selectspell 819 -- Group Barkskin
@@ -160949,6 +165116,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 822 -- Shrink
 #range 5015 -- 25+5
 #aoe 1002 -- 4+1
+#precision 6
 #end
 
 #selectspell 1309 -- Wildness
@@ -161004,6 +165172,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 841 -- Enfeeble
 #aoe 4012 -- 20++++
 #range 5030 -- 40+5
+#precision 20
 #end
 
 #selectspell 848 -- Shadow Warriors
@@ -161103,6 +165272,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #pathlevel 1 1
 #aoe 1001
 #spec 2305843009759494272
+#precision 4
 #end
 
 #selectspell 701 -- Shadow Blast
@@ -161110,6 +165280,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #pathlevel 0 2
 #path 1 7
 #pathlevel 1 1
+#precision 4
 #aoe 2008 -- 12+2
 #spec 2305843009759494272
 #end
@@ -161149,6 +165320,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 831 -- Gift of Formlessness
 #school -1 -- unresearchable
+#end
+
+#selectspell 834 -- Bone Melter
+#precision 8
 #end
 
 #selectspell 832  -- Winter's Chill
@@ -161522,6 +165697,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #researchlevel 4
 #end
 
+#selectspell 1023 -- Summon Fay Knights
+#nreff 505
+#fatiguecost 2000
+#end
+
 #selectspell 1027 -- Great Eagles
 #nreff 508
 #end
@@ -161770,6 +165950,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1286 -- Sailor's Death
 #aoe 1000 -- 3+
+#precision 5
 #end
 
 #selectspell 1300 -- Paralyze
@@ -161828,6 +166009,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1171 -- Watcher
 #pathlevel 0 2
 #fatiguecost 400
+#end
+
+#selectspell 1174 -- Friendly Currents
+#nextspell 4283 -- Permanent Water Breathing
 #end
 
 #selectspell 1173 -- Winter Ward
@@ -162015,6 +166200,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1460 -- Soul Transaction
 #descr "The caster tries to buy the soul and servitude of the target with the promise to protect him from his former masters. If the persuasion is successful the target is granted invisibility by infernal forces as he tries to leave the battle. If he successfully leaves the battle he will join his new master. The spell is impossible to resist magically, but those of strong morals are rarely affected."
 #spec 1152930300700016768 -- No MRNH
+#end
+
+#selectspell 1464 -- Lauma
+#fatiguecost 3000
 #end
 
 #selectspell 1419 -- Harm
@@ -162418,6 +166607,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1323 -- Control the Dead
 #notfornation 109 -- LA Tien Chi
+#precision 10
 #end
 
 #selectspell 1324 -- Charm Animal
@@ -162621,7 +166811,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 1 3
 #pathlevel 1 2
 #nreff 2
-#fatiguecost 2200
+#fatiguecost 2000
 #end
 
 #selectspell 1400 -- Cross breeding
@@ -162650,6 +166840,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #damage 9
 #nreff 3
 #spec 160
+#precision 5
 #end
 
 #selectspell 1418 -- Rain of Toads
@@ -162696,6 +166887,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1423 -- Ritual of Five Gates
 #fatiguecost 2500
 #pathlevel 0 4
+#details "Summons a Fiend of Darkness, Devil, Frost Fiend, Storm Demon, and Demon Knight."
 #end
 
 #selectspell 1444 -- Curse of Blood
@@ -162762,6 +166954,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 1200
 #end
 
+#selectspell 540 -- Bind Warriors of the Jinn
+#fatiguecost 1100
+#end
+
 #selectspell 541 -- Contact Houri
 #path 0 7
 #path 1 1
@@ -162771,13 +166967,16 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #restricted 197 -- Iram
 #end
 
-#selectspell 548 -- Scorching Wind
+#selectspell 548 -- Smokeless Flame
 #restricted 197 -- Iram
+#fatiguecost 10
+#precision 10
 #end
 
 #selectspell 547 -- Scorching Wind
 #descr "The Scorching Wind is the primordial wind from which the Hinn and the Binn were spawned. It is unbearably dry and hot and will dehydrate living beings within minutes. The spell has no effect on living beings resistant to heat or with wasteland survival abilities."
 #restricted 197 -- Iram
+#fatiguecost 20
 #end
 
 -- START OF BATTLEFIELD WIDE CHANGES
@@ -163077,17 +167276,17 @@ Can only be cast once per combat round."
 #end
 
 #selectspell 4230 -- Gotterdammerung clone
-#copyspell 2467
+#copyspell 2473
 #effect 133
 #damage 369 -- Ench169 -- Gotterdammerung
 #spec 8388608
 #details "Can only be cast once per combat round."
 #ainocast 1
 #nextingeo -1
-#nextspell 2467 -- Gotterdammerung
+#nextspell 2473 -- Gotterdammerung
 #end
 
-#selectspell 2467 -- Gotterdammerung
+#selectspell 2473 -- Gotterdammerung
 #school -1
 #end
 
@@ -163777,6 +167976,7 @@ Can only be cast once per combat round."
 #unique
 #bestowtomount
 #waterbreathing
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 658
@@ -166463,8 +170663,8 @@ This will also prevent their skin from drying out."
 
 #selectitem 822
 #spr "magicenhanced/eeicrystalhelm.tga"
-#name "Crystal Mask"
-#descr "This mask is constructed from a magic crystal that will empower the user in battle. The mage wearing this mask will have their paths increased by 1 in combat."
+#name "Mask of the Spheres"
+#descr "This mask is constructed from magic starmetal that will empower the user in battle. The mage wearing this mask will have their paths increased by 1 in combat."
 #constlevel 7
 #mainpath 4
 #mainlevel 2
@@ -166582,7 +170782,7 @@ This will also prevent their skin from drying out."
 #copyitem 320 -- Ring of warning
 #spr "magicenhanced/eeihelmprem.tga"
 #name "Helmet of Premonition"
-#descr "The wearer of this helmet receives flashes of insight from the near future, alerting them to danger. The wearer will anticipate and avoid the first blow that would strike them in each battle, and will be able to fight multiple enemies more effectively. This also allows the wearer to be protected by twice as many bodyguards as usual during assassination attempts."
+#descr "The wearer of this helmet receives flashes of insight from the near future, alerting them to danger. The wearer will anticipate and avoid the first blow that would strike them in each battle, and will be able to fight multiple enemies more effectively."
 #constlevel 3
 #mainpath 4
 #mainlevel 1
@@ -167012,6 +171212,7 @@ This will also prevent their skin from drying out."
 #itemcost1 -40
 #giftofwater 75
 #type 8
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 860 -- Triton's Conch, 1 -> 30 gow
@@ -167024,12 +171225,13 @@ This will also prevent their skin from drying out."
 #itemcost1 -70
 #giftofwater 90
 #type 8
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 861 -- Swamp Talisman, 1 -> 60 gow
 #spr "wateroverhaul/swamptalisman.tga"
 #name "Swamp Talisman"
-#descr "The bearer of this Talisman and all those under their command will find their skin to turn a bit green and swamp grass to grow in place of hair, but more importantly their lungs will adapt to aquatic environments, allowing them to traverse the sea and move underwater with greater ease."
+#descr "The bearer of this Talisman and all those under their command will find their skin to turn a bit green and swamp grass to grow in place of hair, but more importantly their lungs will adapt to aquatic environments, allowing them to traverse the sea."
 #constlevel 5
 #mainpath 6
 #mainlevel 2
@@ -167038,7 +171240,8 @@ This will also prevent their skin from drying out."
 #itemcost1 -70
 #itemcost2 -60
 #giftofwater 300
-#autospell "Tritons Grace"
+--#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #type 8
 #bestowtomount
 #diseaseres 20
@@ -167047,7 +171250,7 @@ This will also prevent their skin from drying out."
 
 #selectitem 862 -- Crown of the Watery Dead, 1 -> 70 gow
 #name "Crown of the Watery Dead"
-#descr "A crown once belonging to the exiled rulers of the realm of the watery dead. Though much of its authority has long been stripped, the waves and dead alike will still recognize the wearer as lord. Water will part around soldiers who follow the wearer, allowing them to breathe and fight underwater with greater ease"
+#descr "A crown once belonging to the exiled rulers of the realm of the watery dead. Though much of its authority has long been stripped, the waves and dead alike will still recognize the wearer as lord. Water will part around soldiers who follow the wearer, allowing them to traverse underwater."
 #spr "wateroverhaul/fomoriancrown.tga"
 #itemdrawsize -33
 #constlevel 5
@@ -167058,7 +171261,8 @@ This will also prevent their skin from drying out."
 #itemcost1 -60
 #itemcost2 -70
 #giftofwater 500
-#autospell "Tritons Grace"
+--#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #undcommand 50
 #type 9
 #nationrebate 10 -- Fomoria
@@ -167350,7 +171554,7 @@ This will also prevent their skin from drying out."
 Increases Natural Protection by 2 for each level of heat in the province."
 #spr "magicenhanced/magmaskin.png"
 #armor 206 --Obsidian Cuirass
-#constlevel 11 -- 7
+#constlevel 7 -- 7
 #hp 8
 #fireres 10
 #icenatprot -2
@@ -167377,31 +171581,27 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #end
 
 #selectitem 886
-#name "Iron Fist of Authority"
-#descr "The one who wears this bloody gauntlet has the terrifying authority to force even the most disorganized rabble into organized troops. So great is the power of this item that even animals or unthinking undead will follow the wearer's command. However, the tighter the grasp, the more slip through the fingers- the morale of any troops this commander leads will be lower, and they will be more likely to route.
-
-Adds Undisciplined Leader"
-#spr "magicenhanced/ironfist.png"
-#constlevel 11 -- 7
+#name "Iron Fist"
+#descr "The one who wears this bloodied gauntlet has the terrifying authority to force even the most undisciplined rabble into organized rows. So great is the power of this item that even animals or unthinking undead will follow the wearer's command. However, the tighter the grasp, the more slip through the fingers - the morale of troops gripped by it will greatly suffer under even the most inspiring commanders."
+#spr "magicenhanced/ironfistb.png"
+#constlevel 7
 #type 1
 #weapon 881 --Magic Fist--
 #undisleader 1
-#inspirational -3
+#inspirational -4
 #command 25
 #undcommand 25
 #taskmaster 2
 #mainpath 8
 #mainlevel 3
-#secondarypath 0
-#secondarylevel 1
+#itemcost1 34 -- 20 slaves
+--#secondarypath 0
+--#secondarylevel 1
 #end
 
 #selectitem 887
 #name "Whip of Beast-Command"
-#descr "This enchanted whip gives the wielder the ability to command and communicate with animals as though they were soldiers allowing for advanced commands for even the most undisciplined rabble. As a side effect, they can also lead undisciplined non animals as well, though their ability to command them will be lowered as the user will only be able to speak in the most basic barks and grunts.
-
-Adds Undisciplined Leader
-Adds Beastmaster 5"
+#descr "This enchanted whip gives the wielder the ability to command and communicate with animals as though they were soldiers allowing for advanced commands for even the most undisciplined rabble. As a side effect, they can also lead undisciplined non animals as well, though their ability to command them will be lowered as the user will only be able to speak in the most basic barks and grunts."
 #spr "magicenhanced/beastcommand.png"
 #constlevel 11 -- 5
 #weapon 140
@@ -167411,8 +171611,8 @@ Adds Beastmaster 5"
 #undiscleader 1
 #noundead
 #nodemon
-#inspirational -5
-#beastmaster 5
+#inspirational -6
+#beastmaster 8
 #end
 
 #selectitem 888
@@ -167434,33 +171634,31 @@ Adds Beastmaster 5"
 #end
 
 #selectitem 889
-#name "Amulet of Unification"
-#descr "This amulet empowers the wearer's ability to open their mind allowing it's wearer to join or lead a Grand Communion.
-
-Adds Grand Communicant"
-#spr "magicenhanced/unification.png"
+#name "Amulet of Grand Communion"
+#descr "This amulet allows the bearer to join or lead a Grand Communion. If joining a Grand Communion, his magic skill in the path of the ritual cast by another Grand Communicant will be added to the power of the ritual. Only global spells or dispels are affected."
+#spr "magicenhanced/grandcommunion.png"
 #mainpath 4
 #mainlevel 3
 #grandcom 1
 #type 8
-#constlevel 11 -- 7
+#constlevel 7
 #end
 
 #selectitem 890
 #name "Gauntlet of Spell Channeling"
 #spr "magicenhanced/spellfocus.png"
-#descr "This enchanted glove allow for quick movements and are magically enchanted to help channel magic, allowing wearers to occasionally cast spells while in melee combat, and helps avoid having their spells be interrupted.
-
-Adds Combat Caster"
+#descr "This enchanted glove allow for quick movements and are magically enchanted to help channel magic, allowing wearers to occasionally cast spells while in melee combat, and helps avoid having their spells be interrupted."
 #type 1
-#weapon 881 --Magic Fist--
+#weapon 231 -- Thunder Fist
+#reinvigoration 1
 #mainpath 0
-#mainlevel 2
+#mainlevel 1
 #secondarypath 7
 #secondarypath 1
-#itemcost1 -50
+#itemcost1 -40
+#itemcost2 -40
 #combatcaster 1
-#constlevel 11 -- 5
+#constlevel 5 -- 5
 #end
 
 #selectitem 891
@@ -167509,6 +171707,89 @@ Adds Combat Caster"
 #itemcost1 -33
 #earthelementals 1
 #constlevel 11 -- 5
+#end
+
+#selectitem 895
+#name "Astral Suppressor"
+#spr "magicenhanced/blue_astralsuppressor.png"
+#descr "This amulet will suppress the bearer's astral footprint. This will prevent them from casting Astral magic, but will prevent their mind from being duelled by other mages."
+#type 8
+#mainpath 4
+#mainlevel 1
+#itemcost1 -40 -- 3S
+#magicboost 4 -9
+#constlevel 3
+#autospell "Mind Blank"
+#nationrebate 40 -- EA Pelagia
+#end
+
+#selectitem 896
+#name "Amulet of Serenity"
+#spr "magicenhanced/blue_calmingamulet.png"
+#descr "This amulet will quell the bearer's rage. This will prevent them from going berserk in combat, but will reduce their attack and strength by 1."
+#type 8
+#mainpath 2 -- W
+#mainlevel 1
+--#secondarypath 6 -- N
+--#secondarylevel 1
+#itemcost1 -40 -- 3W
+--#itemcost2 -60 -- 2N
+#constlevel 3
+#berserk -9
+#autospell "Tranquility"
+#end
+
+
+#selectitem 897 -- Earthen Pillar
+#spr "magicenhanced/blue_earthrod.png"
+#name "Earthen Pillar"
+#descr "This magical staff is hewn from a great stalactite in a cavern deep within the earth. Its connection to the earth allows one to receive the power of the earth, increasing their stamina and allowing them to empower summoned Earth elementals, increasing their size. The rod is very heavy and will slow the bearer down, and is too heavy for most transportation magic."
+#constlevel 5
+#mainpath 3
+#mainlevel 1
+#type 2 -- 2H
+#weapon 1923 -- Earthen Pillar
+#reinvigoration 3
+#swift -50
+#mapspeed -4
+#heavyitem 1
+#earthelementals 1
+#end
+
+#selectitem 898 -- Kelp Lord's Crown
+#name "Kelp Lord's Crown"
+#descr "Allows the Kelp Lord to animate kelp."
+#spr "wateroverhaul/lungweed.tga"
+#constlevel 11
+#mainpath 6
+#mainlevel 1
+#type 8
+#cursed
+#nofind
+#battlesum1d2 7580 -- Kelp Man
+--#spell "Kelp Man Animation"
+#end
+
+#selectitem 899 -- Blodhjart
+#copyitem 395 -- Heart of Life
+#name "Blodhjart"
+#descr "This heart, made with the life force of many slaves and infused with the magic of Death, may bring the bearer back from the dead as an undead wight should they fall. The heart's magic will require a month to attune to, and the crude surgery required to replace the heart will most likely permanently damage its owner. One being can have multiple magic hearts at once. Inanimate beings cannot use magic hearts."
+#spr "magicenhanced/blue_blodhjart.png"
+#constlevel 5
+#mainpath 5 -- D
+#mainlevel 1
+#secondarypath 8 -- B
+#secondarylevel 1
+#itemcost1 -40 -- 3D
+#itemcost2 100 -- 10B
+#type 8
+#spell "Twiceborn"
+#reinvigoration 2
+#coldres 5
+#poisonres 5
+#restricted 81
+#nodemon
+#noundead
 #end
 
 
@@ -167578,6 +171859,7 @@ Adds Combat Caster"
 #selectitem 89 -- Standard of the Damned gow 0 -> 250 (1 -> 6 gow)
 #giftofwater 150
 #descr "This standard drains life energy from enemies and adds it to the owner of the standard. The standard also causes fear in all nearby enemies. The holder and those under their command will be able to travel under the sea, as if undead."
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 140 -- Vajra
@@ -167796,7 +172078,11 @@ Adds Combat Caster"
 #end
 
 #selectitem 48 -- Wand of Wild Fire
-#itemcost1 -50
+#descr "The wielder of this wand can shoot Flame Bolts at the enemy, or a mage of Fire can utilize it to empower summoned Fire Elementals, increasing their size."
+#mainlevel 3
+#itemcost1 -67
+#fireelementals 1
+#spell "Wild Fire"
 #end
 
 #selectitem 50 -- lightning Spear
@@ -168346,6 +172632,11 @@ This headband does not require activation in combat."
 #awe 7
 #end
 
+#selectitem 251 -- Robe of the Sea
+#descr "A Water mage who wears this robe will find that it helps him in the use of Water magic. This robe makes it possible for anyone wearing it to breathe underwater and on land. The robe can also be used to empower Water Elementals, increasing their size."
+#waterelementals 1
+#end
+
 #selectitem 256 -- Chainmail of Displacement
 #itemcost1 -50
 #end
@@ -168689,7 +172980,7 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 348 -- Soul Contract
-#itemcost1 266
+#itemcost1 234
 #descr "The Blood mage sacrifices a great number of slaves to get the attention of Infernal powers. When contact is made, an Infernal Lord offers a contract, to be signed in blood. Whoever signs the contract promises his soul, to be collected at the time of his death, to the Infernal Lord. In exchange for this fair and valuable consideration, the signatory will, for as long as he lives, receive one bound devil each month from the Infernal Lord."
 #noinanim
 #nodemon
@@ -168702,6 +172993,12 @@ This headband does not require activation in combat."
 #constlevel 3
 #itemcost1 -50
 #giftofwater 150
+#autospell "Permanent Water Breathing"
+#end
+
+#selectitem 353 -- Storm Spool
+#descr "An arcane device used to trap and store lightning. This device will increase the effectiveness of the Corpse Man Construction spell. When carried in combat anyone striking its wielder might get stunned by the energy of the storm spool. The caster can also empower summoned Air Elementals with the stored lightning, increasing their size when summoned."
+#airelementals 1
 #end
 
 #selectitem 355 -- Wall Shaker
@@ -168727,7 +173024,7 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 364 -- Manual of Water Breathing
-#descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water. At the start of battle, the book's owner will cast a spell that makes fighting underwater more bearable for airbreathing soldiers."
+#descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water."
 #itemcost1 -60 -- 4 gems
 #itemcost2 -40 -- 3 gems
 #mainpath 2
@@ -168735,7 +173032,8 @@ This headband does not require activation in combat."
 #mainlevel 2
 #constlevel 3
 #giftofwater 300
-#autospell "Tritons Grace"
+--#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 367 -- Crystal Matrix
@@ -168794,11 +173092,12 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 396 -- Lifelong Protection
-#noinanim
-#nodemon
-#noundead
 #sneakunit 0
 #stealthboost -500
+--#battlesum1d3 303 -- Imp
+#mainpath 8
+#mainlevel 2
+#itemcost1 200
 #end
 
 #selectitem 401 -- Barrel of Air
@@ -168806,6 +173105,7 @@ This headband does not require activation in combat."
 #itemcost1 -33
 #mainlevel 3
 #giftofwater 750
+--#autospell "Tritons Grace"
 #autospell "Permanent Water Breathing"
 #tmpairgems 1
 #end
@@ -168818,7 +173118,7 @@ This headband does not require activation in combat."
 #descr "This magic item will enable a commander to travel underwater with an army consisting of up to 250 human-sized troops or 100 giants. On the eve of battle, each soldier within the army sips enchanted seawater from the goblet and is blessed by Thetis, granting them the ability to breathe water in perpetuity."
 #itemcost1 -33
 #giftofwater 750
-#autospell "Permanent Water Breathing"
+#autospell "Tritons Grace"
 #tmpwatergems 1
 #end
 
@@ -169285,6 +173585,14 @@ This headband does not require activation in combat."
 #defmult1 10
 #end
 
+#selectpoptype 104 --Bekrydes--
+#addreccom 3589 --Bekyrde Scout--
+#end
+
+#selectpoptype 44 --Troglodytes
+#addreccom 1461 --Trog Lord--
+#end
+
 
 -- increase resource events
 
@@ -169412,19 +173720,203 @@ This headband does not require activation in combat."
 #end
 
 
--- Small cave pop increase
+-- START CAVE EVENTS
+
+
+
+--There are too many cavemen. Kill some cavemen. Cavemen have 23 hit points and 2 protection, approx 25 total health. A strike is dmg+drn vs prot+drn Strike damage of 22 should kill approximately 24% of cavemen. Add commander in case all commanders are killed.
 
 #newevent
 #rarity 5
-#req_pregame 1
-#req_capital 0
-#req_cave 1
 #req_indepok 1
-#incpop 50
-#msg "50 pops"
+#req_pop0ok 1
+#req_thronesite 0
+#req_capital 0
+#req_pregame 1
+#req_monster 1615 --caveman--
+#strikeunits 22
+#com 1616 --Caveman Champion--
+#nolog
+#notext
+#incvar 6011 -- flag to heal afflictions
+#end
+
+--There are too many cynos. Kill some cynos. Cynos have 20 or 18hp and 8 prot, so 26-28 total health. Strike of 22 should kill approximately 18% of warriors and 30% of hunters
+
+
+#newevent
+#rarity 5
+#req_indepok 1
+#req_pop0ok 1
+#req_thronesite 0
+#req_capital 0
+#req_pregame 1
+#req_monster 3277 --cyno--
+#strikeunits 22
+#com 3278 --cyno champion--
+#nolog
+#notext
+#incvar 6011 -- flag to heal afflictions
+#end
+
+-- There are too many trogs. Kill some trogs. Trogs have 37 hp and 7 prot for a total of 44 total health. Strike of 42 should kill approximately 30% of trogs.
+
+#newevent
+#rarity 5
+#req_indepok 1
+#req_pop0ok 1
+#req_thronesite 0
+#req_capital 0
+#req_pregame 1
+#req_monster 447 -- Troglodyte
+#strikeunits 42
+#com 1461 --Trog Lord--
+#nolog
+#notext
+#incvar 6011 -- flag to heal afflictions
+#end
+
+-- Heal all the afflictions with a worldheal, since this happens on turn 0 before national units are spawned it shouldnt affect them
+#newevent
+#rarity 5
+#req_pregame 1
+#worldheal 100
+#req_varpos 6011 -- flag to heal afflictions
+#clearvar 6011
 #nolog
 #notext
 #end
+
+
+-- Inc regular caves by 2300, 3300, 4300
+
+#newevent
+#rarity 5
+#req_era 1
+#req_indepok 1
+#req_cave 1
+#req_pregame 1
+#req_capital 0
+#req_crystal 0
+#req_forestcave 0
+#req_drip 0
+#incpop 230
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#req_era 2
+#req_indepok 1
+#req_cave 1
+#req_pregame 1
+#req_capital 0
+#req_crystal 0
+#req_forestcave 0
+#req_drip 0
+#incpop 330
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#req_era 3
+#req_indepok 1
+#req_cave 1
+#req_pregame 1
+#req_capital 0
+#req_crystal 0
+#req_forestcave 0
+#req_drip 0
+#incpop 430
+#nolog
+#notext
+#end
+
+
+-- Inc Dripcaves by 3700, 4200, 4700
+
+#newevent
+#rarity 5
+#req_era 1
+#req_indepok 1
+#req_pregame 1
+#req_capital 0
+#req_drip 1
+#incpop 370
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#req_era 2
+#req_indepok 1
+#req_pregame 1
+#req_capital 0
+#req_drip 1
+#incpop 420
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#req_era 3
+#req_indepok 1
+#req_pregame 1
+#req_capital 0
+#req_drip 1
+#incpop 470
+#nolog
+#notext
+#end
+
+
+-- Decrease cave forests by 1500, 2000, 2500 if they have over 11k, 12.5k 14k pop to begin with 
+
+#newevent
+#rarity 5
+#req_era 1
+#req_indepok 1
+#req_pregame 1
+#req_capital 0
+#req_forestcave 1
+#killpop 150
+#req_minpop 1100
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#req_era 2
+#req_indepok 1
+#req_pregame 1
+#req_capital 0
+#req_forestcave 1
+#killpop 200
+#req_minpop 1250
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#req_era 3
+#req_indepok 1
+#req_pregame 1
+#req_capital 0
+#req_forestcave 1
+#killpop 250
+#req_minpop 1400
+#nolog
+#notext
+#end
+
+-- END CAVE EVENTS
 
 
 -- START OF INFORMATIVE SEARCH EVENTS
@@ -169521,10 +174013,9 @@ This headband does not require activation in combat."
 #req_targpath1 0
 #msg "There are traces of a more powerful Fire site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Academy of the Hidden Flame]"
 #header 2
 #end
-
 
 #newevent
 #rarity 5
@@ -169869,10 +174360,9 @@ This headband does not require activation in combat."
 #req_targpath1 1
 #msg "There are traces of a more powerful Air site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Academy of Storms and Thunder]"
 #header 2
 #end
-
 
 #newevent
 #rarity 5
@@ -170133,7 +174623,7 @@ This headband does not require activation in combat."
 #req_targpath1 2
 #msg "There are traces of a more powerful Water site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Academy of Deep Waters]"
 #header 2
 #end
 
@@ -170469,7 +174959,7 @@ This headband does not require activation in combat."
 #req_targpath1 3
 #msg "There are traces of a more powerful Earth site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Academy of the Deeper Earth]"
 #header 2
 #end
 
@@ -170949,7 +175439,7 @@ This headband does not require activation in combat."
 #req_targpath1 4
 #msg "There are traces of a more powerful Astral site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Academy of the Spheres]"
 #header 2
 #end
 
@@ -172653,7 +177143,7 @@ This headband does not require activation in combat."
 #req_targpath1 7
 #msg "There are traces of a more powerful Glamour site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Academy of Unseen Colors]"
 #header 2
 #end
 
@@ -173517,7 +178007,7 @@ This headband does not require activation in combat."
 #req_targpath1 2
 #msg "There are traces of a more powerful Water site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Troll Pit]"
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Sea Troll Pit]"
 #header 2
 #end
 
@@ -178332,701 +182822,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #addsite 186  -- Great Temple of the Moon
 #end
 
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 3127  -- Keres
-#req_pop0ok
-#msg "One of your Keres broke free and attacked!"
-#killmon 3127
-#assassin 3127
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 3127  -- Keres
-#req_pop0ok
-#msg "One of your Keres broke free and attacked!"
-#killmon 3127
-#assassin 3127
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1357  -- Beast Bat
-#req_pop0ok
-#msg "One of your Beast Bats broke free and attacked!"
-#killmon 1357
-#assassin 1357
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1357  -- Beast Bat
-#req_pop0ok
-#msg "One of your Beast Bats broke free and attacked!"
-#killmon 1357
-#assassin 1357
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1356  -- Ozelotl
-#req_pop0ok
-#msg "One of your Jaguar Fiends broke free and attacked!"
-#killmon 1356  -- Ozelotl
-#assassin 1356  -- Ozelotl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1356  -- Ozelotl
-#req_pop0ok
-#msg "One of your Jaguar Fiends broke free and attacked!"
-#killmon 1356  -- Ozelotl
-#assassin 1356  -- Ozelotl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1483  -- Tzitzimitl
-#req_pop0ok
-#msg "One of your Tzitzimitl broke free and attacked!"
-#killmon 1483  -- Tzitzimitl
-#assassin 1483  -- Tzitzimitl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1483  -- Tzitzimitl
-#req_pop0ok
-#msg "One of your Tzitzimitl broke free and attacked!"
-#killmon 1483  -- Tzitzimitl
-#assassin 1483  -- Tzitzimitl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_targmnr 7119 -- Bound Jinn
-#req_pop0ok
-#msg "One of your Jinn has broken free and escaped!"
-#killcom 7119 -- Bound Jinn
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 7120 -- Bound Jinn Warrior
-#req_pop0ok
-#msg "One of your Jinn Warriors broke free and attacked!"
-#killmon 7120 -- Bound Jinn Warrior
-#assassin 7120 -- Bound Jinn Warrior
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 7120 -- Bound Jinn Warrior
-#req_pop0ok
-#msg "One of your Jinn Warriors broke free and attacked!"
-#killmon 7120 -- Bound Jinn Warrior
-#assassin 7120 -- Bound Jinn Warrior
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2497  -- Penumbral
-#req_pop0ok
-#msg "One of your Penumbrals broke free and attacked!"
-#killmon 2497  -- Penumbral
-#assassin 2497  -- Penumbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 2497  -- Penumbral
-#req_pop0ok
-#msg "One of your Penumbrals broke free and attacked!"
-#killmon 2497  -- Penumbral
-#assassin 2497  -- Penumbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1490  -- Umbral
-#req_pop0ok
-#msg "One of your Umbrals broke free and attacked!"
-#killmon 1490  -- Umbral
-#assassin 1490  -- Umbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1490  -- Umbral
-#req_pop0ok
-#msg "One of your Umbrals broke free and attacked!"
-#killmon 1490  -- Umbral
-#assassin 1490  -- Umbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 6773 -- Demon Owl
-#req_pop0ok
-#msg "One of your Demon Owls broke free and attacked!"
-#killmon 6773 -- Demon Owl
-#assassin 6773 -- Demon Owl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 6773 -- Demon Owl
-#req_pop0ok
-#msg "One of your Demon Owls broke free and attacked!"
-#killmon 6773 -- Demon Owl
-#assassin 6773 -- Demon Owl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 6774 -- Soul Eater
-#req_pop0ok
-#msg "One of your Soul Eaters broke free and attacked!"
-#killmon 6774 -- Soul Eater
-#assassin 6774 -- Soul Eater
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 6774 -- Soul Eater
-#req_pop0ok
-#msg "One of your Soul Eaters broke free and attacked!"
-#killmon 6774 -- Soul Eater
-#assassin 6774 -- Soul Eater
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_targmnr 6775 -- Black One
-#req_pop0ok
-#msg "One of your Black Ones has broken free and escaped!"
-#killcom 6775 -- Black One
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 303  -- Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 303  -- Imp
-#assassin 303  -- Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 303  -- Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 303  -- Imp
-#assassin 303  -- Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2286  -- Fiery Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 2286  -- Fiery Imp
-#assassin 2286  -- Fiery Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 2286  -- Fiery Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 2286  -- Fiery Imp
-#assassin 2286  -- Fiery Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 638  -- Spine Devil
-#req_pop0ok
-#msg "One of your Spine Devils broke free and attacked!"
-#killmon 638  -- Spine Devil
-#assassin 638  -- Spine Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 638  -- Spine Devil
-#req_pop0ok
-#msg "One of your Spine Devils broke free and attacked!"
-#killmon 638  -- Spine Devil
-#assassin 638  -- Spine Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 88  -- Fiend of Darkness
-#req_pop0ok
-#msg "One of your Fiends of Darkness broke free and attacked!"
-#killmon 88  -- Fiend of Darkness
-#assassin 88  -- Fiend of Darkness
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 88  -- Fiend of Darkness
-#req_pop0ok
-#msg "One of your Fiends of Darkness broke free and attacked!"
-#killmon 88  -- Fiend of Darkness
-#assassin 88  -- Fiend of Darkness
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 304  -- Devil
-#req_pop0ok
-#msg "One of your Devils broke free and attacked!"
-#killmon 304  -- Devil
-#assassin 304  -- Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 304  -- Devil
-#req_pop0ok
-#msg "One of your Devils broke free and attacked!"
-#killmon 304  -- Devil
-#assassin 304  -- Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 449  -- Frost Fiend
-#req_pop0ok
-#msg "One of your Frost Fiends broke free and attacked!"
-#killmon 449  -- Frost Fiend
-#assassin 449  -- Frost Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 449  -- Frost Fiend
-#req_pop0ok
-#msg "One of your Frost Fiends broke free and attacked!"
-#killmon 449  -- Frost Fiend
-#assassin 449  -- Frost Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 526  -- Serpent Fiend
-#req_pop0ok
-#msg "One of your Serpent Fiends broke free and attacked!"
-#killmon 526  -- Serpent Fiend
-#assassin 526  -- Serpent Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 526  -- Serpent Fiend
-#req_pop0ok
-#msg "One of your Serpent Fiends broke free and attacked!"
-#killmon 526  -- Serpent Fiend
-#assassin 526  -- Serpent Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 632  -- Storm Demon
-#req_pop0ok
-#msg "One of your Storm Demons broke free and attacked!"
-#killmon 632  -- Storm Demon
-#assassin 632  -- Storm Demon
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 632  -- Storm Demon
-#req_pop0ok
-#msg "One of your Storm Demons broke free and attacked!"
-#killmon 632  -- Storm Demon
-#assassin 632  -- Storm Demon
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 489  -- Demon Knight
-#req_pop0ok
-#msg "One of your Demon Knights broke free and attacked!"
-#killmon 489  -- Demon Knight
-#assassin 489  -- Demon Knight
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 489  -- Demon Knight
-#req_pop0ok
-#msg "One of your Demon Knights broke free and attacked!"
-#killmon 489  -- Demon Knight
-#assassin 489  -- Demon Knight
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 306
-#req_pop0ok
-#msg "Nycafor broke free from their binding and has escaped!"
-#killcom 306
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 821
-#req_pop0ok
-#msg "Oriax broke free from their binding and has escaped!"
-#killcom 821
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 822
-#req_pop0ok
-#msg "Gaap broke free from their binding and has escaped!"
-#killcom 822
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 823
-#req_pop0ok
-#msg "Bifrons broke free from their binding and has escaped!"
-#killcom 823
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 824
-#req_pop0ok
-#msg "Cimejes broke free from their binding and has escaped!"
-#killcom 824
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 825
-#req_pop0ok
-#msg "Bune broke free from their binding and has escaped!"
-#killcom 825
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 305
-#req_pop0ok
-#msg "Buriol broke free from their binding and has escaped!"
-#killcom 305
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 826
-#req_pop0ok
-#msg "Ethanim broke free from their binding and has escaped!"
-#killcom 826
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 827
-#req_pop0ok
-#msg "Furcas broke free from their binding and has escaped!"
-#killcom 827
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 828
-#req_pop0ok
-#msg "Magoth broke free from their binding and has escaped!"
-#killcom 828
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 829
-#req_pop0ok
-#msg "Igarak broke free from their binding and has escaped!"
-#killcom 829
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 492
-#req_pop0ok
-#msg "Mastema broke free from their binding and has escaped!"
-#killcom 492
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 818
-#req_pop0ok
-#msg "Amaimon broke free from their binding and has escaped!"
-#killcom 818
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 819
-#req_pop0ok
-#msg "Gorilon broke free from their binding and has escaped!"
-#killcom 819
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 820
-#req_pop0ok
-#msg "Mabakiel broke free from their binding and has escaped!"
-#killcom 820
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 446
-#req_pop0ok
-#msg "Pazuzu has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 446
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 810
-#req_pop0ok
-#msg "Belphegor has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 810
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 900
-#req_pop0ok
-#msg "Belial has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 900
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1405
-#req_pop0ok
-#msg "Buer has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 1405
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2277
-#req_pop0ok
-#msg "Geryon has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 2277
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2278
-#req_pop0ok
-#msg "Ashmedai broke free from their binding and has escaped!"
-#killcom 2278
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 7667
-#req_pop0ok
-#msg "Lilith broke free from her binding and has escaped!"
-#killcom 7667
-#nolog
-#end
 
 #newevent
 #rarity 5
@@ -182476,12 +186271,15 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 
 
+-- START TAX COLLECTION REPORTS
+
+
 -- amounts -
 
--- 10~25 = reduced
--- 30~65 = one half
--- 70 ~ 135 = one third
--- 140+ = ruined
+-- 10~25 = reduced, 15-35% redux
+-- 30~65 = one half, 35-60% redux
+-- 70 ~ 135 = one third, 60-75% redux
+-- 140+ = ruined, 75%+ redux
 
 -- odd turn events
 
@@ -182497,9 +186295,12 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182515,9 +186316,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182533,9 +186337,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182549,9 +186356,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182580,9 +186390,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182598,9 +186411,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182616,9 +186432,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182632,9 +186451,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182663,9 +186485,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182681,9 +186506,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182699,9 +186527,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182715,9 +186546,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182746,9 +186580,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182764,9 +186601,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182782,9 +186622,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182798,9 +186641,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182829,9 +186675,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182847,9 +186696,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182865,9 +186717,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182881,9 +186736,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182912,9 +186770,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182930,9 +186791,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182948,9 +186812,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182964,9 +186831,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_land 1
 #req_site 1
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182996,9 +186866,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183013,9 +186886,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183030,9 +186906,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183046,9 +186925,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183064,9 +186946,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183081,9 +186966,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183098,9 +186986,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183114,9 +187005,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183132,9 +187026,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183149,9 +187046,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183166,9 +187066,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183182,9 +187085,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183200,9 +187106,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183217,9 +187126,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183234,9 +187146,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183250,9 +187165,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183268,9 +187186,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183285,9 +187206,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183302,9 +187226,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183318,9 +187245,12 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183336,9 +187266,12 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Less than the expected income was collected in ##landname##.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 15% and 35% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183353,9 +187286,12 @@ Tax collectors report that the population was unruly this month and collected le
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Half of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Between 35% and 60% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183370,9 +187306,12 @@ Tax collectors report that the population was very unruly this month and were on
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "One third of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+Roughly 60% to 75% of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
@@ -183386,12 +187325,18 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_nositenbr 2314
 #hiddensite 2314
 #req_targorder 8
-#msg "Tax collectors in ##landname## have a report.
+#msg "Very little of the expected income was collected in ##landname##.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area.
+
+75% or more of income was lost.
+This event did not directly reduce income, and is only reporting on the income already lost from Unrest prior to patrolling."
 #header 2
 #nolog
 #end
+
+
+-- END TAX COLLECTION REPORTS
 
 
 #newevent -- Has fort, has PD
@@ -188953,7 +192898,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_pregame 1
 #req_site 1
-#msg "[Mountain of the Mystics"
+#msg "[Mountain of the Mystics]"
 #addgeo 16 --Highland
 #end
 
@@ -189952,22 +193897,22 @@ It is now fully repaired and a new crew has been assigned to it."
 #newevent
 #rarity 5
 #req_targorder 52 -- Void Summon
-#req_rare 3
+#req_rare 2
 #req_turn 12
 #req_pop0ok
 #nation -2
 #msg "A strange creature has emerged from the Void Gate while your summoner was attempting to open it."
 #nolog
 #header 2
-#com 7393
-#req_varone 6010
+#com 7393 -- Yithian
+--#req_varone 6010
 #end
 
 #newevent
 #rarity 5
 #req_targorder 52 -- Void Summon
 #req_fornation 127 -- LA R'lyeh
-#req_rare 10
+#req_rare 6
 #req_turn 12
 #req_unique 1
 #req_pop0ok
@@ -189975,8 +193920,267 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "A strange creature has emerged from the Void Gate while your summoner was attempting to open it."
 #nolog
 #header 2
-#com 7393
-#incvar 6010
+#com 7393 -- Yithian
+--#incvar 6010
+#end
+
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 50 -- MA Arco
+#req_fornation 50 -- MA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent
+#rarity 5
+#nation 95 -- LA Arco
+#req_fornation 95 -- LA Arco
+#req_monster 9323 -- Heart Companion x2
+#killmon 9323
+#1unit 747
+#1unit 747
+#nolog
+#notext
+#end
+
+#newevent -- Gloom event
+#rarity 5
+#req_rare 0
+#id 4300
+#msg "The province was covered in dark and gloomy clouds for an entire month."
+--#nation -2
+#end
+
+#newevent -- Polar Night event
+#rarity 5
+#req_rare 0
+#id 4301
+#msg "The province has been covered by an unnatural darkness for the entire month, and it does not appear to be lifting yet."
+--#nation -2
 #end
 
 
