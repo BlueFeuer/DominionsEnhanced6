@@ -1,4 +1,4 @@
-#modname "Dominions Enhanced 2 (GitHub)"
+#modname "Dominions Enhanced 2(GitHub)"
 #description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by BlueFire, Red_Rob, Lightmane, Flintlock, Selgeron, laodie666, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
 #icon "domenhanced/banner.png"
 #version 2.x
@@ -39413,7 +39413,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 760  -- Siege Golem
 #clearweapons
 #name "Siege Golem"
-#descr "A siege golem is a metal giant with fists enchanted to shatter steel and stone. It is tremendously strong and can crush stone walls to powder. The main purpose of the siege golem is to besiege castles and it is rather poor at melee combat, although it is very durable and will not easily be destroyed. The siege golem is instilled with instructions from its creator and can act independently, although it has no mind. A single siege golem counts as one hundred normal soldiers when besieging a castle, and if given a full month can deploy pulverising shockwaves that will utterly destroy any fort in the province, however once this process begins the golem will slowly tear itself apart. The Siege Golem is a huge construction and cannot be teleported via magic."
+#descr "A siege golem is a metal giant with fists enchanted to shatter steel and stone. It is tremendously strong and can crush stone walls to powder. The main purpose of the siege golem is to besiege castles and it is rather poor at melee combat, although it is very durable and will not easily be destroyed. The siege golem is instilled with instructions from its creator and can act independently, although it has no mind. A single siege golem counts as one hundred normal soldiers when besieging a castle, and if given a full month can deploy pulverising shockwaves that will utterly destroy any fort in the province, however once this process begins the golem will slowly tear itself apart. The Siege Golem is a huge construction and cannot be teleported via magic. This Siege Golem is still in it's immobile fort destroying form, but will soon return to it's mobile form."
 #fortkill 100
 #str 40
 #noleader
@@ -52952,8 +52952,11 @@ Requires an Ippondatara present to recruit."
 #iceprotinspector -1
 #prot 3
 #cleararmor
-#armor 570 -- Half Plate
+#armor 14 --Hauberk--
 #armor 20 -- cap
+#size 5
+#coldres -3
+#formationfighter -1
 #end
 
 #newmonster 8893 -- Nonsacred Daeva
@@ -72894,7 +72897,32 @@ Only three Queens of Elemental Water are known to exist."
 #magicskill 1 1
 #magicskill 3 1
 #magicskill 5 1
+#bonusspells 1
+#battleshape 9357
 #end
+
+--Totem Battle Shapes--
+
+#newmonster 9357 --Totem Battle No Innate --
+#copystats 8260
+#copystats 8260
+#copyspr 8260
+#bonusspells 0
+#homerealm 0
+#startdom 0
+#clearmagic
+#shrinkhp 999
+#end
+
+#newmonster 9358 --Totem Battle Innate--
+#copystats 8260
+#copyspr 8260
+#bonusspells 1
+#homerealm 0
+#startdom 0
+#worldshape 8260 --Totem-- 
+#clearmagic
+#end 
 
 #newmonster 8261 -- Great Bear
 #spr1 "chaco/brownbear.tga"
@@ -77835,6 +77863,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mapmove 2
 #fireres 25
 #heat 7
+#icenatprot -1
 #fireshield 8
 #darkvision 100
 #firepower 1
@@ -81965,7 +81994,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "Potent nature mages do not die easily, and even death might not stop the more powerful ones. When the worms and bugs that feed of carrion devour the corpse of a dead Nature mage, some of the mages manage to transfer a portion of their mind and power into the crawling mass feeding on their remains. This being houses the life force of such a mage and it is formed by thousands of worms and bugs. Should it be slain in combat it can usually transfer its life force to other nearby bugs and shape a new body capable of casting spells.
 The Worm Lord has learnt all of magic that it can and now there is nothing left but to take the role of a Pretender God."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #startdom 2
 #pathcost 30
 #moregrowth 1
@@ -82954,6 +82983,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 0 3
 #magicskill 6 1
 #magicskill 7 1
+#size 9
 #end
 
 
@@ -83967,6 +83997,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 0 1
 #magicskill 4 1
 #magicskill 8 1
+#size 3
 #end
 
 #selectmonster 499 -- Nataraja
@@ -126808,7 +126839,10 @@ Priests: Strong"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 #addgod 8283 -- Solar Bison
-
+#addgod 8260 -- Totem 
+#addgod 8261 -- Great Bear
+#addgod 8262 -- Storm Eagle
+#addgod 8263 -- Mountain Lion
 #fortera 1
 #buildfort 27  -- Fortified Villages
 #startcom 6798 -- Kikmongwi
@@ -126962,6 +126996,11 @@ Priests: Strong"
 #addgod 8280 -- Titan of the Sun
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
+#addgod 8284 -- Diyin Dine'é of War
+#addgod 8261 -- Great Bear
+#addgod 8262 -- Storm Eagle
+#addgod 8263 -- Mountain Lion
+#addgod 8260 -- Totem
 
 #blessbonus 1
 #fortera 2
@@ -127115,6 +127154,10 @@ Priests: Strong"
 #addgod 8280 -- Titan of the Sun
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
+#addgod 8261 --Great bear--
+#addgod 8262 --Storm Eagle--
+#addgod 8263 --Mountain Lion--
+#addgod 8284 -- "Diyin Dine'é of War"
 
 #fortera 2
 #startcom 6861 -- Kikmongwi
@@ -127258,7 +127301,11 @@ Priests: Strong, can Blood Sacrifice"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 #addgod 8283 -- Solar Bison
-#addgod 8284 -- Titan of War
+#addgod 8284 -- "Diyin Dine'é of War"
+#addgod 8261 --Great bear--
+#addgod 8262 --Storm Eagle--
+#addgod 8263 --Mountain Lion--
+#addgod 8260 --Totem--
 #cheapgod20 120  -- Moloch
 #cheapgod20 2788  -- Man Eater
 #cheapgod20 8284 -- Titan of War
@@ -128661,7 +128708,6 @@ Priests: Average"
 #addgod 2792 -- Solar Serpent
 #addgod 2799 -- Wadjet
 #addgod 657 -- Monolith
-
 #addgod 8284 -- "Diyin Dine'é of War"
 #addgod 8278 -- "Diyin Dine'é of the Sky"
 #addgod 8277 -- "Diyin Dine'é of Rain"
@@ -128701,7 +128747,10 @@ Priests: Average"
 #cheapgod20 8282 -- "Diyin Dine'é of the Earth"
 #cheapgod20 8285 -- "First Man"
 #cheapgod20 8286 -- "First Woman"
-
+#addgod 8260 --Totem--
+#addgod 8261 --Great bear--
+#addgod 8262 --Storm Eagle--
+#addgod 8263 --Mountain Lion--
 #noundeadgods
 
 #moreheat 1
@@ -128833,6 +128882,9 @@ Priests: Average, can cure disease"
 #cheapgod20 8278 -- "Diyin Dine'é of the Sky"
 #cheapgod20 8284 -- "Diyin Dine'é of War"
 #cheapgod20 8262 -- "Storm Eagle"
+#addgod 8260 --Totem--
+#addgod 8263 --Mountain Lion--
+#addgod 8261 --Great bear--
 #noundeadgods
 
 #moreheat 1
@@ -165211,9 +165263,9 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 902 -- Crumble
-#details "Wall Damage: 750 +75 points for each additional Earth skill level.
+#details "Wall Damage: 750.
 50% of the defenders must roll for defence or get 3 AP blunt damage."
-#damage -75450 -- -750-75
+#damage -800 -- -Scaling on this spell was bugged if it went over 999--
 #pathlevel 0 4
 --#fatiguecost 1500
 #end
@@ -193497,16 +193549,38 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent -- Fort Destroy --
+#rarity 0
+#revealprov
+#req_ench 284 -- Ench84 -- Shatter Fort
+#req_targmnr 760 --siege golem-- 
+#req_fort 1
+#notext
+#nolog
+#req_pop0ok
+#req_indepok
+#forcetransform 7937
+#end
+
+#newevent
 #rarity 13
 #revealprov
 #req_ench 284 -- Ench84 -- Shatter Fort
-#req_monster 760 --siege golem-- 
+#req_monster 7937 --siege golem-- 
 #req_fort 1
 #msg "A great explosion from ##landname## echoes across the world! A Siege Golem has shattered the entire fortification there into dust!"
 #req_pop0ok
 #req_indepok
-#fort 0 --destroy fort--
 #end
+
+#newevent -- puts siege golems back--
+#rarity 0
+#req_fort 0
+#req_targmnr 7937
+#msg "The Siege Golem in this province has returned to it's mobile form.""
+#req_pop0ok
+#req_indepok
+#forcetransform 760
+#end 
 
 --Gives the Siege Golem his heart if he somehow loses it, or is wished for--
 #newevent
