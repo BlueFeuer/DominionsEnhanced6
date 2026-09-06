@@ -1446,44 +1446,11 @@
 #secondaryeffectalways 171
 #end
 
-#newweapon 1612
-#copyweapon 567  -- Drake Fire
-#name "Flamethrower"
-#end
-
-#newweapon 1613
-#copyweapon 601  -- Cave Fire Bottle
-#name "Launcher"
-#range 30
-#att 5
-#dmg 16
-#ammo 5
-#aoe 5
-#end
-
-#newweapon 1614
-#copyweapon 231  -- Thunder Fist
-#name "Disruptor Gauntlets"
-#nratt 2
-#end
-
-#newweapon 1615
-#copyweapon 673  -- Bronze Glaive
-#name "Stainless Halberd"
-#dmg 10
-#end
-
 #newweapon 1616
 #copyweapon 197  -- Gaze of Death
 #name "Nether Gaze"
 #aoe 3
 #ammo 5
-#end
-
-#newweapon 1617
-#copyweapon 129  -- Dusk Dagger
-#name "Blade of the Killer"
-#secondaryeffectalways 401  -- Soul Death
 #end
 
 #newweapon 1618
@@ -1798,7 +1765,7 @@
 #copyweapon 360  -- Sticks and Stones
 #name "Torrent of Rocks"
 #nratt 20
-#prec -2
+#att -2
 #ammo 5
 #end
 
@@ -4215,7 +4182,7 @@
 #natural
 #secondaryeffectalways 1920
 #sound 16 -- flames
-#flyspr 362 4 -- Fire boulder
+#flightspr 362 4 -- Fire boulder
 #end
 
 #newweapon 1922 -- Area Calmness
@@ -4365,7 +4332,7 @@
 #copyweapon 839  -- Tendie Mind Blast
 #name "Mental Mastery"
 #dmginspector 9007199254740992 -- ??? affliction
-#nreff 5
+#nratt 5
 #end
 
 -- End Mind Blast Changes
@@ -5662,7 +5629,7 @@
 #enc 0
 #def 0
 #rcost 6
-#magic
+#magicarmor
 #end
 
 #newarmor 577 -- Turquoise Barding
@@ -6266,7 +6233,6 @@
 #stealthy 0
 #douse 5
 #startitem 356 -- Flying Carpet
-#batstartsum2 6517 -- Kapikulu
 #amphibian
 #giftofwater 120
 #weapon "quarterstaff"
@@ -11022,7 +10988,7 @@
 #prec 12
 #mr 18
 #mor 18
-#weapon "War Boomerang"
+#weapon "War Boomerangs"
 #weapon "Magic Spear"
 #armor "Magic Shield"
 #maxage 175
@@ -21465,7 +21431,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #swimming
 #inspirational 1
 #ambidextrous 3
-#sailing
 #weapon 1544
 #armor "Leather Cuirass"
 #armor "Crested Helmet"
@@ -28150,7 +28115,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mountmnr 3585
 #mountedinspector
 #nofmounts 2
-#regainmounts 1
+#regainmount 1
 #end
 
 #newmonster 7396
@@ -30285,7 +30250,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #acidshield 8
 #regeneration 10
 #poisonres 15
-#hpoverslow 20
+#hpoverflow 20
 #diseaseres 100
 #heal
 #neednoteat
@@ -30322,7 +30287,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #acidshield 6
 #poisonres 15
 #growhp 30
-#hpoverslow 20
+#hpoverflow 20
 #diseaseres 100
 #heal
 #corpseeater 1
@@ -31873,7 +31838,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #regeneration 10
 #slimer 1
 #poisonres 15
-#hpoverslow 20
+#hpoverflow 20
 #corpseeater 1
 #deadhp 1
 #maxdeadhp 5000
@@ -32761,23 +32726,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #startage 1000
 #maxage 3000
 #polyimmune
-#end
-
-#newmonster 7606
-#copystats 1926  -- Peshtsi City Guard
-#cleararmor
-#spr1 "magicenhanced/eeironcommissar.tga"
-#spr2 "magicenhanced/eeironcommissar2.tga"
-#name "Commissar"
-#descr "Josef the Iron Patriarch is aided by his loyal commissars, experts in rooting out dissent. In United Soviet Bogarus they gather those of pure blood to convince them to sacrifice themselves for the good of the nation. Most are also minor blood mages and enforce the iron will of the Patriarch upon the populace."
-#gcost 0
-#mor 16
-#magicskill 8 1
-#douse 2
-#heretic 1
-#popkill 3
-#patrolbonus 10
-#mapmove 2
 #end
 
 #newmonster 7608
@@ -35911,16 +35859,16 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #montagweight 2
 #end
 
-#newmonster 7767
-#copystats 7515 -- Sacred Beast
-#copyspr 514  -- Kithaironic Lion
-#name "Transformed Beast"
-#descr "This is a Galli transformed into the form of a ferocious beast. It retains the mind and magical skills of the Galli, however its magical skills are reduced in this form. The Galli can return to human form at will, however he must undergo the ritual to assume this form again."
-#magicboost 6 -1
-#shapechange 7732 -- Galli
-#patrolbonus 15
-#stealthy 0
-#end
+--#newmonster 7767 -- DEPRECATED PYTHIUM UNIT
+--#copystats 7515 -- Sacred Beast
+--#copyspr 514  -- Kithaironic Lion
+--#name "Transformed Beast"
+--#descr "This is a Galli transformed into the form of a ferocious beast. It retains the mind and magical skills of the Galli, however its magical skills are reduced in this form. The Galli can return to human form at will, however he must undergo the ritual to assume this form again."
+--#magicboost 6 -1
+--#shapechange 7732 -- Galli
+--#patrolbonus 15
+--#stealthy 0
+--#end
 
 #newmonster 7771
 #copystats 1902  -- Ministry Guardsman
@@ -41135,7 +41083,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #heal
 #magicbeing
 #domsummon2 752  -- Elder Thing
-#hpoverslow 100
+#hpoverflow 100
 #regeneration 10
 #voidsanity 20
 #fear 10
@@ -46641,7 +46589,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #allrange 1
 #weapon "Quarterstaff"
 #armor "Leather Cap"
-#armor "Robe"
+#armor "Robes"
 #magicskill 4 2
 #magicskill 5 1
 #magicskill 7 3
@@ -48486,7 +48434,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #armor "Reinforced leather cap"
 #mountainsurvival
 #snow
-#mobilearcher
+#mobilearcher 1
 #coldres 5
 #stealthy 0
 #end
@@ -56924,7 +56872,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mountmnr 9140 -- fel beast
 #skilledrider 5
 #poisonres 25
-#colres 15
+#coldres 15
 #fear 10
 #inspirational 1
 #pooramphibian
@@ -61226,7 +61174,6 @@ Companions are recruited in pairs and two must be recruited at once."
 #magicbeing
 #spiritsight
 #unsurr 1
-#mindless
 #poisonres 15
 #amphibian
 #weapon 450  -- Tiny Bite
@@ -72637,7 +72584,7 @@ Only three Queens of Elemental Air are known to exist."
 Thalassa resembles a huge, crowned female being composed of water. She is innately skilled in Water magic and can summon water elementals to serve her. The Queen's body is composed of water and is very difficult to harm, particularly when she is underwater. Unless she is completely killed during one combat round, she will heal all her wounds.
 Only three Queens of Elemental Water are known to exist."
 #uwregen 50
-#regen 20
+#regeneration 20
 #giftofwater 500
 #makemonsters1 3731 -- "Water Elemental"
 #amphibian
@@ -72701,7 +72648,7 @@ Only three Queens of Elemental Water are known to exist."
 #mr 18
 #mapmove 14
 #neednoteat
-#recuperation
+#heal
 #spiritsight
 #enc 0
 #prot 13
@@ -75444,7 +75391,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #noslowrec
 #mountmnr 3521
-#skilledrider 1
+#skilledrider 3
 #regainmount 1
 #itemslots 860678
 #clearmagic
@@ -76279,6 +76226,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #domsummon2 1120  -- Markata Archer
 #domsummon20 8344 -- Markata Freak
 #itemslots 860678
+#skilledrider 1 -- 0 -> 1
 #clearmagic
 #magicskill 6 1
 #magicskill 8 1
@@ -82753,7 +82701,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Zodiac Crab is a monstrous crab born at the dawn of time, when monsters and giants roamed the world. In the great battle between Gods the crab nipped the Pantokrator on the toe to distract him. Enraged, the Pantokrator tossed the crab into the sky, where it was imprisoned for all eternity as a consellation. Now with the Pantokrator gone, the shackles are weakening and the Zodiac Crab can once more roam the oceans of the world. The Zodiac Crab has immense strength and is well protected by its thick shell. Its time amongst the stars has bestowed it with the ability to predict future events."
 #diseaseres 100
 #gcost 180
-#homerealm --9 -- Deeps
+#homerealm 9 -- Deeps
 #startdom 2
 #pathcost 60
 #moreluck 1
@@ -86128,7 +86076,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #descr "The Great Sauromancer is a mage of such great power that he has taken the role of a Pretender God. He is a master of magic and particularly skilled in Death magic."
 #diseaseres 100
 #gcost 110
-#homerealm -LA C'tis
 #pathcost 20
 #hp 12
 #prot 5
@@ -90262,7 +90209,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #def 12
 #mr 18
 #woundfend 2
-#invuln 20
+#invulnerable 20
 #itemslots 17571840
 #clearmagic
 #magicskill 2 1
@@ -98389,7 +98336,7 @@ The number of Scar Souls equals the one half the dominion of the province, round
 
 #selectmonster 3712 -- Spine Frog
 #descr "The Spine frog is a large amphibian beast found in warm swamps and marshlands famous for its deadly toxins. Their skin is so poisonous even a single touch can leave a victim paralyzed, and they can spit a blinding poison when they feel threatened. When hunting they grab their prey with their tongue and often swallow it whole."
-#amphibious
+#amphibian
 #poisonskin 60
 #clearweapons
 #weapon 1892 -- blinding spit
@@ -117432,25 +117379,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #end
 
-#newsite 2158
-#name "Newt Colony"
-#path 2 
-#level 0
-#rarity 5
-#res 30
-#mon 7549 -- Newt Soldier
-#end
-
-#newsite 2159
-#name "Robot Factory"
-#path 3 
-#level 0
-#rarity 5
-#res 50
-#mon 7540 -- Robot
-#decscale 1  -- +Prod
-#end
-
 #newsite 2160
 #name "Portal to Hell"
 #path 8 
@@ -117560,7 +117488,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 6 
 #level 0
 #rarity 5
-#unrest 5
 #res 200
 #incscale 3  -- Death
 #decunrest -5
@@ -120351,8 +120278,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #wallunit 9610
 #wallmult 10
 #look 7
-#end
-#rarity 5
 #end
 
 #newsite 2373
@@ -128534,9 +128459,6 @@ Sailing: All commanders can sail. Only Schippers can transport troops."
 #uwwallcom 1067  -- Merman Captain
 #uwwallunit 7971
 #uwwallmult 20
-#uwguardcom 1067  -- Merman Captain
-#uwguardunit 7973 -- Merman Hoplite
-#uwguardmult 15
 #moreprod 1
 #end
 
@@ -129021,7 +128943,7 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 
 #blessbonus 1
 #color 0.6 0 0
-#secondarycolor 10 0.7 0.2
+#secondarycolor 1.0 0.7 0.2
 #likespop 94  -- Lavaborn
 #fortera 1
 #templepic 10
@@ -129248,7 +129170,7 @@ Priests: Average"
 #addgod 8460 -- Foul Statue
 #addgod 8474 -- Ancestral Barrow
 #addgod 8457 -- Spirit of Bones
-#addgod 8354 -- Great White Stag
+#addgod 3693 -- Great White Stag
 #delgod 251  -- Great Sage
 #delgod 245  -- Master Enchanter
 #delgod 244  -- Arch Mage
@@ -129384,7 +129306,7 @@ Priests: Average, can cure disease"
 #addgod 8460 -- Foul Statue
 #addgod 8474 -- Ancestral Barrow
 #addgod 8457 -- Spirit of Bones
-#addgod 8354 -- Great White Stag
+#addgod 3693 -- Great White Stag
 #delgod 251  -- Great Sage
 #delgod 245  -- Master Enchanter
 #delgod 244  -- Arch Mage
@@ -129887,9 +129809,6 @@ Priests: Average, temples more expensive."
 #uwwallcom 8036 -- Crab General
 #uwwallunit 8023 -- Shrimp Soldier
 #uwwallmult 20
-#uwguardcom 8036
-#uwguardunit 8028 -- Crab Soldier
-#uwguardmult 6
 #defmult1 20
 #defmult1b 10
 #defmult2 20
@@ -130181,9 +130100,6 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 #uwwallcom 8712 -- Sothul
 #uwwallunit 8702 -- Abyssal One Guard
 #uwwallmult 20
-#uwguardcom 8712
-#uwguardunit 8707
-#uwguardmult 6
 
 #startcom 8712 -- Sothul
 #startscout 8711 -- Sothul Dun
@@ -130346,9 +130262,6 @@ Priests: Average"
 #uwwallunit 8902
 #uwwallmult 20
 
-#uwguardcom 8928
-#uwguardunit 8905
-#uwguardmult 8
 
 #startcom 8927 -- Siyokoy Pamagat
 #startscout 8937 -- Ugkoy Scout
@@ -131737,7 +131650,7 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #uwbuild 1
 #addgod 10007 -- Mother of Tuathas
 #addgod 8387 -- Once & Future King
-#cheapgod20 8354 -- Great White Stag
+#cheapgod20 3693 -- Great White Stag
 #cheapgod20 8387 -- Once & Future King
 #cheapgod20 8326 -- Triple Goddess
 #startcom 54  -- Castellan
@@ -132356,7 +132269,6 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #hero2 3380  -- Protopope
 #hero3 8218 -- St. Christopher
 #uwbuild 1
-#delgod 8347 -- Drake Breeder
 #delgod 8307 -- Stone Magus
 #delgod 8509 -- Great Sage
 #delgod 8510 -- Crone
@@ -132744,7 +132656,7 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #addgod 8453 -- Divine Egg
 #cheapgod20 8306 -- Lord of Pearls
 #cheapgod20 8314 -- Triton Queen
-#cheapgod20 8381 -- Sea Nymph
+#cheapgod20 10009 -- Sea Nymph
 #cheapgod20 8477 -- Mother of Pearls
 
 #plainfortrec 2821 -- hoplite
@@ -132915,9 +132827,6 @@ Priests: Weak, magical"
 #guardunit 1045 -- Mermidon
 #guardmult 10
 
-#uwguardcom 2410
-#uwguardunit 1045
-#uwguardmult 10
 
 #defcom1 2372 -- ichtysatyr
 #defcom2 2410 -- ichtycentaur
@@ -133775,9 +133684,6 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 #guardunit 971 -- Hybrid Trooper
 #guardmult 10
 
---#uwguardcom 445 -- Illithid Lord
---#uwguardunit 335 -- Slave Trooper
---#uwguardmult 15
 
 #uwdefunit1 337 -- Lobo Guard 
 #uwdefmult1 20
@@ -160424,9 +160330,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #school 0
 #researchlevel 2
 #path 0 7
-#pathlevel 1
+#pathlevel 0 1
 #path 1 0
-#pathlevel 1 
+#pathlevel 1 1 
 #precision 100
 #effect 10
 #damage 549755813888
@@ -160441,9 +160347,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #school 0
 #researchlevel 5
 #path 0 7
-#pathlevel 2
+#pathlevel 0 2
 #path 1 0
-#pathlevel 2 
+#pathlevel 1 2 
 #precision 100
 #effect 10
 #damage 549755813888
@@ -160458,9 +160364,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #school 0
 #researchlevel 8
 #path 0 7
-#pathlevel 4
+#pathlevel 0 4
 #path 1 0
-#pathlevel 3 
+#pathlevel 1 3 
 #spec 12599424 -- AN, ignore shields, UWOK, enemy immune
 #effect 10
 #damage 549755813888
@@ -163504,7 +163410,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #descr "The caster shoots a handful of enchanted darts against his enemies. The darts will not cause serious damage, but are coated in serpent venom that can hurt and possibly kill a human."
 #spec 1152921779484753984 -- AP, Piercing, Next effect on damage
 #fatiguecost 20
-#flyspr 403 1
+#flightspr 403 1
 #effect 109 -- Blow dart
 #damage 9
 #range 5025 -- 30+5
@@ -166865,7 +166771,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 1099514773504 -- Non-magical, defense negates, slashing - Unarmored spiritform beings don't need this in their life
 #damage 1007 -- 12+ -- Damage buffed to compensate
 #aoe 2008 -- 12++ -- AOE buffed to compensate
-#ainocast
+#ainocast 1
 #end
 
 #selectspell 815 -- Curse of Stones
@@ -172051,33 +171957,6 @@ This will also prevent their skin from drying out."
 #spell "Cloud Trapeze"
 #end
 
-#selectitem 606
-#copyitem 37
-#copyspr 42
-#name "Blade of the Immortal Killer"
-#descr "This black blade is used by the Immortal Killer in his dark work. It will kill any being it strikes by slaying their soul. None except the Killer know its true origin, however it can send shadowy apparitions of the Killer to disant provinces to slay important targets."
-#weapon 1617
-#spell "Send Killer"
-#constlevel 12
-#att 3
-#cursed
-#nofind
-#end
-
-#selectitem 607
-#copyspr 103  -- Trident from Beyond
-#name "Trident of Dulness"
-#descr "This trident is owned by Dulness and only she can weild the power it contains. Forged in the depths of hell it can blight a province with listlessness."
-#constlevel 12
-#mainpath 8
-#mainlevel 6
-#type 1
-#weapon 641  -- Bronze Trident
-#spell "Melancholia"
-#cursed
-#nofind
-#end
-
 #selectitem 779
 #copyitem 391 -- Stone Sphere
 #copyspr 391  -- Stone Sphere
@@ -173206,7 +173085,7 @@ This will also prevent their skin from drying out."
 #constlevel 7
 #mainpath 4
 #mainlevel 3
-#spell "Bless"
+#spell "Blessing"
 #type 8  -- Misc
 #restricted 201 -- Venedia
 #bestowtomount
@@ -173673,7 +173552,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #mainpath 6
 #mainlevel 3
 #type 1
-#undiscleader 1
+#undisleader 1
 #noundead
 #nodemon
 #inspirational -6
@@ -175584,7 +175463,7 @@ This headband does not require activation in combat."
 #selectitem 220 -- Crown of the Frost King
 #itemcost1 -40
 #nofind
-#frostelementals 1
+#waterelementals 1
 #tmpwatergems 3
 #constlevel 7
 #unique
@@ -181997,18 +181876,6 @@ They were quickly transported to the treasury."
 
 #newevent
 #rarity 5
-#req_targmnr 7556 -- Dulness
-#req_rare 15
-#nation -2
-#req_land 1
-#msg "Create Debauched Libertine."
-#notext
-#nolog
-#com 7624 -- Debauched Libertine
-#end
-
-#newevent
-#rarity 5
 #req_targmnr 7624 -- Debauched Libertine
 #req_rare 5
 #nation -2
@@ -186308,7 +186175,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targinanimate 0
 #req_targimmobile 0
 #req_land 1
-#req_targaff  -- Flesh Eater
+#req_targaff 8589934592 -- Flesh Eater
 #req_targmaxsize 3
 #msg "##targname## now suffers the curse of vampirism!"
 #transform 7823 -- Vampire Countess
@@ -186329,7 +186196,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targinanimate 0
 #req_targimmobile 0
-#req_targaff  -- Flesh Eater
+#req_targaff 8589934592 -- Flesh Eater
 #req_targmaxsize 3
 #req_land 1
 #msg "##targname## now suffers the curse of vampirism!"
@@ -186353,7 +186220,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targimmobile 0
 #req_targmaxsize 3
 #req_land 1
-#req_targnoaff  -- Flesh Eater
+#req_targnoaff 8589934592 -- Flesh Eater
 #msg "##targname## has fallen victim to the Malediction and now suffers an unnatural urge to feast on human flesh."
 #nation -2
 #gainaff 8589934592  -- Flesh Eater
@@ -186406,7 +186273,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targinanimate 0
 #req_targimmobile 0
-#req_targnoaff  -- Flesh Eater
+#req_targnoaff 8589934592 -- Flesh Eater
 #msg "Your commander has fallen victim to a terrible hunger and now suffers an unnatural urge to feast on human flesh."
 #nation -2
 #gainaff 8589934592  -- Flesh Eater
@@ -186997,7 +186864,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #gainaff 8589934592
 #end
@@ -187007,7 +186874,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187019,8 +186886,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187031,8 +186898,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187043,8 +186910,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187055,8 +186922,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187067,8 +186934,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187079,8 +186946,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187091,8 +186958,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -187103,8 +186970,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunge for human flesh and will consume the populace each turn, or else gain further afflictions."
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
 #gainaff 8589934592
@@ -189425,7 +189292,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and reclaimed!"
 --#nolog
@@ -189442,7 +189309,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and will be reclaimed when a fort is built and has adequate province defense."
 --#nolog
@@ -189458,7 +189325,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and will be reclaimed when a fort is built and has adequate province defense."
 --#nolog
@@ -189508,7 +189375,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_land 0
 #req_notfornation 206 -- Dirgen
 #msg "Swatch to no rec [Basalt City]"
@@ -189542,7 +189409,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #nation -2
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #req_owncapital 0
 #req_site 1
 #msg "Place shattered crystal [Basalt City]"
@@ -189556,7 +189423,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #nation -2
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #req_owncapital 1
 #req_fornation 206 -- Dirgen
 #msg "Place shattered crystal"
@@ -189570,7 +189437,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #nation -2
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #req_owncapital 0
 #req_site 1
 #msg "Remove shattered crystal [Shattered Crystal]"
@@ -191719,7 +191586,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #req_fornation 42 -- Therodos
 #req_owncapital 1
-#req_pregame
+#req_pregame 1
 #req_growth 1
 #msg "Incpop Growth 1"
 #nolog
@@ -194229,7 +194096,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #addgeo 274877906944
 #code -540
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #setpoptype 72
 #delay 1
 #end
@@ -194241,7 +194108,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #addgeo 1152921504606846980
 #remgeo 8389104
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #code 0
 #kill 90
 #end
@@ -194354,8 +194221,6 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_site 1
 #msg "[Temple Sanguine]"
 #addgeo 4096 --cave
-#end
-
 #end
 
 #selectsite 108 --LA Agartha--
@@ -195599,7 +195464,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 7937 --siege golem--
 #msg "The Siege Golem has been returned to its mobile form."
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #nolog
 #forcetransform 760 -- Siege Golem w/o Fort Destruction
 #end
@@ -195613,7 +195478,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fort 1
 #msg "A great explosion from ##landname## echoes across the world! A Siege Golem has shattered the entire fortification there into dust!"
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #forcetransform 7937 -- Siege Golem w/ Fort Destruction
 #end
 
@@ -196856,7 +196721,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_noench 700 --choleria
 #removesite 2622 --choleric production-- 
 #removesite 2623 --choleric production 2--
-#req_indepok
+#req_indepok 1
 #req_pop0ok
 #nolog
 #notext
@@ -196973,7 +196838,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_nearbysite 1 --Phlegmatic Site-- 
 #unrest -5
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #msg "unrest reduce?[Phlegmatic Passivity]" --adds site--
 #notext
 #nolog
