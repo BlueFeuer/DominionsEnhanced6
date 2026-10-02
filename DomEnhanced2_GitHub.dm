@@ -61733,7 +61733,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 10
 #str 15
 #prot 20
-#masterrit 2
+#masterrit 1
 #holy
 #clearmagic
 #magicskill 3 1
@@ -62021,7 +62021,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #startage 600
 #end
 
-#newmonster 9342 -- Cromlech +1 masterrit
+#newmonster 9342 -- Cromlech +0 masterrit
 #copystats 473 -- Telestic Animate
 #spr1 "extrapretenders/cromlech.tga"
 #spr2 "extrapretenders/cromlech2.tga"
@@ -62033,7 +62033,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 8
 #str 15
 #prot 18
-#masterrit 1
+#masterrit 0
 #holy
 #clearmagic
 #magicskill 4 1
@@ -62043,14 +62043,14 @@ Companions are recruited in pairs and two must be recruited at once."
 #startage 1000
 #end
 
-#newmonster 9361 -- Cromlech +2 masterrit
+#newmonster 9361 -- Cromlech +1 masterrit
 #copystats 9342 -- Cromlech
 #copyspr 9342 -- Cromlech
 #name "Menec Cromlech"
 #descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God."
 #heretic 1
 #drawsize -15
-#masterrit 2
+#masterrit 1
 #holy
 #clearmagic
 #magicskill 4 1
@@ -62098,7 +62098,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 10
 #str 22
 #prot 19
-#masterrit 2
+#masterrit 1
 #holy
 #clearmagic
 #magicskill 3 1
@@ -62122,7 +62122,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 10
 #str 22
 #prot 19
-#masterrit 1
+#masterrit 0
 #holy
 #clearmagic
 #magicskill 3 1
@@ -62146,7 +62146,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 10
 #str 22
 #prot 19
-#masterrit 2
+#masterrit 1
 #holy
 #clearmagic
 #magicskill 3 1
@@ -62172,7 +62172,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 10
 #str 22
 #prot 19
-#masterrit 1
+#masterrit 0
 #holy
 #clearmagic
 #magicskill 3 1
@@ -76656,10 +76656,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Traveler"
 #descr "The Traveler is a giant of divine heritage that once served the Pantokrator as a divine messenger. His winged sandals and helmet allowed him to stride through the air with incredible speed carrying messages and warnings from his master. With the Pantokrator gone he has decided to ascend the Throne of Heaven and become the true God. The Traveler is tireless and has supernatural perceptive abilities. He is surrounded by an aura of splendour gifted to him by his former master and can fly through even the fiercest storms. He bears a Caduceus that can rob the will of those it strikes. In combat he moves with unearthly speed."
 #diseaseres 100
-#gcost 230
+#gcost 200
 #homerealm 3  -- Mediterranean
 #startdom 2
-#pathcost 60
+#pathcost 40
 #mor 30
 #hp 45
 #prot 0
@@ -167896,6 +167896,14 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 17592194449552 -- MRN -> MRNH
 #end
 
+#selectspell 843 -- Drain Life
+#school 5 -- Thaum
+#end
+
+#selectspell 863 -- Soul Vortex
+#school 5 -- Thaum
+#end
+
 #selectspell 852 -- Blizzard, re-evaluate later
 #school -1
 #end
@@ -171447,6 +171455,7 @@ Can only be cast once per combat round."
 #type 8  -- Misc
 #mainpath 6
 #mainlevel 1
+#itemcost1 -40
 #invulnerable 10
 #att 5
 #cursed
@@ -171837,6 +171846,7 @@ Can only be cast once per combat round."
 #type 8  -- Misc
 #mainpath 6
 #mainlevel 1
+#itemcost1 -40
 #invulnerable 10
 #str 5
 #cursed
@@ -171853,7 +171863,8 @@ Can only be cast once per combat round."
 #type 8  -- Misc
 #mainpath 6
 #mainlevel 2
-#invulnerable 15
+#itemcost1 -50
+#invulnerable 20
 #cursed
 #noinanim
 #nofind
@@ -171870,6 +171881,8 @@ Can only be cast once per combat round."
 #mainlevel 1
 #secondarypath 4
 #secondarylevel 1
+#itemcost1 -40
+#itemcost2 -40
 #invulnerable 10
 #def 5
 #swift 30
@@ -171888,6 +171901,7 @@ Can only be cast once per combat round."
 #type 8  -- Misc
 #mainpath 4
 #mainlevel 2
+#itemcost1 -20
 #invulnerable 10
 #mr 5
 #cursed
@@ -176430,20 +176444,20 @@ This headband does not require activation in combat."
 #req_capital 1
 #req_growth 1
 #req_death -1
-#incpop 160
-#msg "growth pop boost growth 1"
+#incpop 150
+#msg "The Growth dominion of ##godname## has brought prosperity and growth to ##landname##."
 #nolog
 --#notext
 #end
 
-#newevent 
+#newevent
 #rarity 5
 #req_pregame 1
 #req_capital 1
 #req_growth 2
 #req_death -2
-#incpop 320
-#msg "growth pop boost growth 2"
+#incpop 300
+#msg "The Growth dominion of ##godname## has brought prosperity and growth to ##landname##."
 #nolog
 --#notext
 #end
@@ -176453,8 +176467,8 @@ This headband does not require activation in combat."
 #req_pregame 1
 #req_capital 1
 #req_growth 3
-#incpop 480
-#msg "growth pop boost growth 3"
+#incpop 450
+#msg "The Growth dominion of ##godname## has brought prosperity and growth to ##landname##."
 #nolog
 --#notext
 #end
@@ -200574,9 +200588,9 @@ The Forest Lord is an ancient spirit of nature appearing as a large figure made 
 #req_targmnr 9359 -- white bull
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
-#req_targforeignok
 
 The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura." -- MESSAGE HERE
+#req_targforeignok
 #header 2
 #req_varone 6021
 #clearvar 6021
