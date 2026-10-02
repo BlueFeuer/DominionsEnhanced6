@@ -83216,17 +83216,17 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Zodiac Crab"
 #descr "The Zodiac Crab is a monstrous crab born at the dawn of time, when monsters and giants roamed the world. In the great battle between Gods the crab nipped the Pantokrator on the toe to distract him. Enraged, the Pantokrator tossed the crab into the sky, where it was imprisoned for all eternity as a consellation. Now with the Pantokrator gone, the shackles are weakening and the Zodiac Crab can once more roam the oceans of the world. The Zodiac Crab has immense strength and is well protected by its thick shell. Its time amongst the stars has bestowed it with the ability to predict future events."
 #diseaseres 100
-#gcost 180
+#gcost 200
 #homerealm 9 -- Deeps
 #startdom 2
 #pathcost 60
 #moreluck 1
 #mor 30
-#hp 223
-#prot 3
+#hp 216
+#prot 23
 #str 32
-#att 13
-#def 13
+#att 11
+#def 6
 #mr 17
 #mastersmith -1
 #researchbonus -8
