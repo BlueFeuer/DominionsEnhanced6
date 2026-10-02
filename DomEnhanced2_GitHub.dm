@@ -11691,6 +11691,7 @@
 #clearweapons
 #weapon "Dagger"
 #sailing 999 6
+#mr 12
 #poorleader
 #cleararmor
 #magicskill 4 1
@@ -12496,7 +12497,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 10
 #prec 10
 #size 3
-#mr 10
+#mr 13
 #mor 9
 #enc 3
 #mapmove 18
@@ -12527,7 +12528,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 10
 #prec 10
 #size 3
-#mr 10
+#mr 14
 #mor 9
 #enc 3
 #mapmove 18
@@ -150220,6 +150221,14 @@ All effects scale with friendly Dominion."
 #restricted 100 -- LA Man
 #end
 
+#selectspell 3214
+#copyspell 18 -- summon devil
+#name "Chort"
+#effect 10021
+#school -1
+#damage 7831
+#end
+
 #selectspell 3219
 #copyspell 935 -- Pack of Wolves
 #name "Enchant Morgen Wraith"
@@ -150970,6 +150979,7 @@ All effects scale with friendly Dominion."
 #nreff 3015 -- 30+++
 #fatiguecost 5000
 #damage 7831 -- Chort
+#nextspell 3214
 #restricted 116 -- Bogarus
 #end
 
@@ -165182,36 +165192,12 @@ This spell may only target friendly provinces."
 #pathlevel 0 1
 #end
 
-#selectspell 4396
-#name "Inner Light"
-#descr "The caster fills the souls of a small group of nearby soldiers with the incandescent light of the sun. When a soldier so affected is slain, a shower of sunlight will shoot forth from the body and burn all undead beings and demons in the vicinity."
-#details "Explosion: 15 AN MR dmg (undeads and demons only), 35 AoE"
-#school 5
-#researchlevel 6
-#path 0 0
-#pathlevel 0 2
-#path 1 4
-#pathlevel 1 1
-#effect 17
-#damage 1
-#nreff 1
-#range 10
-#precision 100
-#aoe 2004
-#flightspr -1
-#explspr 10034
-#sound 16  -- Fire
-#fatiguecost 100
-#ainocast 1
-#spec 281690240  -- Ignore shields & armor, friendlies only, mindless, demons, and undead immune, UWOK
-#nextspell 4395
-#end
-
 #selectspell 4397
 #copyspell 1261 -- Farstrike
 #name "Greater Farstrike"
 #descr "The caster opens multiple rifts in space and strikes through them with a fist as hard as steel. The strength of the caster adds to the damage of the spell."
-#nreff 1001
+#nreff 3
+#damage 1013
 #precision 20
 #range 100
 #researchlevel 5
